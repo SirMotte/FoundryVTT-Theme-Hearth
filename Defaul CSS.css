@@ -399,14 +399,15 @@ body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) a[href] {
     text-shadow: none;
 }
 
-/*
+body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active, body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active {
+    background-color: red;
+    color: black;
+}
+
+/* -------- Header of window frames
 body.-emu .window-app .window-header {
     background: var(--color-background-dunkel-mild);
-}+/
-
-
-
-
+}*/
 
 
 /* -------------------- xXxXx -------------------- */
@@ -498,17 +499,25 @@ h3 {
     color: var(--primary-font);
 }
 
-.message.damage-log.damage {
-    background: #241C1C;
-}
+
 
 .chat-message .message-header {
     line-height: 20px;
     color: #FFF0CA;
 }
 
+
+/* -------- Damage Log ------- */
 .message.damage-log.healing {
     background: #1F241C;
+}
+
+.message.damage-log.damage {
+    background: #2c1414;
+}
+
+.message.damage-log.reverted.damage {
+    background: #2e0736;
 }
 
 /*----------- Always HP ---------*/
@@ -942,6 +951,11 @@ nav.damage-log-nav.tabs {
     padding: 5px 0;
 }
 
+/*--------------------------------- Action Pack --------------------------------- */
+.action-pack__item .item-summary a {
+    color: var(--primary-font);
+}
+
 /*--------------------------------- Icons --------------------------------- */
 .fa-coins:before {
     content: "\f51e";
@@ -988,10 +1002,12 @@ nav.damage-log-nav.tabs {
     color: #FF6161;
 }
 
+/* ----causes issues with combat tracker readability ------
 .fa-skull:before {
     content: "\f54c";
     color: var(--primary-font);
 }
+*/
 
 .fa-angle-double-down:before,
 .fa-angles-down:before {
