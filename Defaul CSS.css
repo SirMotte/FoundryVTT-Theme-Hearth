@@ -1405,3 +1405,13 @@ nav.damage-log-nav.tabs {
 .anonymous-replaced {
     background-color: transparent;
 }
+
+.fa-circle-plus:before, .fa-plus-circle:before {
+    content: "\f055";
+    color: var(--color-text-gruen);
+}
+
+.fa-bookmark:before {
+    content: "\f02e";
+    color: var(--color-orange);
+}
