@@ -22,6 +22,7 @@
     --color-dunkelblau: #191E21;
 
 
+
 }
 
 /* -------------------- DnD 5E Ruleset -------------------- */
@@ -388,10 +389,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     color: var(--primary-font);
 }
 
-.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
-.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
-    background-color: var(--color-background-dunkel);
-}
+
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
 .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula {
@@ -434,6 +432,30 @@ body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"
     background: #4e1e16;
 }
 
+/* Chat Cards */
+body.-emu #sidebar [data-tab="chat"] #chat-log .message,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message {
+
+    background-image: var(--emu-image-background-light, none);
+    border-top: 3px solid var(--color-border-light-primary);
+    border-bottom: 3px solid var(--color-border-light-primary);
+    border-radius: 5px;
+    border-style: solid;
+    color: rgba(var(--color-text), 1);
+}
+
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
+    border: none;
+}
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
+    background-color: var(--color-background-dunkel);
+}
+
+
 /* -------- Header of window frames
 body.-emu .window-app .window-header {
     background: var(--color-background-dunkel-mild);
@@ -446,7 +468,7 @@ a.inline-roll {
     background: #453B32;
     padding: 1px 4px;
     border: 1px solid var(--color-border-highlight);
-    border-radius: 2px;
+    border-radius: 1px;
     white-space: nowrap;
     word-break: break-all;
 }
