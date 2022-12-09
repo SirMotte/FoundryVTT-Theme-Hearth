@@ -456,6 +456,14 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 }
 
 
+
+/*AE Marker*/
+.tidy5e.sheet.actor .ae-marker {
+    background: var(--color-text-creme);
+    color: black;
+    border-radius: 3px;
+}
+
 /* -------- Header of window frames
 body.-emu .window-app .window-header {
     background: var(--color-background-dunkel-mild);
