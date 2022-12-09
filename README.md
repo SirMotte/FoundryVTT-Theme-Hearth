@@ -9,7 +9,7 @@ Right now this is for my personal use only and raw work in progress, if you alre
 - DnD 5E Ruleset
 - [Ernie's Modern UI](xxx) (Mandatory)
 - [Custom CSS](xxx) (Mandatory)
-- [Tidy5ESheet] (Recommended)
+- [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Recommended)
 
 ## Supported Modules
 Others work out of the box or are not used by me. Right now I won't take requests for additional module support:
@@ -29,7 +29,21 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Ready Set Roll for D&D5e](https://github.com/MangoFVTT/fvtt-ready-set-roll-5e) - Currently Ernie's UI breaks the buttons on Chat cards. He said he will add support in the future.
 - [Token Variant Art](https://github.com/Aedif/TokenVariants) - Ernie's UI currently makes the Token HUD UI hard to use. No ETA on a fix.
 
-##Set-UP
+## Installation Instructions and Set-Up
 
-In oder to make this work you need to apply the following settings to Ernie's Modern UI:
+1. Install the Required Modules to Foundy VTT.
+2. Navigate to the Modules Settings for the Custom CSS Module open the "Custom CSS Rules" window.Copy-Paste all entries found in the "Custom CSS Module Settings.css" and hit save. You can choose to apply the style on a global basis or as User Style. Please refer to the Custom CSS Module Documentation for further information.
+3. Open the Ernie's Modern UI Settings and tick the following boxes. Feel free to experiment with these settings, but avoid any opacity alterations.
+   - Hit the "Settings" Button and apply the following values in the "Colors" Tab:
+   - Switch to the "Design" Tab and Apply the following settings. It might be necessary, in order to make the font's work, to download the Calibri Font from Google and add it to your Foundry installation. (Needs testing).
+   - Lastly in the "Options" Tab, check the boxes as follows and hit the "Save" Button.
+4. (Only if used) Open up the Tidy5e Sheet Settings and set it to the "Alternative (dark)" color scheme. Additional Settings used need further testing in regard of UI Elements. I will update this document accordingly.
+
+This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue reporter.
+
+Have Fun!
+Sir Motte
+
+
+
 
