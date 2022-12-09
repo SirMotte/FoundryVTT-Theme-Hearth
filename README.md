@@ -41,7 +41,7 @@ Others work out of the box or are not used by me. Right now I won't take request
    ![grafik](https://user-images.githubusercontent.com/82598692/206667254-3bdc42d0-9c21-492f-be41-9eefcb3461ae.png)
    - Hit the "Settings" Button and apply the following values in the "Colors" Tab:
 
-   ![grafik](https://user-images.githubusercontent.com/82598692/206667372-4ac4c426-860f-4301-b03b-12423278ba4b.png)
+   ![grafik](https://user-images.githubusercontent.com/82598692/206686955-d32ebd14-2800-4f33-a5a8-6775d4742187.png)
 
    - Switch to the "Design" Tab and Apply the following settings. It might be necessary, in order to make the font's work, to download the Calibri Font from Google and add it to your Foundry installation. (Needs testing).
 
