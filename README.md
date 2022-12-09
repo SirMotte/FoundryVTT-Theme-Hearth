@@ -34,8 +34,8 @@ Others work out of the box or are not used by me. Right now I won't take request
 
 ## Installation Instructions and Set-Up
 
-1. Install the Required Modules to Foundy VTT.
-2. Navigate to the Modules Settings for the Custom CSS Module open the "Custom CSS Rules" window.Copy-Paste all entries found in the "Custom CSS Module Settings.css" and hit save. You can choose to apply the style on a global basis or as User Style. Please refer to the Custom CSS Module Documentation for further information.
+1. Install the required modules to Foundy VTT.
+2. Navigate to the module settings for the Custom CSS Module and open the "Custom CSS Rules" window. Copy-Paste all entries found in the "Custom CSS Module Settings.css" and hit save. You can choose to apply the style on a global basis or as User Style. Please refere to the Custom CSS Module Documentation for further information.
 3. Open the Ernie's Modern UI Settings and tick the following boxes. Feel free to experiment with these settings, but avoid any opacity alterations.
 
    ![grafik](https://user-images.githubusercontent.com/82598692/206667254-3bdc42d0-9c21-492f-be41-9eefcb3461ae.png)
