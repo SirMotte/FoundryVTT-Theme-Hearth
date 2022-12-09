@@ -106,6 +106,7 @@ p::selection {
     border-width: 6px;
     border-radius: 1px;
     margin-right: -6px;
+    
 }
 
 .tidy5e.sheet.actor .list-layout .items-list .item.magic-item {
@@ -1431,3 +1432,5 @@ nav.damage-log-nav.tabs {
     content: "\f02e";
     color: var(--color-orange);
 }
+
+/*Rightclick Creature Context Menu*/
