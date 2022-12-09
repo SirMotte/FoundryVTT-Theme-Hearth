@@ -2,7 +2,7 @@ Attention: Raw WIP!
 
 # Sir Motte's Magnificent Darkness - Heart Theme for Foundry VTT
 
-This is my attempt at a recreation of my [Theme for Fantasy Grounds](https://github.com/SirMotte/FGU-Theme-Hearth) that was well received.
+This is my attempt at a recreation of my well received [Theme for Fantasy Grounds Unity](https://github.com/SirMotte/FGU-Theme-Hearth).
 Right now this is for my personal use only and raw work in progress, if you already want to test ist and get a feel on how it looks, feel free to follow the set-up instructions below and report back with findings and opinions.
 
 ## Requirements:
