@@ -34,9 +34,20 @@ Others work out of the box or are not used by me. Right now I won't take request
 1. Install the Required Modules to Foundy VTT.
 2. Navigate to the Modules Settings for the Custom CSS Module open the "Custom CSS Rules" window.Copy-Paste all entries found in the "Custom CSS Module Settings.css" and hit save. You can choose to apply the style on a global basis or as User Style. Please refer to the Custom CSS Module Documentation for further information.
 3. Open the Ernie's Modern UI Settings and tick the following boxes. Feel free to experiment with these settings, but avoid any opacity alterations.
+
+   ![grafik](https://user-images.githubusercontent.com/82598692/206667254-3bdc42d0-9c21-492f-be41-9eefcb3461ae.png)
    - Hit the "Settings" Button and apply the following values in the "Colors" Tab:
+
+   ![grafik](https://user-images.githubusercontent.com/82598692/206667372-4ac4c426-860f-4301-b03b-12423278ba4b.png)
+
    - Switch to the "Design" Tab and Apply the following settings. It might be necessary, in order to make the font's work, to download the Calibri Font from Google and add it to your Foundry installation. (Needs testing).
+
+   ![grafik](https://user-images.githubusercontent.com/82598692/206669105-062adb7f-e47e-4cc3-866a-5f4d57709869.png)
+
    - Lastly in the "Options" Tab, check the boxes as follows and hit the "Save" Button.
+
+   ![grafik](https://user-images.githubusercontent.com/82598692/206667745-1c8df9b4-1dcc-48c6-ad72-c246245108d1.png)
+
 4. (Only if used) Open up the Tidy5e Sheet Settings and set it to the "Alternative (dark)" color scheme. Additional Settings used need further testing in regard of UI Elements. I will update this document accordingly.
 
 This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue reporter.
