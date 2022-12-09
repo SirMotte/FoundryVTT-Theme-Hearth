@@ -18,6 +18,10 @@
     --color-dunkelrot-dunkler: #241C1C;
     --color-dunkelgruen: #1F241C;
     --color-dunkellila: #23182F;
+    --color-border-light-primary: #6C5848;
+    --color-dunkelblau: #191E21;
+
+
 }
 
 /* -------------------- DnD 5E Ruleset -------------------- */
@@ -36,6 +40,9 @@
     color: var(--primary-font);
 }
 
+.prosemirror.editing-source textarea {
+    color: #DDDDDD;
+}
 
 /* -------------------- Text Selection -------------------- */
 p::selection {
@@ -403,6 +410,28 @@ body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.defeated.activ
 body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active {
     background-color: red;
     color: black;
+}
+
+.-emu-layout body.-emu .dialog p,
+.-emu-layout body.-emu #sidebar p,
+.-emu-layout body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) p {
+    background: var(--color-background-dunkel-mild);
+}
+
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
+.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
+    background: #1e2c35;
+}
+
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
+.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
+    font-weight: bold;
+    color: var(--color-text-creme);
+}
+
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
+    background: #1e2c35;
 }
 
 /* -------- Header of window frames
