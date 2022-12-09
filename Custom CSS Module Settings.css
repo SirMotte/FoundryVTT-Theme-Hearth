@@ -420,7 +420,7 @@ body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"
 
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
 .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
-    background: #1e2c35;
+    background: #4e1e16;
 }
 
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
@@ -431,7 +431,7 @@ body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header,
 .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
-    background: #1e2c35;
+    background: #4e1e16;
 }
 
 /* -------- Header of window frames
