@@ -106,7 +106,6 @@ p::selection {
     border-width: 6px;
     border-radius: 1px;
     margin-right: -6px;
-    
 }
 
 .tidy5e.sheet.actor .list-layout .items-list .item.magic-item {
@@ -400,7 +399,8 @@ body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) a[href] {
     text-shadow: none;
 }
 
-body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active, body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active {
+body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active {
     background-color: red;
     color: black;
 }
@@ -1423,7 +1423,8 @@ nav.damage-log-nav.tabs {
     background-color: transparent;
 }
 
-.fa-circle-plus:before, .fa-plus-circle:before {
+.fa-circle-plus:before,
+.fa-plus-circle:before {
     content: "\f055";
     color: var(--color-text-gruen);
 }

@@ -19,6 +19,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Action Pack](https://github.com/teroparvinen/foundry-action-pack)
 - [Always HP](https://github.com/ironmonk88/always-hp)
 - [Anonymous](https://github.com/reonZ/anonymous)
+- [Combat Tracker Disposition](https://github.com/LebombJames/combat-tracker-disposition)
 - [Damage Log](https://github.com/cs96and/FoundryVTT-damage-log)
 - [Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator)
 - [Monk's Common Display](https://github.com/ironmonk88/monks-common-display)
@@ -26,7 +27,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Small Weather](https://github.com/LeafWulf/smallweather)
 
 ## Known Issues:
-- Some areas of certain UI elements are hard to read or messed up. This is mostly caused by Ernie's Modern UI and me not having touched these areas yet.
+- Some areas of certain UI elements are hard to read or messed up. This is mostly caused by Ernie's Modern UI and me not having touched these areas yet. A lot needs to be done.
 - [Combat Tracker Disposition](https://github.com/LebombJames/combat-tracker-disposition) - slight bugs with icons, investigating
 - [Ready Set Roll for D&D5e](https://github.com/MangoFVTT/fvtt-ready-set-roll-5e) - Currently Ernie's UI breaks the buttons on Chat cards. He said he will add support in the future.
 - [Token Variant Art](https://github.com/Aedif/TokenVariants) - Ernie's UI currently makes the Token HUD UI hard to use. No ETA on a fix.
