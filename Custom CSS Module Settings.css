@@ -1,5 +1,5 @@
 /* Custom CSS */
-/*HEAVY WIP, sorting not complete. Add these entrys into the Custom CSS Rules Sheet - Only works well in tandem with Ernie's Modern UI - Please See this Document (!INSERTLINK!)*/
+/*HEAVY WIP, sorting not complete. Add these entrys into the Custom CSS Rules Sheet - Only works well in tandem with Ernie's Modern UI - Please See the Readme!/
 
 /*Here I either define oder overwrite root color settings that stem from baseline Foundry*/
 :root {
@@ -20,9 +20,6 @@
     --color-dunkellila: #23182F;
     --color-border-light-primary: #6C5848;
     --color-dunkelblau: #191E21;
-
-
-
 }
 
 /* -------------------- DnD 5E Ruleset -------------------- */
@@ -379,7 +376,7 @@ p::selection {
 }
 
 
-/* -------------------- Ernie's Modern UI -------------------- */
+/* -------------------- Ernie's Modern UI ---------------------------------*/
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
@@ -456,7 +453,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 
 
 
-/*AE Marker*/
+/*AE Marker*---------------------------------*/
 .tidy5e.sheet.actor .ae-marker {
     background: var(--color-text-creme);
     color: black;
@@ -469,7 +466,7 @@ body.-emu .window-app .window-header {
 }*/
 
 
-/* -------------------- xXxXx -------------------- */
+/* -------------------- xXxXx ---------------------------------*/
 a.content-link,
 a.inline-roll {
     background: var(--color-background-dunkel);
@@ -566,7 +563,7 @@ h3 {
 }
 
 
-/* -------- Damage Log ------- */
+/* -------- Damage Log ---------------------------------*/
 .message.damage-log.healing {
     background: #1F241C;
 }
@@ -579,7 +576,7 @@ h3 {
     background: #2e0736;
 }
 
-/*----------- Always HP ---------*/
+/*----------- Always HP ---------------------------------*/
 
 #always-hp .resource .bar {
     border: 1px solid solid #000000;
@@ -604,7 +601,7 @@ h3 {
     border-radius: 1px;
 }
 
-/*----------- xXxXx ---------*/
+/*----------- xXxXx ---------------------------------*/
 
 .death-savingthrow>div {
     border: 1px solid #DDDDDD;
@@ -679,7 +676,7 @@ h3 {
     border: 1px solid #F3D876;
 }
 
-/*---------- Token Bar ---------*/
+/*---------- Token Bar ---------------------------------*/
 #tokenbar .bar-controls {
     margin: 0 2px;
     text-align: center;
@@ -766,6 +763,7 @@ body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[
     transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+/* Anonymous Module---------------------------------*/
 .anonymous-replaced {
     background-color: #322C27;
 }
@@ -977,7 +975,7 @@ body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
 
 
 
-/* ---------------------------------Monk's Common Display--------------------------------- */
+/* ---------------------------------Monk's Common Display ---------------------------------*/
 #common-display-toolbar .common-display-button.toggle {
     background: var(--color-background-dunkel);
     border: 1px solid #F2AB76;
@@ -1010,7 +1008,7 @@ nav.damage-log-nav.tabs {
     padding: 5px 0;
 }
 
-/*--------------------------------- Action Pack --------------------------------- */
+/*--------------------------------- Action Pack ---------------------------------*/
 .action-pack__item .item-summary a {
     color: var(--primary-font);
 }
