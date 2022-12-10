@@ -78,6 +78,8 @@ p::selection {
     --unsafe-accent: #501515;
     --prepareable: #232323;
     --faintest-color: #232323;
+    --checkbox-font: #DDDDDD;
+    --checkbox-checked: #274714;
 }
 
 /*Here begins the more fingrained work in no particular order*/
@@ -373,6 +375,18 @@ p::selection {
 
 .tidy5e.sheet.actor .class-list {
     color: #A8B6FF;
+}
+
+/*Item Sheet*/
+.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group select, .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group input[type=text], .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group button, .tidy5e.sheet.item .sheet-body .tab.details .form-group select, .tidy5e.sheet.item .sheet-body .tab.details .form-group input[type=text], .tidy5e.sheet.item .sheet-body .tab.details .form-group button, .tidy5e.sheet.item .sheet-body .tab.advancement .form-group select, .tidy5e.sheet.item .sheet-body .tab.advancement .form-group input[type=text], .tidy5e.sheet.item .sheet-body .tab.advancement .form-group button, .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group select, .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group input[type=text], .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group button, .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group select, .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group input[type=text], .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group button {
+    background: var(--color-background-dunkel);
+    height: 20px;
+    font-size: 13px;
+}
+
+/*Checkboxes*/
+.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label.checkbox, .tidy5e.sheet.item .sheet-body .tab.details .form-group label.checkbox, .tidy5e.sheet.item .sheet-body .tab.advancement .form-group label.checkbox, .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group label.checkbox, .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group label.checkbox {
+    border-radius: 1px;
 }
 
 
@@ -1491,3 +1505,5 @@ nav.damage-log-nav.tabs {
 }
 
 /*Rightclick Creature Context Menu*/
+
+
