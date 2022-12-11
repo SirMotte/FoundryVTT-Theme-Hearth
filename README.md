@@ -12,7 +12,7 @@ If you already want to test it and get a feel on how it looks, follow the set-up
 - DnD 5E Ruleset
 - [Ernie's Modern UI](xxx) (Mandatory)
 - [Custom CSS](xxx) (Mandatory)
-- [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Recommended)
+- [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Recommended, must be set to Dark Ui!)
 
 ## Supported Modules
 Others work out of the box or are not used by me. Right now I won't take requests for additional module support:

@@ -2,7 +2,7 @@
 /*HEAVY WIP, sorting not complete. Add these entrys into the Custom CSS Rules Sheet - Only works well in tandem with Ernie's Modern UI - Please See the Readme!/
 
 /*Here I either define oder overwrite root color settings that stem from baseline Foundry*/
-:root {
+.system-dnd5e {
     --color-text-creme: #FFF0CA;
     --color-background-braun: #322C27;
     --color-background-dunkel: #1C1C1C;
@@ -20,11 +20,36 @@
     --color-dunkellila: #23182F;
     --color-border-light-primary: #6C5848;
     --color-dunkelblau: #191E21;
-}
-
-.system-dnd5e {
-    --background: #232323;
     --primary-font: #DDDDDD;
+    --tertiary-color: #DDDDDD;
+    --secondary-color: #DDDDDD;
+    --faint-color: #322C27;
+    --header-background: #232323;
+    --primary-font: #DDDDDD;
+    --primary-accent: #FF913F;
+    --prepared: #301e13;
+    --always-prepared-outline: #F3D876;
+    --always-prepared-accent: #F3D876;
+    --always-prepared: #322a1a;
+    --exhaustion-font: #DDDDDD;
+    --encumbrance-bar: #501515;
+    --encumbrance-bar-outline: #501515;
+    --note-background: #232323;
+    --xp-bar: #77CE77;
+    --prepared-outline: #2D842D;
+    --attunement-required: #FF5555;
+    --icon-attuned: #77CE77;
+    --encumbrance-outline: #000000;
+    --warning-accent: #FF6161;
+    --exhaustion-lvl1: #504A15;
+    --exhaustion-lvl2: #503815;
+    --exhaustion-lvl3: #501515;
+    --safe-accent: #FF913F;
+    --unsafe-accent: #501515;
+    --prepareable: #232323;
+    --faintest-color: #232323;
+    --checkbox-font: #DDDDDD;
+    --checkbox-checked: #274714;
 }
 
 /* -------------------- DnD 5E Ruleset -------------------- */
@@ -43,6 +68,16 @@
     color: var(--primary-font);
 }
 
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
+.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
+    font-weight: bold;
+    color: var(--color-text-creme);
+    background: var(--color-dunkelrot);
+    justify-content: flex-start;
+}
+
+
+
 .prosemirror.editing-source textarea {
     color: #DDDDDD;
 }
@@ -55,37 +90,12 @@ p::selection {
 
 /*--------------------------------- Tidy 5E Sheet ---------------------------------*/
 /*This first part overwrites color settings within Tidy 5E Sheet on a more global scale*/
-.system-dnd5e.tidy5eDark {
-    --primary-font: #DDDDDD;
-    --primary-accent: #FF913F;
-    --background: #1C1C1C;
-    --faint-color: #322C27;
-    --prepared: #301e13;
-    --always-prepared-outline: #F3D876;
-    --always-prepared-accent: #F3D876;
-    --always-prepared: #322a1a;
-    --exhaustion-font: #DDDDDD;
-    --encumbrance-bar: #501515;
-    --encumbrance-bar-outline: #501515;
-    --note-background: #232323;
-    --xp-bar: #77CE77;
-    --prepared-outline: #2D842D;
-    --attunement-required: #FF5555;
-    --icon-attuned: #77CE77;
-    --encumbrance-outline: #000000;
-    --warning-accent: #FF6161;
-    --tertiary-color: #DDDDDD;
-    --secondary-color: #DDDDDD;
-    --exhaustion-lvl1: #504A15;
-    --exhaustion-lvl2: #503815;
-    --exhaustion-lvl3: #501515;
-    --safe-accent: #FF913F;
-    --unsafe-accent: #501515;
-    --prepareable: #232323;
-    --faintest-color: #232323;
-    --checkbox-font: #DDDDDD;
-    --checkbox-checked: #274714;
+.tidy5e.sheet.actor .traits .configure-flags {
+    border: 1px solid var(--faint-color);
+    border-radius: 0 0 2px 2px;
 }
+
+
 
 /*Here begins the more fingrained work in no particular order*/
 
@@ -452,13 +462,7 @@ body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"
     background: var(--color-background-dunkel-mild);
 }
 
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
-.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
-    font-weight: bold;
-    color: var(--color-text-creme);
-    background: var(--color-dunkelrot);
-    justify-content: center;
-}
+
 
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header,
@@ -1001,7 +1005,6 @@ body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.pr
 body.-emu #df-curvy-walls-tools .control-tool.active,
 body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
     background-color: var(--color-background-dunkel);
-    color: #DDDDDD;
     border: 1px solid #F2AB76;
     text-shadow: none;
 }
@@ -1531,6 +1534,11 @@ nav.damage-log-nav.tabs {
 .fa-bookmark:before {
     content: "\f02e";
     color: var(--color-orange);
+}
+
+.fa-pencil-alt:before, .fa-pencil:before {
+    content: "\f303";
+    color: var(--primary-font)
 }
 
 /*Rightclick Creature Context Menu*/
