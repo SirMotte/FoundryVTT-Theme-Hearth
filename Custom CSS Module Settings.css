@@ -2,6 +2,9 @@
 /*HEAVY WIP, sorting not complete. Add these entrys into the Custom CSS Rules Sheet - Only works well in tandem with Ernie's Modern UI - Please See the Readme!/
 
 /*Here I either define oder overwrite root color settings that stem from baseline Foundry*/
+.root {
+}
+
 .system-dnd5e {
     --color-text-creme: #FFF0CA;
     --color-background-braun: #322C27;
@@ -27,6 +30,11 @@
     --header-background: #232323;
     --primary-font: #DDDDDD;
     --primary-accent: #FF913F;
+}
+
+.system-dnd5e.tidy5eDark {
+    --tertiary-color: #DDDDDD;
+    --light-color: #6C5848;
     --prepared: #301e13;
     --always-prepared-outline: #F3D876;
     --always-prepared-accent: #F3D876;
@@ -50,7 +58,10 @@
     --faintest-color: #232323;
     --checkbox-font: #DDDDDD;
     --checkbox-checked: #274714;
+    --icon-outline: #000000;
+    --icon-font: #000000;
 }
+
 
 /* -------------------- DnD 5E Ruleset -------------------- */
 .dnd5e.chat-card .card-header h3:hover {
@@ -110,6 +121,12 @@ p::selection {
     border-radius: 2px;
 }
 
+
+
+.tidy5e.sheet.actor .portrait-hp .hp-bar {
+    background: rgb(0, 63, 0);
+}
+
 .tidy5e.sheet.actor .items-list .item.equipped,
 .tidy5e.sheet.actor .items-list .item.prepared {
     background: var(--prepared);
@@ -143,7 +160,7 @@ p::selection {
 }
 
 .tidy5e.sheet.actor .list-layout .items-list .item {
-    border-radius: 1px;
+    border-radius: 2px;
 }
 
 .tidy5e.sheet.actor .char-name {
@@ -152,9 +169,21 @@ p::selection {
 
 .tidy5e.sheet.actor .level {
     padding: 2px 6px;
-    border-radius: 1px;
+    border-radius: 2px;
     background: var(--color-background-braun);
     color: var(--color-text-creme);
+}
+
+.tidy5e.sheet.actor .resting {
+    border-radius: 0 2px 0 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.tidy5e.sheet.actor .exhaustion-wrap {
+    border-radius: 2px 0 2px 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .tidy5e.sheet.actor.npc .level-information .level [contenteditable] {
@@ -163,6 +192,17 @@ p::selection {
 
 .tidy5e.sheet.actor .portrait-hd .current-hd {
     color: var(--color-text-tuerkis);
+}
+
+.tidy5e.sheet.actor .portrait {
+    width: 100%;
+    height: 100%;
+    border-radius: 1px;
+    overflow: hidden;
+    border: 1px solid var(--icon-outline);
+    position: relative;
+    mix-blend-mode: normal;
+    z-index: 2;
 }
 
 .tidy5e.sheet.actor .portrait-hp input,
@@ -332,7 +372,7 @@ p::selection {
 .tidy5e.sheet.actor .spellcasting-ability h3 {
     margin-right: 10px;
     font-size: 18px;
-    font-family: Calibri Bold;
+    font-family: "Calibri Bold";
 }
 
 .tidy5e.sheet.actor .items-list .item .context-menu a.warning {
@@ -673,7 +713,7 @@ h3 {
 
 #weather-app #displayContainer-weatherapp {
     background: #322C27;
-    font-family: Calibri Bold;
+    font-family: "Calibri Bold";
     box-shadow: none;
 }
 
@@ -685,7 +725,7 @@ h3 {
 #wind,
 #weather-text,
 #configWeather {
-    font-family: Calibri Bold;
+    font-family: "Calibri Bold";
     color: var(--primary-font);
     text-shadow: 0px 0px 0px rgb(0 0 0 / 50%);
 }
@@ -831,7 +871,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 
 .rsr-dual .mixed {
     color: var(--color-text-rot);
-    font-family: Calibri Bold;
+    font-family: "Calibri Bold";
 }
 
 .rsr-dual .dice-row .success {
@@ -1536,9 +1576,16 @@ nav.damage-log-nav.tabs {
     color: var(--color-orange);
 }
 
-.fa-pencil-alt:before, .fa-pencil:before {
+.fa-pencil-alt:before,
+.fa-pencil:before {
     content: "\f303";
     color: var(--primary-font)
+}
+
+.fa-face-grin:before,
+.fa-grin:before {
+    content: "\f580";
+    color: var(--primary-font);
 }
 
 /*Rightclick Creature Context Menu*/

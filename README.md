@@ -1,4 +1,4 @@
-# Attention: Heavy WIP! Turns out that I relied so much on other not mentioned modules, that anyone who wants to try this will have a hard time to get the same results...working on fixing stuff up now.
+# Attention: Heavy WIP! Depending on your modules present you might have a hard time to get good results. I'm working through ironing out anything that comes my way.
 
 
 # Sir Motte's Magnificent Darkness - Hearth Theme for Foundry VTT
@@ -12,7 +12,7 @@ If you already want to test it and get a feel on how it looks, follow the set-up
 - DnD 5E Ruleset
 - [Ernie's Modern UI](xxx) (Mandatory)
 - [Custom CSS](xxx) (Mandatory)
-- [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Recommended, must be set to Dark Ui!)
+- [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Recommended, should be set to Dark Ui for best results)
 
 ## Supported Modules
 Others work out of the box or are not used by me. Right now I won't take requests for additional module support:
