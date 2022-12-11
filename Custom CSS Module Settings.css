@@ -22,6 +22,11 @@
     --color-dunkelblau: #191E21;
 }
 
+.system-dnd5e {
+    --background: #232323;
+    --primary-font: #DDDDDD;
+}
+
 /* -------------------- DnD 5E Ruleset -------------------- */
 .dnd5e.chat-card .card-header h3:hover {
     color: var(--color-text-creme);
@@ -83,6 +88,7 @@ p::selection {
 }
 
 /*Here begins the more fingrained work in no particular order*/
+
 
 .tidy5e.sheet.actor .profile.disable-hp-overlay .counter-value,
 .tidy5e.sheet.actor .profile.disable-hp-overlay.dead .counter-value {
@@ -338,7 +344,8 @@ p::selection {
 }
 
 .tidy5e.sheet.actor .tidy5e-navigation .toggle-allow-edit span {
-    border-radius: 1px;
+    border-radius: 2px;
+    background: #085c03
 }
 
 .tidy5e.sheet.actor.npc .unlinked .link-state.fa-unlink {
@@ -378,14 +385,32 @@ p::selection {
 }
 
 /*Item Sheet*/
-.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group select, .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group input[type=text], .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group button, .tidy5e.sheet.item .sheet-body .tab.details .form-group select, .tidy5e.sheet.item .sheet-body .tab.details .form-group input[type=text], .tidy5e.sheet.item .sheet-body .tab.details .form-group button, .tidy5e.sheet.item .sheet-body .tab.advancement .form-group select, .tidy5e.sheet.item .sheet-body .tab.advancement .form-group input[type=text], .tidy5e.sheet.item .sheet-body .tab.advancement .form-group button, .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group select, .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group input[type=text], .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group button, .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group select, .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group input[type=text], .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group button {
+.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group select,
+.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group input[type=text],
+.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group button,
+.tidy5e.sheet.item .sheet-body .tab.details .form-group select,
+.tidy5e.sheet.item .sheet-body .tab.details .form-group input[type=text],
+.tidy5e.sheet.item .sheet-body .tab.details .form-group button,
+.tidy5e.sheet.item .sheet-body .tab.advancement .form-group select,
+.tidy5e.sheet.item .sheet-body .tab.advancement .form-group input[type=text],
+.tidy5e.sheet.item .sheet-body .tab.advancement .form-group button,
+.tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group select,
+.tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group input[type=text],
+.tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group button,
+.tidy5e.sheet.item .sheet-body .tab.magic-items .form-group select,
+.tidy5e.sheet.item .sheet-body .tab.magic-items .form-group input[type=text],
+.tidy5e.sheet.item .sheet-body .tab.magic-items .form-group button {
     background: var(--color-background-dunkel);
     height: 20px;
     font-size: 13px;
 }
 
 /*Checkboxes*/
-.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label.checkbox, .tidy5e.sheet.item .sheet-body .tab.details .form-group label.checkbox, .tidy5e.sheet.item .sheet-body .tab.advancement .form-group label.checkbox, .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group label.checkbox, .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group label.checkbox {
+.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label.checkbox,
+.tidy5e.sheet.item .sheet-body .tab.details .form-group label.checkbox,
+.tidy5e.sheet.item .sheet-body .tab.advancement .form-group label.checkbox,
+.tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group label.checkbox,
+.tidy5e.sheet.item .sheet-body .tab.magic-items .form-group label.checkbox {
     border-radius: 1px;
 }
 
@@ -459,6 +484,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
     border: none;
 }
+
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
 .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
     background-color: var(--color-background-dunkel);
@@ -498,7 +524,9 @@ a.inline-roll {
     border-radius: 1px 0 0 0;
 }
 
-
+#keybindings .binding .key.uneditable {
+    background: var(--background);
+}
 
 
 
@@ -972,8 +1000,9 @@ body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"
 body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy,
 body.-emu #df-curvy-walls-tools .control-tool.active,
 body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
-    background-color: var(--background);
-    color: var(--color-text-creme);
+    background-color: var(--color-background-dunkel);
+    color: #DDDDDD;
+    border: 1px solid #F2AB76;
     text-shadow: none;
 }
 
@@ -1061,7 +1090,7 @@ nav.damage-log-nav.tabs {
 
 .fa-lock:before {
     content: "\f023";
-    color: #000000;
+    color: var(--primary-font);
 }
 
 .fa-close:before,
@@ -1297,7 +1326,7 @@ nav.damage-log-nav.tabs {
 .fa-cogs:before,
 .fa-gears:before {
     content: "\f085";
-    color: var(--primary-font);
+    color: #DDDDDD;
 }
 
 .fa-music:before {
@@ -1505,5 +1534,3 @@ nav.damage-log-nav.tabs {
 }
 
 /*Rightclick Creature Context Menu*/
-
-

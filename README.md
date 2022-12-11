@@ -1,4 +1,4 @@
-# Attention: Heavy WIP!
+# Attention: Heavy WIP! Turns out that I relied so much on other not mentioned modules, that anyone who wants to try this will have a hard time to get the same results...working on fixing stuff up now.
 
 
 # Sir Motte's Magnificent Darkness - Hearth Theme for Foundry VTT
