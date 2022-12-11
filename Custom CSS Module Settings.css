@@ -64,6 +64,11 @@
 
 
 /* -------------------- DnD 5E Ruleset -------------------- */
+.dnd5e.chat-card {
+    font-style: normal;
+    font-size: 12px;
+}
+
 .dnd5e.chat-card .card-header h3:hover {
     color: var(--color-text-creme);
     text-shadow: none;
@@ -76,7 +81,8 @@
     font-family: "Calibri Bold";
     font-size: var(--font-size-20px);
     font-weight: 700;
-    color: var(--primary-font);
+    color: var(--color-text-creme);
+    background: var(--color-dunkelrot);
 }
 
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
@@ -525,6 +531,12 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     color: rgba(var(--color-text), 1);
 }
 
+h1, h2, h3, h4 {
+
+    padding: 0px 0px 0px 5px;
+
+}
+
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
@@ -818,6 +830,8 @@ body.-emu .window-app {
     background-color: #453B32;
 }
 
+
+
 body.-emu .dialog input[type="text"],
 body.-emu .dialog input[type="number"],
 body.-emu .dialog input[type="date"],
@@ -844,7 +858,7 @@ body.-emu #sidebar [data-tab="chat"] section.dice-tray input.dice-tray__input,
 body.-emu .sidebar-popout [data-tab="chat"] section.dice-tray input.dice-tray__input,
 body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input,
 body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] #searchField #searchInput {
-    background: transparent;
+    background: black;
     border: 0px solid #FFF0CA;
     border-radius: var(--emu-border-radius-forms, 0);
     box-shadow: none;
