@@ -475,6 +475,9 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     color: var(--primary-font);
 }
 
+body.-emu .window-app {
+    border: rgba(var(--color-border), 1) 3px double;
+}
 
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
