@@ -511,12 +511,14 @@ body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"
     background: var(--color-background-dunkel-mild);
 }
 
-
+.-emu-layout body.-emu .dialog p, .-emu-layout body.-emu #sidebar p, .-emu-layout body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) p {
+    background: var(--primary-font);
+}
 
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header,
 .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
-    background: var(--color-dunkelrot);
+    background: #303030;
 }
 
 /* Chat Cards */
