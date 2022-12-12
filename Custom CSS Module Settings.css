@@ -79,7 +79,7 @@
     flex: 1;
     margin: 0;
     line-height: 36px;
-    font-family: "Calibri Bold";
+    font-family: "Calibri Bold", sans-serif;
     font-size: var(--font-size-20px);
     font-weight: 700;
     color: var(--color-text-creme);
@@ -116,6 +116,18 @@ p::selection {
 
 
 /*Here begins the more fingrained work in no particular order*/
+
+
+
+.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label, .tidy5e.sheet.item .sheet-body .tab.details .form-group label, .tidy5e.sheet.item .sheet-body .tab.advancement .form-group label, .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group label, .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group label {
+    margin-left: 4px;
+    line-height: 20px;
+    font-size: 13px;
+    font-family: "Calibri Bold", sans-serif;
+    font-weight: normal;
+    color: var(--secondary-color);
+    white-space: nowrap;
+}
 
 
 .tidy5e.sheet.actor .profile.disable-hp-overlay .counter-value,
@@ -236,7 +248,7 @@ p::selection {
 .tidy5e.sheet.actor .ability-scores .ability .ability-score {
     margin: 1px 0 5px 0;
     padding: 2px 0 0 0;
-    font-family: "Calibri Bold";
+    font-family: "Calibri Bold", sans-serif;
     font-weight: 400;
 }
 
@@ -265,12 +277,12 @@ p::selection {
 
 .tidy5e.sheet.actor .traits .tag {
     margin-right: 4px;
-    font-family: "Calibri";
+    font-family: "Calibri", sans-serif;
     color: var(--primary-font);
 }
 
 .tidy5e.sheet.actor .skills-list .skill .skill-name {
-    font-family: "Calibri Bold";
+    font-family: "Calibri Bold", sans-serif;
     color: var(--color-text-creme);
 }
 
@@ -287,7 +299,7 @@ p::selection {
 }
 
 .tidy5e.sheet.actor .resources .resource .resource-name input {
-    font-family: "Calibri Bold";
+    font-family: "Calibri Bold", sans-serif;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -379,7 +391,7 @@ p::selection {
 .tidy5e.sheet.actor .spellcasting-ability h3 {
     margin-right: 10px;
     font-size: 18px;
-    font-family: "Calibri Bold";
+    font-family: "Calibri Bold", sans-serif;
 }
 
 .tidy5e.sheet.actor .items-list .item .context-menu a.warning {
@@ -617,8 +629,8 @@ h3 {
 }
 
 .system-dnd5e {
-    --modesto: "Calibri Bold";
-    --signika: "Calibri Bold";
+    --modesto: "Calibri Bold", sans-serif;
+    --signika: "Calibri Bold", sans-serif;
 }
 
 .monks-tokenbar .sheet .items-list .item .item-name {
@@ -806,12 +818,12 @@ body.-emu .window-app {
     background-color: #322C27;
     border: 1px solid #6C5848;
     border-radius: 1px;
-    font-family: "Calibri Bold";
+    font-family: "Calibri Bold", sans-serif;
     font-size: var(--font-size-17px);
 }
 
 .action-pack__container h1 {
-    font-family: "Calibri Black";
+    font-family: "Calibri Black", sans-serif;
     color: var(--primary-font);
     font-size: var(--font-size-17px);
 }
@@ -882,7 +894,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 
 .rsr-dual .mixed {
     color: var(--color-text-rot);
-    font-family: "Calibri Bold";
+    font-family: "Calibri Bold", sans-serif;
 }
 
 .rsr-dual .dice-row .success {
@@ -1074,14 +1086,14 @@ body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
 #wind,
 #weather-text,
 #configWeather {
-    font-family: "Calibri Bold";
+    font-family: "Calibri Bold", sans-serif;
     color: var(--primary-font);
     text-shadow: 0px 0px 0px rgb(0 0 0 / 50%);
 }
 
 #weather-app #displayContainer-weatherapp {
     background: #322C27;
-    font-family: "Calibri Bold";
+    font-family: "Calibri Bold", sans-serif;
     box-shadow: none;
 }
 
