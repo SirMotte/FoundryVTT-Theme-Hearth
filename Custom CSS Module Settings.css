@@ -3,6 +3,7 @@
 
 /*Here I either define oder overwrite root color settings that stem from baseline Foundry*/
 .root {
+    --sidebar-width: 270px;
 }
 
 .system-dnd5e {
@@ -511,8 +512,8 @@ body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"
     background: var(--color-background-dunkel-mild);
 }
 
-.-emu-layout body.-emu .dialog p, .-emu-layout body.-emu #sidebar p, .-emu-layout body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) p {
-    background: var(--primary-font);
+aside.rules-text {
+    color: #DDDDDD;
 }
 
 
@@ -533,13 +534,20 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     color: rgba(var(--color-text), 1);
 }
 
-h1, h2, h3, h4 {
-
-    padding: 0px 0px 0px 5px;
-
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: var(--sidebar-width);
+    height: calc(100% - 56px);
+    overflow: hidden;
+    margin: 1px;
+    padding: 0;
 }
 
-body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
+h1, h2, h3, h4 {    padding: 0px 0px 0px 5px;
+}body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
@@ -728,24 +736,8 @@ h3 {
     color: var(--primary-font);
 }
 
-#weather-app #displayContainer-weatherapp {
-    background: #322C27;
-    font-family: "Calibri Bold";
-    box-shadow: none;
-}
 
-#weather-app #current-temp {
-    color: #FFF0CA;
-}
 
-#weather-app #high-low,
-#wind,
-#weather-text,
-#configWeather {
-    font-family: "Calibri Bold";
-    color: var(--primary-font);
-    text-shadow: 0px 0px 0px rgb(0 0 0 / 50%);
-}
 
 #common-display-toolbar {
     background: #322C27;
@@ -1071,13 +1063,31 @@ body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
 /*--------------------------------- Simple Weather ---------------------------------*/
 #weather-app #rightHandle {
     background: url(../images/denim-dark-090.webp) repeat;
-    background-color: transparent;
+    background-color: var(--color-background-dunkel-mild);
 }
 
 #weather-app #displayContainer-weatherapp {
     border-radius: 1px;
 }
 
+#weather-app #high-low,
+#wind,
+#weather-text,
+#configWeather {
+    font-family: "Calibri Bold";
+    color: var(--primary-font);
+    text-shadow: 0px 0px 0px rgb(0 0 0 / 50%);
+}
+
+#weather-app #displayContainer-weatherapp {
+    background: #322C27;
+    font-family: "Calibri Bold";
+    box-shadow: none;
+}
+
+#weather-app #current-temp {
+    color: #FFF0CA;
+}
 
 
 /* ---------------------------------Monk's Common Display ---------------------------------*/
