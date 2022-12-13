@@ -29,7 +29,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 
 ## Known Issues:
 - Chat cards look still a little wild. Rework is in progress.
-- Some areas of certain UI elements are hard to read or messed up. This is mostly caused by Ernie's Modern UI and me not having touched these areas yet. A lot needs to be done.
+- Some areas of certain UI elements are hard to read or messed up. This is mostly caused by Ernie's Modern UI that will be resolved at some point. A lot needs to be done.
 - [Combat Tracker Disposition](https://github.com/LebombJames/combat-tracker-disposition) - slight bugs with icons, investigating
 - [Ready Set Roll for D&D5e](https://github.com/MangoFVTT/fvtt-ready-set-roll-5e) - Currently Ernie's UI breaks the buttons on Chat cards, they still work but don't feature an icon anymore. He said he will add support in the future.
 - [Token Variant Art](https://github.com/Aedif/TokenVariants) - Ernie's UI currently makes the Token HUD UI hard to use. No ETA on a fix.
@@ -38,7 +38,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 
 1. Install the required modules to Foundy VTT.
 2. Navigate to the module settings for the Custom CSS Module and open the "Custom CSS Rules" window. Copy-Paste all entries found in the "Custom CSS Module Settings.css" and hit save. You can choose to apply the style on a global basis or as User Style. Please refere to the Custom CSS Module Documentation for further information.
-3. Open the Ernie's Modern UI Settings and tick the following boxes. Feel free to experiment with these settings, but avoid any opacity alterations.
+3. Open Ernie's Modern UI Settings and tick the following boxes. Feel free to experiment with these settings, but avoid any opacity alterations.
 
    ![grafik](https://user-images.githubusercontent.com/82598692/206667254-3bdc42d0-9c21-492f-be41-9eefcb3461ae.png)
    - Hit the "Settings" Button and apply the following values in the "Colors" Tab:
