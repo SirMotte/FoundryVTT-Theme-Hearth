@@ -65,9 +65,8 @@
 
 
 /* -------------------- DnD 5E Ruleset -------------------- */
-.dnd5e.chat-card {   
+.dnd5e.chat-card {
     background: #232323;
-    
 }
 
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header, body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
