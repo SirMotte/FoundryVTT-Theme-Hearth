@@ -65,10 +65,23 @@
 
 
 /* -------------------- DnD 5E Ruleset -------------------- */
-.dnd5e.chat-card {
-    font-style: normal;
-    font-size: 12px;
+.dnd5e.chat-card {   
+    background: #232323;
+    
 }
+
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header, body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
+    background-color: var(--color-dunkelrot);
+    color: var(--primary-font);
+    border-radius: 2px;
+    margin: -3px;
+}
+
+.rsr5e-roll-label {
+    border-bottom: 1px solid var(--light-color);
+}
+
+
 
 .dnd5e.chat-card .card-header h3:hover {
     color: var(--color-text-creme);
@@ -546,15 +559,17 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     color: rgba(var(--color-text), 1);
 }
 
+
 #sidebar {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     width: var(--sidebar-width);
-    height: calc(100% - 56px);
+    height: calc(100%);
+    width: 305px;
     overflow: hidden;
-    margin: 1px;
+    margin: 0px;
     padding: 0;
 }
 
