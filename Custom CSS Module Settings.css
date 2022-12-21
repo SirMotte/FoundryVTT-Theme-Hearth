@@ -70,10 +70,9 @@
 }
 
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header, body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
-    background-color: var(--color-dunkelrot);
+    background-color: var(--background);
     color: var(--primary-font);
     border-radius: 2px;
-    margin: -3px;
 }
 
 .rsr5e-roll-label {
@@ -84,7 +83,7 @@ body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header, body.-e
 
 .dnd5e.chat-card .card-header h3:hover {
     color: var(--color-text-creme);
-    text-shadow: none;
+    text-shadow:none;
 }
 
 .dnd5e.chat-card .card-header h3 {
@@ -93,20 +92,22 @@ body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header, body.-e
     line-height: 36px;
     font-family: "Calibri Bold", sans-serif;
     font-size: var(--font-size-20px);
-    font-weight: 700;
     color: var(--color-text-creme);
-    background: var(--color-dunkelrot);
+    background: ##501546;
 }
 
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
 .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
-    font-weight: bold;
+    font-family: "Calibri Bold", sans-serif;
     color: var(--color-text-creme);
-    background: var(--color-dunkelrot);
+    background: #501546;
     justify-content: flex-start;
 }
 
-
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-content, .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-content {
+    margin: var(--emu-space-base, 4px) 0;
+    color: var(--color-text-creme);
+}
 
 .prosemirror.editing-source textarea {
     color: #DDDDDD;
@@ -540,11 +541,6 @@ aside.rules-text {
     color: #DDDDDD;
 }
 
-
-.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header,
-.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
-    background: #303030;
-}
 
 /* Chat Cards */
 body.-emu #sidebar [data-tab="chat"] #chat-log .message,
