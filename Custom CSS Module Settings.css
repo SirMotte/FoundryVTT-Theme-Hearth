@@ -69,7 +69,8 @@
     background: #232323;
 }
 
-body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header, body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
     background-color: var(--background);
     color: var(--primary-font);
     border-radius: 2px;
@@ -83,7 +84,7 @@ body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header, body.-e
 
 .dnd5e.chat-card .card-header h3:hover {
     color: var(--color-text-creme);
-    text-shadow:none;
+    text-shadow: none;
 }
 
 .dnd5e.chat-card .card-header h3 {
@@ -104,7 +105,8 @@ body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header, body.-e
     justify-content: flex-start;
 }
 
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-content, .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-content {
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-content,
+.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-content {
     margin: var(--emu-space-base, 4px) 0;
     color: var(--color-text-creme);
 }
@@ -132,7 +134,11 @@ p::selection {
 
 
 
-.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label, .tidy5e.sheet.item .sheet-body .tab.details .form-group label, .tidy5e.sheet.item .sheet-body .tab.advancement .form-group label, .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group label, .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group label {
+.tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label,
+.tidy5e.sheet.item .sheet-body .tab.details .form-group label,
+.tidy5e.sheet.item .sheet-body .tab.advancement .form-group label,
+.tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group label,
+.tidy5e.sheet.item .sheet-body .tab.magic-items .form-group label {
     margin-left: 4px;
     line-height: 20px;
     font-size: 13px;
@@ -568,8 +574,14 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     padding: 0;
 }
 
-h1, h2, h3, h4 {    padding: 0px 0px 0px 5px;
-}body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
+h1,
+h2,
+h3,
+h4 {
+    padding: 0px 0px 0px 5px;
+}
+
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
