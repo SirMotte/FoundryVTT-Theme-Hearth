@@ -80,8 +80,8 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     border-bottom: 1px solid var(--light-color);
     border-top: 1px solid var(--light-color);
     font-weight: bold;
-    background: var(--color-text-creme);
-    color: var(--color-background-dunkel);
+    background: var(--color-background-braun);
+    color: var(--color-text-creme);
 }
 
 
