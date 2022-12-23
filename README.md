@@ -38,10 +38,10 @@ Others work out of the box or are not used by me. Right now I won't take request
 2. Navigate to the module settings for the Custom CSS Module and open the "Custom CSS Rules" window. Copy-Paste all entries found in the "Custom CSS Module Settings.css" and hit save. You can choose to apply the style on a global basis or as User Style. Please refere to the Custom CSS Module Documentation for further information.
 3. Download the Sir_Motte_Hearth_Foundry.json from this repository.
    - Open Ernie's Modern UI Settings and open the settings menu:
-![grafik](https://user-images.githubusercontent.com/82598692/209413448-ac9d63a4-e74f-4050-ba98-a7400adcefcc.png)
+   - ![grafik](https://user-images.githubusercontent.com/82598692/209413448-ac9d63a4-e74f-4050-ba98-a7400adcefcc.png)
    - Navigate to the Options Tab and Press "Import Theme".
-![grafik](https://user-images.githubusercontent.com/82598692/209413563-291edba9-3949-4a65-bf66-0b9ab4297828.png)
-   - Choose the downloaded Sir_Motte_Hearth_Foundry.json file.
+   - ![grafik](https://user-images.githubusercontent.com/82598692/209413563-291edba9-3949-4a65-bf66-0b9ab4297828.png)
+   - Choose the downloaded Sir_Motte_Hearth_Foundry.json file and import it.
 4. (Only if used) Open up the Tidy5e Sheet Settings and set it to the "Alternative (dark)" color scheme. Additional Settings used need further testing in regard of UI Elements. I will update this document accordingly.
 
 This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue reporter.
