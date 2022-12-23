@@ -78,6 +78,10 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 
 .rsr5e-roll-label {
     border-bottom: 1px solid var(--light-color);
+    border-top: 1px solid var(--light-color);
+    font-weight: bold;
+    background: var(--color-text-creme);
+    color: var(--color-background-dunkel);
 }
 
 
@@ -95,28 +99,23 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     font-weight: bold;
     font-size: var(--font-size-20px);
     color: var(--color-text-creme);
-    background: ##501546;
 }
 
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
 .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
     font-family: "Calibri Bold", sans-serif;
     font-weight: bold;
-
     color: var(--color-text-creme);
-    background: #501546;
+    background: #350e2e;
     justify-content: flex-start;
 }
 
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-content,
 .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-content {
     margin: var(--emu-space-base, 4px) 0;
-    color: var(--color-text-creme);
+    color: var(--primary-font);
 }
 
-.prosemirror.editing-source textarea {
-    color: #DDDDDD;
-}
 
 /* -------------------- Text Selection -------------------- */
 p::selection {
@@ -520,11 +519,13 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     border-color: 1px solid #77CE77;
     color: var(--primary-font);
 }
-
 body.-emu .window-app {
-    border: rgba(var(--color-border), 1) 3px double;
+    border: 3px double RGB(var(--emu-color-border, 33, 50, 52));
 }
 
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-metadata, .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-sender, .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-metadata, .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-sender {
+    color: var(--color-text-gruen);
+}
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
 .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula {
@@ -543,6 +544,10 @@ body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.defeated.activ
 body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active {
     background-color: red;
     color: black;
+}
+
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer, .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer {
+    color: var(--color-text-rot)
 }
 
 .-emu-layout body.-emu .dialog p,
@@ -594,11 +599,13 @@ body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
     border: none;
+    font-weight: bold;
 }
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
 .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
     background-color: var(--color-background-dunkel);
+    font-weight: bold;
 }
 
 
