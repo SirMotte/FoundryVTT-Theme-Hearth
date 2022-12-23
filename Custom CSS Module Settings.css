@@ -92,6 +92,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     margin: 0;
     line-height: 36px;
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
     font-size: var(--font-size-20px);
     color: var(--color-text-creme);
     background: ##501546;
@@ -100,6 +101,8 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
 .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
+
     color: var(--color-text-creme);
     background: #501546;
     justify-content: flex-start;
@@ -143,8 +146,9 @@ p::selection {
     line-height: 20px;
     font-size: 13px;
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
     font-weight: normal;
-    color: var(--secondary-color);
+    a color: var(--secondary-color);
     white-space: nowrap;
 }
 
@@ -268,6 +272,7 @@ p::selection {
     margin: 1px 0 5px 0;
     padding: 2px 0 0 0;
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
     font-weight: 400;
 }
 
@@ -302,6 +307,7 @@ p::selection {
 
 .tidy5e.sheet.actor .skills-list .skill .skill-name {
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
     color: var(--color-text-creme);
 }
 
@@ -319,6 +325,7 @@ p::selection {
 
 .tidy5e.sheet.actor .resources .resource .resource-name input {
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -411,6 +418,7 @@ p::selection {
     margin-right: 10px;
     font-size: 18px;
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
 }
 
 .tidy5e.sheet.actor .items-list .item .context-menu a.warning {
@@ -650,9 +658,28 @@ h3 {
     white-space: nowrap;
 }
 
+:host, :root {
+    --modesto: "Calibri", sans-serif;
+    --signika: "Calibri", sans-serif;
+    --font-primary: "Calibri", sans-serif;
+    --font-mono: "Calibri", sans-serif;
+    --font-awesome: "Calibri", sans-serif;
+}
+
+.system-dnd5e.tidy5eDark {
+    --modesto: "Calibri", sans-serif;
+    --signika: "Calibri", sans-serif;
+    --font-primary: "Calibri", sans-serif;
+    --font-mono: "Calibri", sans-serif;
+    --font-awesome: "Calibri", sans-serif;
+
+}
 .system-dnd5e {
-    --modesto: "Calibri Bold", sans-serif;
-    --signika: "Calibri Bold", sans-serif;
+    --modesto: "Calibri", sans-serif;
+    --signika: "Calibri", sans-serif;
+    --font-primary: "Calibri", sans-serif;
+    --font-mono: "Calibri", sans-serif;
+    --font-awesome: "Calibri", sans-serif;
 }
 
 .monks-tokenbar .sheet .items-list .item .item-name {
@@ -660,7 +687,7 @@ h3 {
 }
 
 .tidy5e.sheet.item .sheet-header .summary li {
-    font-weight: 400;
+    font-type: 400;
 }
 
 .monks-tokenbar .sheet .items-list {
@@ -841,6 +868,7 @@ body.-emu .window-app {
     border: 1px solid #6C5848;
     border-radius: 1px;
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
     font-size: var(--font-size-17px);
 }
 
@@ -917,6 +945,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 .rsr-dual .mixed {
     color: var(--color-text-rot);
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
 }
 
 .rsr-dual .dice-row .success {
@@ -1109,6 +1138,8 @@ body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
 #weather-text,
 #configWeather {
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
+
     color: var(--primary-font);
     text-shadow: 0px 0px 0px rgb(0 0 0 / 50%);
 }
@@ -1116,6 +1147,8 @@ body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
 #weather-app #displayContainer-weatherapp {
     background: #322C27;
     font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
+
     box-shadow: none;
 }
 
