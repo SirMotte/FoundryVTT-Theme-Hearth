@@ -63,6 +63,10 @@
     --icon-font: #000000;
 }
 
+.prosemirror.editing-source textarea {
+    color: var(--primary-font);
+}
+
 
 /* -------------------- DnD 5E Ruleset -------------------- */
 .dnd5e.chat-card {
