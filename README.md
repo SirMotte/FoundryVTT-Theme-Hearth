@@ -15,7 +15,7 @@ If you already want to test it and get a feel on how it looks, follow the set-up
 - [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Recommended, must be set to Dark Ui for best results)
 
 ## Supported Modules
-Others work out of the box or are not used by me. Right now I won't take requests for additional module support:
+Others work out of the box or are not used by me. Right now I won't take requests for additional module support, but leave a comment anyway so I can create a todo list:
 
 - [Action Pack](https://github.com/teroparvinen/foundry-action-pack)
 - [Always HP](https://github.com/ironmonk88/always-hp)
