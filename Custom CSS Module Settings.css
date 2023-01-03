@@ -120,7 +120,6 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     color: var(--primary-font);
 }
 
-
 /* -------------------- Text Selection -------------------- */
 p::selection {
     color: var(--color-orange);
@@ -151,7 +150,7 @@ p::selection {
     font-family: "Calibri Bold", sans-serif;
     font-weight: bold;
     font-weight: normal;
-    a color: var(--secondary-color);
+    color: var(--secondary-color);
     white-space: nowrap;
 }
 
@@ -536,6 +535,13 @@ body.-emu .window-app {
     background-color: var(--color-background-dunkel);
 }
 
+
+.-emu-layout body.-emu #hud input[type="text"] {
+    font-size: var(--emu-font-size-xl, 20px);
+    height: var(--emu-space-button-lg, 40px);
+    color: var(--color-text-creme);
+}
+
 body.-emu .dialog a[href],
 body.-emu #sidebar a[href],
 body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) a[href] {
@@ -698,7 +704,7 @@ h3 {
 }
 
 .tidy5e.sheet.item .sheet-header .summary li {
-    font-type: 400;
+    font-weight: 400;
 }
 
 .monks-tokenbar .sheet .items-list {
