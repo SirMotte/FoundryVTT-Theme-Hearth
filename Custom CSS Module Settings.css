@@ -31,6 +31,7 @@
     --header-background: #232323;
     --primary-font: #DDDDDD;
     --primary-accent: #FF913F;
+    --prepared: #322a1a;
 }
 
 .system-dnd5e.tidy5eDark {
@@ -215,7 +216,7 @@ p::selection {
     padding: 2px 6px;
     border-radius: 2px;
     background: var(--color-background-braun);
-    color: var(--color-text-creme);
+    color: var(--color-text-rot);
 }
 
 .tidy5e.sheet.actor .resting {
@@ -528,6 +529,8 @@ body.-emu .window-app {
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-metadata, .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-sender, .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-metadata, .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-sender {
     color: var(--color-text-gruen);
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
@@ -537,8 +540,6 @@ body.-emu .window-app {
 
 
 .-emu-layout body.-emu #hud input[type="text"] {
-    font-size: var(--emu-font-size-xl, 20px);
-    height: var(--emu-space-button-lg, 40px);
     color: var(--color-text-creme);
 }
 
