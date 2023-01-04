@@ -534,6 +534,12 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     color: var(--primary-font);
 }
 
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-border-light-primary);
+    border-radius: 2px;
+    outline: 0;
+}
+
 body.-emu .window-app {
     border: 3px double RGB(var(--emu-color-border, 33, 50, 52));
 }
@@ -635,7 +641,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 }
 
 .-emu-layout body.-emu #sidebar [data-tab=chat] #chat-controls, .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-controls {
-border-top: double 3px #6C5848;
+border-top: solid 3px var(--color-border-light-primary);
 }
 
 
@@ -790,8 +796,7 @@ h3 {
 
 .-emu-layout body.-emu #sidebar nav.damage-log-nav.tabs, .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content nav.damage-log-nav.tabs {
     border-radius: 2px;
-    border-bottom: double 3px;
-    color:#6C5848;
+    border-bottom: solid 3px var(--color-border-light-primary);
 }
 
 /*----------- Always HP ---------------------------------*/
