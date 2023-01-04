@@ -28,7 +28,6 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Small Weather](https://github.com/LeafWulf/smallweather)
 
 ## Known Issues:
-- Chat cards look still a little wild. Rework is in progress.
 - Some areas of certain UI elements are hard to read or messed up. This is mostly caused by Ernie's Modern UI that will be resolved at some point. A lot needs to be done.
 - [Combat Tracker Disposition](https://github.com/LebombJames/combat-tracker-disposition) - slight bugs with icons, investigating
 

@@ -32,6 +32,7 @@
     --primary-font: #DDDDDD;
     --primary-accent: #FF913F;
     --prepared: #322a1a;
+    --t5e-primary-font: #DDDDDD;
 }
 
 .system-dnd5e.tidy5eDark {
@@ -347,6 +348,7 @@ p::selection {
 .tidy5e.sheet.actor .movement-primary,
 .tidy5e.sheet.actor .movement-special {
     color: var(--color-text-blau);
+    font-weight: bold;
 }
 
 .tidy5e.sheet.actor .header-attributes .value-footer {
@@ -406,8 +408,8 @@ p::selection {
 }
 
 .tidy5e.sheet.actor .note-entries article {
-    background: var(--color-background-dunkel-mild);
-    border-radius: 1px;
+    background: var(--color-background-dunkel);
+    border-radius: 2px;
 }
 
 .tidy5e.sheet.actor ul {
@@ -445,6 +447,14 @@ p::selection {
 .tidy5e.sheet.actor .tidy5e-navigation .toggle-allow-edit span {
     border-radius: 2px;
     background: #085c03
+}
+
+.tidy5e.sheet.actor input.hp-max, .tidy5e.sheet.actor input.max-temphp {
+    color: var(--color-text-gruen);
+}
+
+.tidy5e.sheet.actor .portrait-temp input {
+    color: #DDDDDD
 }
 
 .tidy5e.sheet.actor.npc .unlinked .link-state.fa-unlink {
@@ -624,7 +634,9 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     font-weight: bold;
 }
 
-
+.-emu-layout body.-emu #sidebar [data-tab=chat] #chat-controls, .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-controls {
+border-top: double 3px #6C5848;
+}
 
 
 /*AE Marker*---------------------------------*/
@@ -690,6 +702,7 @@ h3 {
     --font-awesome: "Calibri", sans-serif;
     --t5e-modesto: "Calibri Bold", sans-serif;
     --t5e-signika: "Calibri", sans-serif;
+    
 }
 
 .system-dnd5e.tidy5eDark {
@@ -773,6 +786,12 @@ h3 {
 
 .message.damage-log.reverted.damage {
     background: #2e0736;
+}
+
+.-emu-layout body.-emu #sidebar nav.damage-log-nav.tabs, .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content nav.damage-log-nav.tabs {
+    border-radius: 2px;
+    border-bottom: double 3px;
+    color:#6C5848;
 }
 
 /*----------- Always HP ---------------------------------*/
