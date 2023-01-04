@@ -426,7 +426,7 @@ p::selection {
 
 .tidy5e.sheet.actor .items-list .item .context-menu a.warning {
     background: var(--warning-accent);
-    color: #000000;
+    color: black;
 }
 
 .tidy5e.sheet.actor.npc .unlinked {
@@ -688,6 +688,8 @@ h3 {
     --font-primary: "Calibri", sans-serif;
     --font-mono: "Calibri", sans-serif;
     --font-awesome: "Calibri", sans-serif;
+    --t5e-modesto: "Calibri Bold", sans-serif;
+    --t5e-signika: "Calibri", sans-serif;
 }
 
 .system-dnd5e.tidy5eDark {
