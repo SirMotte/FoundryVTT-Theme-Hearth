@@ -13,7 +13,7 @@
     --color-background-dunkel-mild: #232323;
     --color-text-gruen: #77CE77;
     --color-text-blau: #69B7FF;
-    --color-text-rot: #FF6161;
+    --color-text-rot: #fa8f8f;
     --color-text-gelb: #F3D876;
     --background: #232323;
     --color-text-tuerkis: #8CFFFF;
@@ -915,7 +915,7 @@ body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.f
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.fumble,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.failure {
     background-color: #501515;
-    border-color: #FF6161;
+    border-color: var(--color-text-rot);
 }
 
 
