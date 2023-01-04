@@ -209,7 +209,7 @@ p::selection {
 }
 
 .tidy5e.sheet.actor .char-name {
-    color: var(--color-text-creme);
+    color: var(--color-text-gruen);
 }
 
 .tidy5e.sheet.actor .level {
@@ -523,6 +523,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     border-color: 1px solid #77CE77;
     color: var(--primary-font);
 }
+
 body.-emu .window-app {
     border: 3px double RGB(var(--emu-color-border, 33, 50, 52));
 }
@@ -558,7 +559,7 @@ body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"
 }
 
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer, .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer {
-    color: var(--color-text-rot)
+    color: var(--color-text-rot);
 }
 
 .-emu-layout body.-emu .dialog p,
@@ -902,42 +903,6 @@ body.-emu .window-app {
 
 .item-piles-even-color:nth-child(odd) {
     background-color: #453B32;
-}
-
-
-
-body.-emu .dialog input[type="text"],
-body.-emu .dialog input[type="number"],
-body.-emu .dialog input[type="date"],
-body.-emu .dialog input[type="time"],
-body.-emu .dialog input[type="password"],
-body.-emu .dialog input[type="datetime-local"],
-body.-emu .dialog input[type="search"],
-body.-emu #sidebar input[type="text"],
-body.-emu #sidebar input[type="number"],
-body.-emu #sidebar input[type="date"],
-body.-emu #sidebar input[type="time"],
-body.-emu #sidebar input[type="password"],
-body.-emu #sidebar input[type="datetime-local"],
-body.-emu #sidebar input[type="search"],
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) input[type="text"],
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) input[type="number"],
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) input[type="date"],
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) input[type="time"],
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) input[type="password"],
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) input[type="datetime-local"],
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) input[type="search"],
-body.-emu #hud input[type="text"],
-body.-emu #sidebar [data-tab="chat"] section.dice-tray input.dice-tray__input,
-body.-emu .sidebar-popout [data-tab="chat"] section.dice-tray input.dice-tray__input,
-body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input,
-body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] #searchField #searchInput {
-    background: black;
-    border: 0px solid #FFF0CA;
-    border-radius: var(--emu-border-radius-forms, 0);
-    box-shadow: none;
-    color: rgba(var(--color-text), 1);
-    transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* Anonymous Module---------------------------------*/
