@@ -528,7 +528,10 @@ body.-emu .window-app {
     border: 3px double RGB(var(--emu-color-border, 33, 50, 52));
 }
 
-.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-metadata, .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-sender, .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-metadata, .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-sender {
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-metadata,
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-sender,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-metadata,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-sender {
     color: var(--color-text-gruen);
     font-size: 16px;
     font-weight: bold;
@@ -558,7 +561,8 @@ body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"
     color: black;
 }
 
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer, .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer {
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer,
+.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer {
     color: var(--color-text-rot);
 }
 
@@ -677,7 +681,8 @@ h3 {
     white-space: nowrap;
 }
 
-:host, :root {
+:host,
+:root {
     --modesto: "Calibri", sans-serif;
     --signika: "Calibri", sans-serif;
     --font-primary: "Calibri", sans-serif;
@@ -693,6 +698,7 @@ h3 {
     --font-awesome: "Calibri", sans-serif;
 
 }
+
 .system-dnd5e {
     --modesto: "Calibri", sans-serif;
     --signika: "Calibri", sans-serif;
