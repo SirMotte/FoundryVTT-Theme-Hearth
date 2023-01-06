@@ -175,9 +175,9 @@ p::selection {
 
 .tidy5e.sheet.actor .items-list .item.equipped,
 .tidy5e.sheet.actor .items-list .item.prepared {
-    background: var(--prepared);
+    background: #111f0c;
     border-right-style: solid;
-    border-color: #FF913F;
+    border-color: #69e241;
     padding: none;
     border-width: 6px;
     border-radius: 1px;
@@ -185,9 +185,9 @@ p::selection {
 }
 
 .tidy5e.sheet.actor .items-list .item.alwaysPrepared {
-    background: #3d002e;
+    background: #042e42;
     border-right-style: solid;
-    border-color: #9e0077;
+    border-color: #4479eb;
     padding: none;
     border-width: 6px;
     border-radius: 1px;
