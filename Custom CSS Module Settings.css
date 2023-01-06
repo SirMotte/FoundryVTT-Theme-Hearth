@@ -38,10 +38,10 @@
 .system-dnd5e.tidy5eDark {
     --tertiary-color: #DDDDDD;
     --light-color: #6C5848;
-    --prepared: #301e13;
+    --prepared: #153013;
     --always-prepared-outline: #F3D876;
     --always-prepared-accent: #F3D876;
-    --always-prepared: #322a1a;
+    --always-prepared: #1f321a;
     --exhaustion-font: #DDDDDD;
     --encumbrance-bar: #501515;
     --encumbrance-bar-outline: #501515;
@@ -185,9 +185,9 @@ p::selection {
 }
 
 .tidy5e.sheet.actor .items-list .item.alwaysPrepared {
-    background: #2b0909;
+    background: #3d002e;
     border-right-style: solid;
-    border-color: var(--color-text-rot);
+    border-color: #9e0077;
     padding: none;
     border-width: 6px;
     border-radius: 1px;
@@ -330,8 +330,7 @@ p::selection {
 .tidy5e.sheet.actor .resources .resource .resource-name input {
     font-family: "Calibri Bold", sans-serif;
     font-weight: bold;
-    font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     text-align: center;
     height: 18px;
     color: var(--color-text-creme);
@@ -428,7 +427,7 @@ p::selection {
 
 .tidy5e.sheet.actor .items-list .item .context-menu a.warning {
     background: var(--warning-accent);
-    color: black;
+    color: var(--color-text-rot);
 }
 
 .tidy5e.sheet.actor.npc .unlinked {
@@ -1657,6 +1656,11 @@ nav.damage-log-nav.tabs {
 .fa-trash-alt:before,
 .fa-trash-can:before {
     content: "\f2ed";
+    color: var(--color-text-rot);
+}
+
+.fa-trash:before {
+    content: "\f1f8";
     color: var(--color-text-rot);
 }
 
