@@ -122,6 +122,11 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     color: var(--primary-font);
 }
 
+body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item.active {
+    border-color: var(--color-text-creme);
+    color: red;
+}
+
 /* -------------------- Text Selection -------------------- */
 p::selection {
     color: var(--color-orange);
@@ -1137,6 +1142,11 @@ body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
     text-shadow: none;
 }
 
+.-emu-layout body.-emu #controls .control-tools .control-tool, .-emu-layout body.-emu #controls .control-tools .scene-control {
+    border-radius: 3px;
+}
+
+
 /*--------------------------------- Simple Weather ---------------------------------*/
 #weather-app #rightHandle {
     background: url(../images/denim-dark-090.webp) repeat;
@@ -1207,6 +1217,18 @@ nav.damage-log-nav.tabs {
 /*--------------------------------- Action Pack ---------------------------------*/
 .action-pack__item .item-summary a {
     color: var(--primary-font);
+}
+
+
+/*--------------------------------- Item Piles ---------------------------- */
+
+.item-piles-config-container p {
+    color: var(--primary-font);
+}
+
+.item-piles-disabled {
+    opacity: 100%;
+    background-color: var(--color-dunkelrot);
 }
 
 /*--------------------------------- Icons --------------------------------- */

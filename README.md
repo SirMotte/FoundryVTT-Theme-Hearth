@@ -12,7 +12,8 @@ If you already want to test it and get a feel on how it looks, follow the set-up
 - DnD 5E Ruleset (No support for other rulesets is planned)
 - [Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout) (Required)
 - [Custom CSS Module](https://github.com/cswendrowski/FoundryVTT-Custom-CSS) (Required)
-- [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Recommended, must be set to Dark Ui for best results)
+- [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Highly Recommended, must be set to Dark Ui for best results)
+- Calibri Font Installed - Guide in the Works (Recommended - Some UI elements will be quirky with other font styles)
 
 ## Supported Modules
 Others work out of the box or are not used by me. Right now I won't take requests for additional module support, but leave a comment anyway so I can create a todo list:
@@ -26,10 +27,10 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Monk's Common Display](https://github.com/ironmonk88/monks-common-display)
 - [Monk's Token Bar](https://github.com/ironmonk88/monks-tokenbar)
 - [Small Weather](https://github.com/LeafWulf/smallweather)
+- A lot of Modules don't require dedicated support, try it out.
 
 ## Known Issues:
 - Some areas of certain UI elements are hard to read or messed up. This is mostly caused by Ernie's Modern UI that will be resolved at some point. A lot needs to be done.
-- [Combat Tracker Disposition](https://github.com/LebombJames/combat-tracker-disposition) - slight bugs with icons, investigating
 
 ## Installation Instructions and Set-Up
 
@@ -42,6 +43,7 @@ Others work out of the box or are not used by me. Right now I won't take request
    - ![grafik](https://user-images.githubusercontent.com/82598692/209413563-291edba9-3949-4a65-bf66-0b9ab4297828.png)
    - Choose the downloaded Sir_Motte_Hearth_Foundry.json file and import it.
 4. (Only if used) Open up the Tidy5e Sheet Settings and set it to the "Alternative (dark)" color scheme. Additional Settings used need further testing in regard of UI Elements. I will update this document accordingly.
+5. Install the Calibri Font for use in Foundry VTT. To match my setup do as follows:
 
 This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue reporter.
 
