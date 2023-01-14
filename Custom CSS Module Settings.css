@@ -127,10 +127,34 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item.active {
     color: red;
 }
 
+/* -------------------- Plutonium -------------------- */
+.cfg__btn-tab-header {
+    background: var(--color-background-braun);
+    border: none;
+}
+
+a.btn, label.btn, div.btn {
+    background: var(--color-background-braun);
+    border: none;
+    border-radius: 1px;
+}
+
+.ui-tab__wrp-tab-body--background {
+    background: var(--color-background-dunkel-mild);
+    border: 1px solid var(--color-border-light-primary);
+    border-top: 0;
+    border-bottom-color: var(--color-border-light-primary);
+}
 /* -------------------- Text Selection -------------------- */
 p::selection {
     color: var(--color-orange);
     background-color: transparent;
+}
+
+.lootg__wrp-output {
+    border-radius: 1px;
+    background: var(--color-background-braun);
+    border: 1px solid var(--color-border-light-primary);
 }
 
 /*--------------------------------- Tidy 5E Sheet ---------------------------------*/
