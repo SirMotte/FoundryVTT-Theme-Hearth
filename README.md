@@ -31,6 +31,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 
 ## Known Issues:
 - Some areas of certain UI elements are hard to read or messed up. This is mostly caused by Ernie's Modern UI that will be resolved at some point. A lot needs to be done.
+- If you're using Plutonium, disable all UI tweaks but for Compact Header Buttons
 
 ## Installation Instructions and Set-Up
 
@@ -44,6 +45,7 @@ Others work out of the box or are not used by me. Right now I won't take request
    - Choose the downloaded Sir_Motte_Hearth_Foundry.json file and import it.
 4. (Only if used) Open up the Tidy5e Sheet Settings and set it to the "Alternative (dark)" color scheme. Additional Settings used need further testing in regard of UI Elements. I will update this document accordingly.
 5. Install the Calibri Font for use in Foundry VTT. To match my setup do as follows:
+   - coming soon
 
 This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue reporter.
 
