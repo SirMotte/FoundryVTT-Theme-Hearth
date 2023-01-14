@@ -31,7 +31,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 
 ## Known Issues:
 - Some areas of certain UI elements are hard to read or messed up. This is mostly caused by Ernie's Modern UI that will be resolved at some point. A lot needs to be done.
-- Modules beside the ones mentioned that alter UI elements can potentially UI cause issues. 
+- Modules beside the ones mentioned that alter UI elements can potentially cause UI issues. 
 
 ## Installation Instructions and Set-Up
 
