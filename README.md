@@ -10,7 +10,7 @@ If you already want to test it and get a feel on how it looks, follow the set-up
 ## Requirements:
 - Foundry VTT (Duh!)
 - DnD 5E Ruleset (No support for other rulesets is planned)
-- [Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout) (Required)
+- [Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout) (Required, make sure to use the Pre-Release Version linked in Ernie's Readme.)
 - [Custom CSS Module](https://github.com/cswendrowski/FoundryVTT-Custom-CSS) (Required)
 - [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Highly Recommended, must be set to Dark Ui for best results)
 - Calibri Font Installed - Guide in the Works (Recommended - Some UI elements will be quirky with other font styles)
