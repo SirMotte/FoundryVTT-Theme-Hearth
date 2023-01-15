@@ -132,6 +132,12 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item.active {
     border: none;
 }
 
+.rd__b-inset {
+    box-shadow: none;
+    border: 1px solid #6C5848;
+    background-color: var(--color-background-braun);
+}
+
 a.btn,
 label.btn,
 div.btn {
