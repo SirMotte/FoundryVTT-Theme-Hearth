@@ -138,6 +138,43 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item.active {
     background-color: var(--color-background-braun);
 }
 
+.fltr__pill {
+    background: var(--color-background-braun);
+    border: 1px solid var(--color-border-light-primary);
+}
+
+.fltr__btn_nest {
+    background: var(--color-background-braun);
+    border: 1px solid var(--color-border-light-primary);
+}
+
+.fltr-search__wrp-values {
+    background: var(--color-background-braun);
+    border: 1px solid var(--color-border-light-primary);
+}
+
+.ui-slidr__disp-value--visible {
+    border: 1px solid var(--color-border-light-primary);
+    background: var(--color-background-braun);
+}
+
+.ml-1 {
+    color: var(--primary-font);
+}
+
+.ui-slidr__thumb {
+
+    background: var(--color-orange);
+    border: black;
+    border-radius: 2px;
+}
+
+.veapp-ctx-menu__wrp {
+    box-shadow: none;
+    background: var(--color-background-braun);
+    border: 1px solid var(--color-border-light-primary);
+}
+
 a.btn,
 label.btn,
 div.btn {
