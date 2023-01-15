@@ -1864,7 +1864,7 @@ h3 {
     .tidy5e.sheet.actor .tidy5e-header {
         background-color: var(--color-background-braun);
     }
-
+/*
     body.-emu .dialog .tabs a.active,
     body.-emu .dialog .sheet-tabs a.active,
     body.-emu #sidebar .tabs a.active,
@@ -1973,18 +1973,41 @@ h3 {
     body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy,
     body.-emu #df-curvy-walls-tools .control-tool.active,
     body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
-        background-color: var(--color-background-dunkel);
+        background-color: var(--color-dunkelrot);
         border: 1px solid #F2AB76;
         text-shadow: none;
     }
+*/
+
+}
 
     .-emu-layout body.-emu #controls .control-tools .control-tool,
     .-emu-layout body.-emu #controls .control-tools .scene-control {
         border-radius: 3px;
     }
 
+    body.-emu .window-app[id*=JournalEntry-] aside.sidebar .pages-list .directory-list .directory-item .page-heading .journal-entry-page-link:hover, body.-emu .window-app[id*=JournalEntry-] aside.sidebar .pages-list .directory-list .directory-item .page-heading .page-title:hover {
+        color: RGB(var(--emu-color-primary,229,117,9));
+
+    }
+
+    aside.read-aloud-text {
+        overflow: auto;
+        display: block;
+        margin: 30px 0;
+        line-height: 1.6;
+        font-size: 14px;
+        color: var(--color-text-creme);
+        border: 1px solid transparent;
+        border-image-repeat: none;
+        border-image-slice: 8 8 8 8 fill;
+        background-color: transparent;
+        padding: 20px 20px 10px !important;
+        position: relative;
+        border-image-source: none;
 
     /*--------------------------------- Simple Weather ---------------------------------*/
+
     #weather-app #rightHandle {
         background: url(../images/denim-dark-090.webp) repeat;
         background-color: var(--color-background-dunkel-mild);
