@@ -127,7 +127,6 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item.active {
     color: red;
 }
 
-/* -------------------- Plutonium -------------------- */
 .cfg__btn-tab-header {
     background: var(--color-background-braun);
     border: none;
@@ -1302,6 +1301,7 @@ h3 {
         height: 20px;
         font-size: 13px;
     }
+
 
     /*Checkboxes*/
     .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label.checkbox,
