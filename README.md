@@ -28,6 +28,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Monk's Token Bar](https://github.com/ironmonk88/monks-tokenbar)
 - [Small Weather](https://github.com/LeafWulf/smallweather)
 - [Deadly Encounter Benchmark](https://github.com/snshatto/deadly-encounter-benchmark)
+- [DFreds Chat Pins](https://github.com/DFreds/dfreds-chat-pins)
 - A lot of Modules don't require dedicated support, try it out.
 
 ## Known Issues:
