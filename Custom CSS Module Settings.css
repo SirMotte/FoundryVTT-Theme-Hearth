@@ -4,6 +4,7 @@
 /*Here I either define or overwrite root color settings that stem from baseline Foundry*/
 .root {
     --sidebar-width: 270px;
+
 }
 
 .system-dnd5e {
@@ -33,6 +34,7 @@
     --primary-accent: #FF913F;
     --prepared: #322a1a;
     --t5e-primary-font: #DDDDDD;
+    --color-bg-option: #322C27;
 }
 
 .system-dnd5e.tidy5eDark {
@@ -3025,7 +3027,11 @@ body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
     border-radius: 3px;
 }
 
-
+/*--------------------------------- Token Notes ---------------------------------*/
+/*--------------------------------- Deadly Encounter Benchmark ---------------------------------*/
+.isdeadly-backgroundClear {
+    background-color: #ffffff00;
+}
 /*--------------------------------- Simple Weather ---------------------------------*/
 #weather-app #rightHandle {
     background: url(../images/denim-dark-090.webp) repeat;
