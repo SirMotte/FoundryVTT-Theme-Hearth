@@ -1501,9 +1501,17 @@ nav.damage-log-nav.tabs {
     color: var(--primary-font);
 }
 
+.item-piles-odd-color:nth-child(odd) {
+    background-color: var(--color-background-dunkel);
+}
+
 .item-piles-disabled {
     opacity: 100%;
     background-color: var(--color-dunkelrot);
+}
+
+.item-piles-chat-card li:nth-child(odd) {
+    background-color: var(--color-background-dunkel);
 }
 
 /*--------------------------------- Icons --------------------------------- */
