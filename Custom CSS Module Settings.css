@@ -1459,6 +1459,14 @@ nav.damage-log-nav.tabs {
     color: var(--primary-font);
 }
 
+.action-pack__end-turn {
+    width: var(--action-pack-width);
+    background: var(--color-dunkelrot-dunkler);
+    color: var(--color-text-creme);
+    border: 3px double var(--color-text-rot);
+}
+
+
 .action-pack__container {
     background: #232323;
     border: 3px double #6C5848;
