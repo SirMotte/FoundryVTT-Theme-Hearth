@@ -218,6 +218,12 @@ p::selection {
     border-radius: 0 0 2px 2px;
 }
 
+.tidy5e.sheet.actor .item-properties .tag {
+    background: var(--color-background-braun);
+    border: 1px solid var(--color-border-light-primary);
+    border-radius: 2px;
+}
+
 .tidy5e.sheet.actor input[type=checkbox], .tidy5e.sheet.actor input[type=radio], .tidy5e.sheet.actor button, .tidy5e.sheet.actor select {
     cursor: pointer;
     -webkit-box-shadow: none;
