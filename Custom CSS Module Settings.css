@@ -218,11 +218,42 @@ p::selection {
     border-radius: 0 0 2px 2px;
 }
 
+.tidy5e.sheet.actor input[type=checkbox], .tidy5e.sheet.actor input[type=radio], .tidy5e.sheet.actor button, .tidy5e.sheet.actor select {
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: var(--primary-font);
+}
 
+.tidy5eDark .tidy5e.sheet.actor select option {
+    color: var(--primary-font);
+}
+
+.tidy5e.sheet.actor .traits .form-group:nth-child(even) {
+    background: var(--color-background-braun);
+}
+
+.tidy5e.sheet.actor .skills-list .skill:nth-child(even) {
+    background: var(--color-background-braun);
+}
+
+.tidy5e.sheet.actor .items-list .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: var(--color-background-dunkel);
+}
 
 /*Here begins the more fingrained work in no particular order*/
 
-
+.-emu-layout body.-emu .tidy5e.sheet.actor #item-info-container .info-card {
+    border-radius: 2px;
+    border: 3px double var(--color-border-light-primary);
+    padding: var(--emu-space-sm,8px);
+}
 
 .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label,
 .tidy5e.sheet.item .sheet-body .tab.details .form-group label,
@@ -1847,13 +1878,9 @@ h3 {
     body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy,
     body.-emu #df-curvy-walls-tools .control-tool.active,
     body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
-        background-color: var(--color-dunkelrot);
-        border: 1px solid #F2AB76;
-        text-shadow: none;
+                text-shadow: none;
+                border-bottom: 1px solid var(--color-text-creme);
     }
-
-
-}
 
 .-emu-layout body.-emu #controls .control-tools .control-tool,
 .-emu-layout body.-emu #controls .control-tools .scene-control {
