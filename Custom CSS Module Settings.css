@@ -30,7 +30,7 @@
     --tertiary-color: #DDDDDD;
     --secondary-color: #DDDDDD;
     --faint-color: #322C27;
-    --header-background: #412b29;
+    --header-background: #3a211f;
     --primary-font: #DDDDDD;
     --primary-accent: #FF913F;
     --prepared: #322a1a;
@@ -233,7 +233,10 @@ p::selection {
     border-radius: 2px;
 }
 
-.tidy5e.sheet.actor input[type=checkbox], .tidy5e.sheet.actor input[type=radio], .tidy5e.sheet.actor button, .tidy5e.sheet.actor select {
+.tidy5e.sheet.actor input[type=checkbox],
+.tidy5e.sheet.actor input[type=radio],
+.tidy5e.sheet.actor button,
+.tidy5e.sheet.actor select {
     cursor: pointer;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -267,7 +270,7 @@ p::selection {
 .-emu-layout body.-emu .tidy5e.sheet.actor #item-info-container .info-card {
     border-radius: 2px;
     border: 3px double var(--color-border-light-primary);
-    padding: var(--emu-space-sm,8px);
+    padding: var(--emu-space-sm, 8px);
 }
 
 .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label,
@@ -731,7 +734,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     border-bottom: 3px solid var(--color-border-light-primary);
     border-radius: 5px;
     border-style: solid;
-    color: rgba(var(--color-text), 1);
+    color: var(--primary-font);
 }
 
 
@@ -843,992 +846,553 @@ h3 {
     white-space: nowrap;
 }
 
-
-
-
-    .prosemirror.editing-source textarea {
-        color: var(--primary-font);
-    }
-
-
-    /* -------------------- DnD 5E Ruleset -------------------- */
-    .dnd5e.chat-card {
-        background: #232323;
-    }
-
-    body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header,
-    body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
-        background-color: var(--background);
-        color: var(--primary-font);
-        border-radius: 2px;
-    }
-
-    .rsr5e-roll-label {
-        border-bottom: 1px solid var(--light-color);
-        border-top: 1px solid var(--light-color);
-        font-weight: bold;
-        background: var(--color-background-braun);
-        color: var(--color-text-creme);
-    }
-
-
-
-    .dnd5e.chat-card .card-header h3:hover {
-        color: var(--color-text-creme);
-        text-shadow: none;
-    }
-
-    .dnd5e.chat-card .card-header h3 {
-        flex: 1;
-        margin: 0;
-        line-height: 36px;
-        font-family: "Calibri Bold", sans-serif;
-        font-weight: bold;
-        font-size: var(--font-size-20px);
-        color: var(--color-text-creme);
-    }
-
-    .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
-    .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
-        font-family: "Calibri Bold", sans-serif;
-        font-weight: bold;
-        color: var(--color-text-creme);
-        background: #350e2e;
-        justify-content: flex-start;
-    }
-
-    .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-content,
-    .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-content {
-        margin: var(--emu-space-base, 4px) 0;
-        color: var(--primary-font);
-    }
-
-    body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item.active {
-        border-color: var(--color-text-creme);
-        color: red;
-    }
-
-    /* -------------------- Plutonium -------------------- */
-    .cfg__btn-tab-header {
-        background: var(--color-background-braun);
-        border: none;
-    }
-
-    a.btn,
-    label.btn,
-    div.btn {
-        background: var(--color-background-braun);
-        border: none;
-        border-radius: 1px;
-    }
-
-    .ui-tab__wrp-tab-body--background {
-        background: var(--color-background-dunkel-mild);
-        border: 1px solid var(--color-border-light-primary);
-        border-top: 0;
-        border-bottom-color: var(--color-border-light-primary);
-    }
-
-    .fa-arrow-alt-circle-up:before,
-    .fa-circle-up:before {
-        content: "\f35b";
-        color: var(--color-text-gelb)
-    }
-
-    /* -------------------- Text Selection -------------------- */
-    p::selection {
-        color: var(--color-orange);
-        background-color: transparent;
-    }
-
-    .lootg__wrp-output {
-        border-radius: 1px;
-        background: var(--color-background-braun);
-        border: 1px solid var(--color-border-light-primary);
-    }
-
-    /*--------------------------------- Tidy 5E Sheet ---------------------------------*/
-    /*This first part overwrites color settings within Tidy 5E Sheet on a more global scale*/
-    .tidy5e.sheet.actor .traits .configure-flags {
-        border: 1px solid var(--faint-color);
-        border-radius: 0 0 2px 2px;
-    }
-
-
-
-    /*Here begins the more fingrained work in no particular order*/
-
-
-
-    .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label,
-    .tidy5e.sheet.item .sheet-body .tab.details .form-group label,
-    .tidy5e.sheet.item .sheet-body .tab.advancement .form-group label,
-    .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group label,
-    .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group label {
-        margin-left: 4px;
-        line-height: 20px;
-        font-size: 13px;
-        font-family: "Calibri Bold", sans-serif;
-        font-weight: bold;
-        font-weight: normal;
-        color: var(--secondary-color);
-        white-space: nowrap;
-    }
-
-
-    .tidy5e.sheet.actor .profile.disable-hp-overlay .counter-value,
-    .tidy5e.sheet.actor .profile.disable-hp-overlay.dead .counter-value {
-        background: var(--color-background-dunkel-mild);
-        border-style: double;
-        border-color: var(--color-text-rot);
-        padding: 0 0.5rem;
-        border-width: 3px;
-        border-radius: 2px;
-    }
-
-
-
-    .tidy5e.sheet.actor .portrait-hp .hp-bar {
-        background: rgb(0, 63, 0);
-    }
-
-    .tidy5e.sheet.actor .items-list .item.equipped,
-    .tidy5e.sheet.actor .items-list .item.prepared {
-        background: #111f0c;
-        border-right-style: solid;
-        border-color: #69e241;
-        padding: none;
-        border-width: 6px;
-        border-radius: 1px;
-        margin-right: -6px;
-    }
-
-    .tidy5e.sheet.actor .items-list .item.alwaysPrepared {
-        background: #042e42;
-        border-right-style: solid;
-        border-color: #4479eb;
-        padding: none;
-        border-width: 6px;
-        border-radius: 1px;
-        margin-right: -6px;
-    }
-
-    .tidy5e.sheet.actor .list-layout .items-list .item.magic-item {
-        background: #292518;
-        border-right-style: solid;
-        border-color: var(--color-text-gelb);
-        padding: none;
-        border-width: 6px;
-        border-radius: 1px;
-        box-shadow: none;
-        margin-right: -6px;
-    }
-
-    .tidy5e.sheet.actor .list-layout .items-list .item {
-        border-radius: 2px;
-    }
-
-    .tidy5e.sheet.actor .char-name {
-        color: var(--color-text-gruen);
-    }
-
-    .tidy5e.sheet.actor .level {
-        padding: 2px 6px;
-        border-radius: 2px;
-        background: var(--color-background-braun);
-        color: var(--color-text-rot);
-    }
-
-    .tidy5e.sheet.actor .resting {
-        border-radius: 0 2px 0 2px;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-
-    .tidy5e.sheet.actor .exhaustion-wrap {
-        border-radius: 2px 0 2px 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-
-    .tidy5e.sheet.actor.npc .level-information .level [contenteditable] {
-        color: var(--color-text-rot);
-    }
-
-    .tidy5e.sheet.actor .portrait-hd .current-hd {
-        color: var(--color-text-tuerkis);
-    }
-
-    .tidy5e.sheet.actor .portrait {
-        width: 100%;
-        height: 100%;
-        border-radius: 1px;
-        overflow: hidden;
-        border: 1px solid var(--icon-outline);
-        position: relative;
-        mix-blend-mode: normal;
-        z-index: 2;
-    }
-
-    .tidy5e.sheet.actor .portrait-hp input,
-    .tidy5e.sheet.actor .portrait-hp span {
-        font-family: var(--modesto);
-        height: 100%;
-        font-weight: 700;
-        width: 40px;
-        color: var(--color-text-gruen);
-    }
-
-    .tidy5e.sheet.actor .resting {
-        color: var(--color-text-blau);
-    }
-
-    .tidy5e.sheet.actor .ability-scores .ability .ability-name {
-        color: var(--color-text-creme);
-    }
-
-    .tidy5e.sheet.actor .attribute-name {
-        color: var(--color-text-creme);
-    }
-
-    .tidy5e.sheet.actor .ability-scores .ability .ability-score {
-        margin: 1px 0 5px 0;
-        padding: 2px 0 0 0;
-        font-family: "Calibri Bold", sans-serif;
-        font-weight: bold;
-        font-weight: 400;
-    }
-
-    .tidy5e.sheet.actor .header-attributes .value {
-        font-size: 24px;
-        margin: 1px 0 0px 0;
-    }
-
-    .tidy5e.sheet.actor .header-attributes .ac-display svg path {
-        fill: var(--color-background-dunkel-mild);
-    }
-
-    .tidy5e.sheet.actor .header-attributes .ac-display .attribute-value {
-        position: absolute;
-        top: 37%;
-        left: 50%;
-        color: var(--color-text-gelb);
-    }
-
-    .tidy5e.sheet.actor .traits.show-labels label span {
-        display: inline-block;
-        margin-left: 4px;
-        font-weight: 700;
-        color: var(--color-text-creme);
-    }
-
-    .tidy5e.sheet.actor .traits .tag {
-        margin-right: 4px;
-        font-family: "Calibri", sans-serif;
-        color: var(--primary-font);
-    }
-
-    .tidy5e.sheet.actor .skills-list .skill .skill-name {
-        font-family: "Calibri Bold", sans-serif;
-        font-weight: bold;
-        color: var(--color-text-creme);
-    }
-
-    .tidy5e.sheet.actor .items-list .items-header {
-        margin: 8px 0 2px 0;
-        padding: 4px 0 2px 6px;
-        line-height: 12px;
-        font-size: 12px;
-        background: var(--color-background-braun);
-        -webkit-box-shadow: 0 0 0px inset var(--color-background-dark);
-        box-shadow: 0 0 0px inset var(--color-background-dark);
-        border-radius: 1px;
-        color: var(--color-text-creme);
-    }
-
-    .tidy5e.sheet.actor .resources .resource .resource-name input {
-        font-family: "Calibri Bold", sans-serif;
-        font-weight: bold;
-        font-size: 13px;
-        text-align: center;
-        height: 18px;
-        color: var(--color-text-creme);
-    }
-
-    .tidy5e.sheet.actor .attuned-items-counter {
-        border-radius: 1px;
-        background: var(--faint-color);
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        border: 1px solid var(--color-text-gelb);
-    }
-
-    .tidy5e.sheet.actor .movement-primary,
-    .tidy5e.sheet.actor .movement-special {
-        color: var(--color-text-blau);
-        font-weight: bold;
-    }
-
-    .tidy5e.sheet.actor .header-attributes .value-footer {
-        font-size: 12px;
-        line-height: 14px;
-        color: var(--primary-font);
-    }
-
-    .tidy5e.sheet.actor .resources .resource .resource-value.multiple input {
-        font-size: 22px;
-        max-width: 3.5ch;
-        height: 22px;
-        padding-top: 2px;
-        color: var(--color-text-gelb);
-    }
-
-    .tidy5e.sheet.actor .list-layout .items-list .item {
-        border-radius: 1px;
-    }
-
-    .tidy5e.sheet.actor .items-list .item .item-name .item-image {
-        border-radius: 1px 0px 0px 1px;
-    }
-
-    .tidy5e.sheet.actor .skills-list {
-        border-radius: 1px;
-    }
-
-    .tidy5e.sheet.actor .traits {
-        border-radius: 1px;
-    }
-
-    .tidy5e.sheet.actor .items-list .items-header-labels {
-        color: var(--color-text-creme);
-    }
-
-    .tidy5e.sheet.actor .center-pane .resources {
-        border-radius: 1px;
-    }
-
-    .tidy5e.sheet.actor .inventory-currency .currency-item {
-        border-radius: 1px;
-    }
-
-    .tidy5e.sheet.actor .inventory-currency .currency-item a {
-        display: block;
-        background: var(--color-background-braun);
-        color: var(--color-text-blau);
-        border-radius: 1px;
-    }
-
-    .tidy5e.sheet.actor .encumbrance .encumbrance-label {
-        border-radius: 1px;
-        color: var(--primary-font);
-        text-shadow: none;
-
-    }
-
-    .tidy5e.sheet.actor .note-entries article {
-        background: var(--color-background-dunkel);
-        border-radius: 2px;
-    }
-
-    .tidy5e.sheet.actor ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        scrollbar-width: thin;
-    }
-
-    .tidy5e.sheet.actor .spellcasting-ability h3 {
-        margin-right: 10px;
-        font-size: 18px;
-        font-family: "Calibri Bold", sans-serif;
-        font-weight: bold;
-    }
-
-    .tidy5e.sheet.actor .items-list .item .context-menu a.warning {
-        background: var(--warning-accent);
-        color: var(--color-text-rot);
-    }
-
-    .tidy5e.sheet.actor.npc .unlinked {
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-
-    .tidy5e.sheet.actor .tidy5e-navigation .item {
-        border-bottom: 1px solid var(--color-text-creme);
-    }
-
-    .tidy5e.sheet.actor .tidy5e-navigation .toggle-allow-edit {
-        border-bottom: 1px solid var(--color-text-creme);
-    }
-
-    .tidy5e.sheet.actor .tidy5e-navigation .toggle-allow-edit span {
-        border-radius: 2px;
-        background: #085c03
-    }
-
-    .tidy5e.sheet.actor input.hp-max,
-    .tidy5e.sheet.actor input.max-temphp {
-        color: var(--color-text-gruen);
-    }
-
-     /*--------------------------------- TDFreds Chat Pins ---------------------------------*/
-    .chat-message.whisper {
-        background: var(--color-background-dunkel-mild);
-        border: 2px solid #F3D876;
-    }
-
-    .dice-roll .dice-formula,
-    .dice-roll .dice-total {
-        background: var(--color-background-dunkel);
-        border: 1px solid var(--color-border-light-primary);
-        border-radius: 3px;
-        box-shadow: none;
-        word-break: break-all;
-    }
-
-    /*--------------------------------- Deadly Encounter Benchmark ---------------------------------*/
-    .isdeadly-backgroundClear {
-        background-color: #ffffff00;
-    }
-
-    /* -------------------- Ernie's Modern UI ---------------------------------*/
-    body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
-    body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success,
-    body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
-    body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success {
-        background-color: #1F241C;
-        border-color: 1px solid #77CE77;
-        color: var(--primary-font);
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: var(--color-border-light-primary);
-        border-radius: 2px;
-        outline: 0;
-    }
-
-    body.-emu .window-app {
-        border: 3px double RGB(var(--emu-color-border, 33, 50, 52));
-    }
-
-    .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-metadata,
-    .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-sender,
-    .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-metadata,
-    .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-sender {
-        color: var(--color-text-gruen);
-        font-size: 16px;
-        font-weight: bold;
-    }
-
-    .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
-    .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula {
-        background-color: var(--color-background-dunkel);
-    }
-
-
-    .-emu-layout body.-emu #hud input[type="text"] {
-        color: var(--color-text-creme);
-    }
-
-    body.-emu #hud .control-icon {
-        background-color: var(--color-background-braun);
-        background-image: none;
-        border: 1px solid var(--color-border-light-primary);
-        box-shadow: none;
-        color: var(--color-text-creme);
-    }
-
-    body.-emu .dialog a[href],
-    body.-emu #sidebar a[href],
-    body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) a[href] {
-        color: #7ED8FF;
-        text-decoration: none;
-        text-shadow: none;
-    }
-
-    body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active,
-    body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active {
-        background-color: red;
-        color: black;
-    }
-
-    .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer,
-    .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer {
-        color: var(--color-text-rot);
-    }
-
-    .-emu-layout body.-emu .dialog p,
-    .-emu-layout body.-emu #sidebar p,
-    .-emu-layout body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) p {
-        background: var(--color-background-dunkel-mild);
-    }
-
-    aside.rules-text {
-        color: #DDDDDD;
-    }
-
-
-    /* Chat Cards */
-    body.-emu #sidebar [data-tab="chat"] #chat-log .message,
-    body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message {
-
-        background-image: var(--emu-image-background-light, none);
-        border-top: 3px solid var(--color-border-light-primary);
-        border-bottom: 3px solid var(--color-border-light-primary);
-        border-radius: 5px;
-        border-style: solid;
-        color: rgba(var(--color-text), 1);
-    }
-
-
-
-    h1,
-    h2,
-    h3,
-    h4 {
-        padding: 0px 0px 0px 5px;
-    }
-
-    body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
-    body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
-    body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
-    body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
-        border: none;
-        font-weight: bold;
-    }
-
-    .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
-    .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
-        background-color: var(--color-background-dunkel);
-        font-weight: bold;
-    }
-
-    .-emu-layout body.-emu #sidebar [data-tab=chat] #chat-controls,
-    .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-controls {
-        border-top: solid 3px var(--color-border-light-primary);
-    }
-
-
-    /*AE Marker*---------------------------------*/
-    .tidy5e.sheet.actor .ae-marker {
-        background: var(--color-text-creme);
-        color: black;
-        border-radius: 3px;
-    }
-
-    /* -------- Header of window frames
+.prosemirror.editing-source textarea {
+    color: var(--primary-font);
+}
+
+/*--------------------------------- DFreds Chat Pins ---------------------------------*/
+.chat-message.whisper {
+    background: var(--color-background-dunkel-mild);
+    border: 2px solid #F3D876;
+}
+
+.dice-roll .dice-formula,
+.dice-roll .dice-total {
+    background: var(--color-background-dunkel);
+    border: 1px solid var(--color-border-light-primary);
+    border-radius: 3px;
+    box-shadow: none;
+    word-break: break-all;
+}
+
+/*--------------------------------- Deadly Encounter Benchmark ---------------------------------*/
+.isdeadly-backgroundClear {
+    background-color: #ffffff00;
+}
+
+/* -------------------- Ernie's Modern UI ---------------------------------*/
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success {
+    background-color: #1F241C;
+    border-color: 1px solid #77CE77;
+    color: var(--primary-font);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-border-light-primary);
+    border-radius: 2px;
+    outline: 0;
+}
+
+body.-emu .window-app {
+    border: 3px double RGB(var(--emu-color-border, 33, 50, 52));
+}
+
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-metadata,
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-sender,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-metadata,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-sender {
+    color: var(--color-text-gruen);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula {
+    background-color: var(--color-background-dunkel);
+}
+
+
+.-emu-layout body.-emu #hud input[type="text"] {
+    color: var(--color-text-creme);
+}
+
+body.-emu #hud .control-icon {
+    background-color: var(--color-background-braun);
+    background-image: none;
+    border: 1px solid var(--color-border-light-primary);
+    box-shadow: none;
+    color: var(--color-text-creme);
+}
+
+body.-emu .dialog a[href],
+body.-emu #sidebar a[href],
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) a[href] {
+    color: #7ED8FF;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active {
+    background-color: red;
+    color: black;
+}
+
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer,
+.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer {
+    color: var(--color-text-rot);
+}
+
+.-emu-layout body.-emu .dialog p,
+.-emu-layout body.-emu #sidebar p,
+.-emu-layout body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) p {
+    background: var(--color-background-dunkel-mild);
+}
+
+aside.rules-text {
+    color: #DDDDDD;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    padding: 0px 0px 0px 5px;
+}
+
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
+    border: none;
+    font-weight: bold;
+}
+
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total {
+    background-color: var(--color-background-dunkel);
+    font-weight: bold;
+}
+
+.-emu-layout body.-emu #sidebar [data-tab=chat] #chat-controls,
+.-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-controls {
+    border-top: solid 3px var(--color-border-light-primary);
+}
+
+
+/*AE Marker*---------------------------------*/
+.tidy5e.sheet.actor .ae-marker {
+    background: var(--color-text-creme);
+    color: black;
+    border-radius: 3px;
+}
+
+/* -------- Header of window frames
     body.-emu .window-app .window-header {
         background: var(--color-background-dunkel-mild);
     }*/
 
 
-    /* -------------------- xXxXx ---------------------------------*/
-    a.content-link,
-    a.inline-roll {
-        background: var(--color-background-dunkel);
-        padding: 1px 4px;
-        border: 1px solid var(--color-border-highlight);
-        border-radius: 1px;
-        white-space: nowrap;
-        word-break: break-all;
-    }
-
-    .sheet.journal-entry .journal-entry-content {
-        height: 100%;
-        background: #232323;
-        border: 0px solid #000;
-        border-radius: 1px 0 0 0;
-    }
-
-    #keybindings .binding .key.uneditable {
-        background: var(--background);
-    }
-
-
-
-
-
-    h3 {
-        border-bottom: 1px solid var(--color-text-light-7);
-    }
-
-    #requestsavingthrow .request-grid>div {
-        border: 1px solid transparent;
-        border-radius: 4px;
-        padding: 2px;
-        cursor: pointer;
-        color: var(--primary-font);
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    :host,
-    :root {
-        --modesto: "Calibri", sans-serif;
-        --modesto-condensded: "Calibri Bold", sans-serif;
-        --signika: "Calibri", sans-serif;
-        --font-primary: "Calibri", sans-serif;
-        --font-mono: "Calibri", sans-serif;
-        --font-awesome: "Calibri", sans-serif;
-        --t5e-modesto: "Calibri", sans-serif;
-        --t5e-signika: "Calibri", sans-serif;
-
-    }
-
-    .system-dnd5e.tidy5eDark {
-        --modesto: "Calibri", sans-serif;
-        --signika: "Calibri", sans-serif;
-        --font-primary: "Calibri", sans-serif;
-        --font-mono: "Calibri", sans-serif;
-        --font-awesome: "Calibri", sans-serif;
-
-    }
-
-    .system-dnd5e {
-        --modesto: "Calibri", sans-serif;
-        --signika: "Calibri", sans-serif;
-        --font-primary: "Calibri", sans-serif;
-        --font-mono: "Calibri", sans-serif;
-        --font-awesome: "Calibri", sans-serif;
-        --t5e-modesto: "Calibri Bold", sans-serif;
-    }
-
-
-    #requestsavingthrow .request-grid>div.selected {
-        color: var(--color-orange);
-        background: var(--color-background-braun);
-    }
-
-    .monks-tokenbar .sheet .items-list .item .item-name {
-        color: var(--primary-font);
-    }
-
-    .monks-tokenbar .sheet .items-list .items-header h3 {
-        padding-left: 5px;
-        font-family: "Calibri", sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        text-align: left;
-        font-size: 16px;
-        min-width: 60px;
-    }
-
-    .tidy5e.sheet.item .sheet-header .summary li {
-        font-weight: 400;
-    }
-
-    .monks-tokenbar .sheet .items-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        overflow-y: auto;
-        scrollbar-width: thin;
-        color: var(--primary-font);
-    }
+/* -------------------- xXxXx ---------------------------------*/
+a.content-link,
+a.inline-roll {
+    background: var(--color-background-dunkel);
+    padding: 1px 4px;
+    border: 1px solid var(--color-border-highlight);
+    border-radius: 1px;
+    white-space: nowrap;
+    word-break: break-all;
+}
+
+.sheet.journal-entry .journal-entry-content {
+    height: 100%;
+    background: #232323;
+    border: 0px solid #000;
+    border-radius: 1px 0 0 0;
+}
+
+#keybindings .binding .key.uneditable {
+    background: var(--background);
+}
+
+
+
+
+
+h3 {
+    border-bottom: 1px solid var(--color-text-light-7);
+}
+
+#requestsavingthrow .request-grid>div {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 2px;
+    cursor: pointer;
+    color: var(--primary-font);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+:host,
+:root {
+    --modesto: "Calibri", sans-serif;
+    --modesto-condensded: "Calibri Bold", sans-serif;
+    --signika: "Calibri", sans-serif;
+    --font-primary: "Calibri", sans-serif;
+    --font-mono: "Calibri", sans-serif;
+    --font-awesome: "Calibri", sans-serif;
+    --t5e-modesto: "Calibri", sans-serif;
+    --t5e-signika: "Calibri", sans-serif;
+
+}
+
+.system-dnd5e.tidy5eDark {
+    --modesto: "Calibri", sans-serif;
+    --signika: "Calibri", sans-serif;
+    --font-primary: "Calibri", sans-serif;
+    --font-mono: "Calibri", sans-serif;
+    --font-awesome: "Calibri", sans-serif;
+
+}
+
+.system-dnd5e {
+    --modesto: "Calibri", sans-serif;
+    --signika: "Calibri", sans-serif;
+    --font-primary: "Calibri", sans-serif;
+    --font-mono: "Calibri", sans-serif;
+    --font-awesome: "Calibri", sans-serif;
+    --t5e-modesto: "Calibri Bold", sans-serif;
+}
+
+
+#requestsavingthrow .request-grid>div.selected {
+    color: var(--color-orange);
+    background: var(--color-background-braun);
+}
+
+.monks-tokenbar .sheet .items-list .item .item-name {
+    color: var(--primary-font);
+}
+
+.monks-tokenbar .sheet .items-list .items-header h3 {
+    padding-left: 5px;
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    font-size: 16px;
+    min-width: 60px;
+}
+
+.tidy5e.sheet.item .sheet-header .summary li {
+    font-weight: 400;
+}
+
+.monks-tokenbar .sheet .items-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    color: var(--primary-font);
+}
 
-    #vtta-tokenizer div.menu {
-        background-color: #322C27;
-    }
+#vtta-tokenizer div.menu {
+    background-color: #322C27;
+}
 
-    #vtta-tokenizer div.view-layer-control {
-        background-color: #322C27;
-        border-bottom: thin solid rgb(255, 240, 202);
-    }
+#vtta-tokenizer div.view-layer-control {
+    background-color: #322C27;
+    border-bottom: thin solid rgb(255, 240, 202);
+}
 
-    #vtta-tokenizer div.section {
-        background-color: #232323;
-        border: thin solid rgb(35, 35, 35);
-    }
+#vtta-tokenizer div.section {
+    background-color: #232323;
+    border: thin solid rgb(35, 35, 35);
+}
 
-    #vtta-tokenizer div.view-layer-control .section,
-    #vtta-tokenizer .section {
-        border: thin solid rgb(35, 35, 35);
-        background-color: #232323;
-    }
+#vtta-tokenizer div.view-layer-control .section,
+#vtta-tokenizer .section {
+    border: thin solid rgb(35, 35, 35);
+    background-color: #232323;
+}
 
-    .app.window-app.randomtarget .target-item label {
-        color: var(--primary-font);
-    }
+.app.window-app.randomtarget .target-item label {
+    color: var(--primary-font);
+}
 
 
 
 
-    /* -------- Damage Log ---------------------------------*/
-    .message.damage-log.healing {
-        background: #1F241C;
-    }
+/* -------- Damage Log ---------------------------------*/
+.message.damage-log.healing {
+    background: #1F241C;
+}
 
-    .message.damage-log.damage {
-        background: #2c1414;
-    }
+.message.damage-log.damage {
+    background: #2c1414;
+}
 
-    .message.damage-log.reverted.damage {
-        background: #2e0736;
-    }
+.message.damage-log.reverted.damage {
+    background: #2e0736;
+}
 
-    .-emu-layout body.-emu #sidebar nav.damage-log-nav.tabs,
-    .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content nav.damage-log-nav.tabs {
-        border-radius: 2px;
-        border-bottom: solid 3px var(--color-border-light-primary);
-    }
+.-emu-layout body.-emu #sidebar nav.damage-log-nav.tabs,
+.-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content nav.damage-log-nav.tabs {
+    border-radius: 2px;
+    border-bottom: solid 3px var(--color-border-light-primary);
+}
 
-    /*----------- Always HP ---------------------------------*/
+/*----------- Always HP ---------------------------------*/
 
-    #always-hp .resource .bar {
-        border: 1px solid solid #000000;
-        border-radius: 1px;
-        background-color: #77CE77;
-    }
+#always-hp .resource .bar {
+    border: 1px solid #000000;
+    border-radius: 1px;
+    background-color: #77CE77;
+}
 
-    #always-hp .window-header .token-stats .stat {
-        border-radius: 1px;
-        color: #000000;
-        background-color: #1C1C1C;
-    }
+#always-hp .window-header .token-stats .stat {
+    border-radius: 1px;
+    color: #000000;
+    background-color: #1C1C1C;
+}
 
-    #always-hp .resource .bar-change {
-        /* display: none; */
-        top: 11px;
-        background: var(--color-background-dunkel-mild);
-    }
+#always-hp .resource .bar-change {
+    /* display: none; */
+    top: 11px;
+    background: var(--color-background-dunkel-mild);
+}
 
-    #always-hp .resource .temp-bar {
-        background-color: var(--color-text-blau);
-        border-radius: 1px;
-    }
+#always-hp .resource .temp-bar {
+    background-color: var(--color-text-blau);
+    border-radius: 1px;
+}
 
-    /*----------- xXxXx ---------------------------------*/
+/*----------- xXxXx ---------------------------------*/
 
-    .death-savingthrow>div {
-        border: 1px solid #DDDDDD;
-        background-color: #000000;
-    }
-
-    .death-savingthrow.save>div.active {
-        border: 1px solid black;
-        background-color: var(--color-text-gruen);
-    }
-
-    .death-savingthrow>div.active {
-        border: 1px solid black;
-        background-color: var(--color-text-rot);
-    }
-
-
-
+.death-savingthrow>div {
+    border: 1px solid #DDDDDD;
+    background-color: #000000;
+}
+
+.death-savingthrow.save>div.active {
+    border: 1px solid black;
+    background-color: var(--color-text-gruen);
+}
+
+.death-savingthrow>div.active {
+    border: 1px solid black;
+    background-color: var(--color-text-rot);
+}
+
+
+
 
-    .dice-tooltip .part-header .part-flavor {
-        color: var(--primary-font);
-    }
-
-
-    body.-emu .window-app {
-        box-shadow: 0 0px 0px rgba(var(--color-black), 1);
-    }
-
-    .item-piles-even-color:nth-child(even) {
-        background-color: #322C27;
-    }
-
-    .item-piles-even-color:nth-child(odd) {
-        background-color: #453B32;
-    }
-
-    /* Anonymous Module---------------------------------*/
-
-    body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.fumble,
-    body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.failure,
-    body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.fumble,
-    body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.failure {
-        background-color: #501515;
-        border-color: var(--color-text-rot);
-    }
-
-
-
-
-    .rsr-dual .dice-row .failure {
-        color: #var(--color-text-rot);
-    }
-
-    .rsr-dual .mixed {
-        color: var(--color-text-rot);
-        font-family: "Calibri Bold", sans-serif;
-        font-weight: bold;
-    }
-
-    .rsr-dual .dice-row .success {
-        color: #77CE77;
-    }
-
-
-
-    input[type="text"],
-    input[type="number"],
-    input[type="password"],
-    input[type="date"],
-    input[type="time"],
-    input[type="search"] {
-        width: calc(100% - 2px);
-        min-width: 20px;
-        height: var(--form-field-height);
-        background: rgba(0, 0, 0, 0.05);
-        padding: 1px 3px;
-        margin: 0;
-        color: var(--color-text-light-2);
-    }
-
-    form button {
-        background: #322C27;
-        border: 1px solid #FFF0CA;
-        color: #FFF0CA;
-    }
-
-    .active-effect-sheet .effect-change .mode select {
-        color: #FFFFFF;
-        width: 100%;
-    }
-
-
-    .tidy5e.sheet.actor .ability-scores .ability .ability-mod,
-    .tidy5e.sheet.actor .ability-scores .ability .ability-save {
-        opacity: 1;
-        border-radius: 1px;
-        background: var(--color-background-dunkel);
-        color: var(--primary-font);
-    }
-
-    .tidy5e.sheet.actor .ability-scores .ability .ability-modifiers {
-        -webkit-box-shadow: 0 0 0 1px var(--tertiary-color);
-        box-shadow: 0 0 0 1px var(--tertiary-color);
-        border-radius: 1px;
-    }
-
-    .tidy5e.sheet.actor .tidy5e-navigation .item.active {
-        background: var(--color-background-dunkel);
-        border: 1px solid var(--color-text-creme);
-        border-bottom-color: transparent;
-        color: var(--color-text-creme);
-    }
-
-       .tidy5e.sheet.actor .tidy5e-header {
-        background-color: var(--color-background-braun);
-    }
-
-
-    body.-emu .dialog .tabs a.active,
-    body.-emu .dialog .sheet-tabs a.active,
-    body.-emu #sidebar .tabs a.active,
-    body.-emu #sidebar .sheet-tabs a.active,
-    body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .tabs a.active,
-    body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .sheet-tabs a.active,
-    body.-emu #module-management .list-filters a.active,
-    body.-emu .dialog button.active,
-    body.-emu #sidebar button.active,
-    body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) button.active,
-    body.-emu #menu #menu-items li.active,
-    body.-emu #sidebar [data-tab="combat"] #combat-controls .active.combat-control,
-    body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-controls .active.combat-control,
-    body.-emu .filepicker.window-app .filepicker-body .filepicker-header .display-modes .active.display-mode,
-    body.-emu .window-app[id*="JournalEntry-"] a.active.editor-edit,
-    body.-emu .active.alwayshp-btn,
-    body.-emu #sidebar #combat .active.add-temporary,
-    body.-emu .sidebar-popout #combat .active.add-temporary,
-    body.-emu #specials-config .fxmaster .directory-header a.active,
-    body.-emu ul.command-menu li.active,
-    body.-emu #token-action-hud button.active.tah-title-button,
-    body.-emu #token-action-hud .tah-action button.active,
-    body.-emu #sidebar .token-mold>label>span.active,
-    body.-emu .sidebar-popout .token-mold>label>span.active,
-    .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header a.active,
-    body.-emu .sheet[id*="activeeffect-sheet-"] .-emu-layout .effects-header a.active,
-    .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards-header a.active,
-    body.-emu .window-app[id*="cards-sheet-"] .-emu-layout .cards-header a.active,
-    .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-header a.active,
-    body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-header a.active,
-    .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active,
-    body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active,
-    .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list li a.active,
-    body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list .-emu-layout li a.active,
-    .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards .card a.active,
-    body.-emu .window-app[id*="cards-sheet-"] .cards .-emu-layout .card a.active,
-    .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result a.active,
-    body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-result a.active,
-    .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active,
-    body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active,
-    body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder,
-    body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-entity,
-    body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-folder,
-    body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-entity,
-    body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item.folder .folder-header .active.create-folder,
-    body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item.folder .folder-header .active.create-entity,
-    body.-emu .dialog .directory .directory-item .active.create-folder,
-    body.-emu .dialog .directory .directory-item .active.create-document,
-    body.-emu #sidebar .directory .directory-item .active.create-folder,
-    body.-emu #sidebar .directory .directory-item .active.create-document,
-    body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item .active.create-folder,
-    body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item .active.create-document,
-    body.-emu #navigation .active#nav-toggle,
-    .-emu-layout body.-emu .window-app .window-header>a.active,
-    .-emu-layout body.-emu .window-app .window-header a.active.header-button,
-    .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .active.button.message-delete,
-    .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .active.button.message-delete,
-    .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-controls .chat-control-icon .active.fa-dice-d20,
-    .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-controls .chat-control-icon .active.fa-dice-d20,
-    .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-controls .control-buttons a.active,
-    .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-controls .control-buttons a.active,
-    body.-emu #sidebar [data-tab="combat"] .combat-tracker-header .encounters a.active,
-    body.-emu #sidebar [data-tab="combat"] .combat-tracker-header .encounter-controls a.active,
-    body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] .combat-tracker-header .encounters a.active,
-    body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] .combat-tracker-header .encounter-controls a.active,
-    body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant .active.combatant-control,
-    body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant .active.combatant-control,
-    body.-emu #sidebar [data-tab="playlists"] .directory-list .playlist-header .sound-controls .active.sound-control,
-    body.-emu #sidebar [data-tab="playlists"] .directory-list .sound .sound-controls .active.sound-control,
-    body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] .directory-list .playlist-header .sound-controls .active.sound-control,
-    body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] .directory-list .sound .sound-controls .active.sound-control,
-    body.-emu #sidebar [data-tab="playlists"] #currently-playing .sound .active.sound-control,
-    body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] #currently-playing .sound .active.sound-control,
-    body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button.active,
-    body.-emu #sidebar [data-tab="chat"] #chat-log .chat-message .chat-card .die-result-overlay-br button.active,
-    body.-emu #dfcp-rt-buttons button.active,
-    body.-emu #specials-config .fxmaster .special-effects .controls a.active,
-    body.-emu div.permission-viewer a.active,
-    body.-emu #smalltime-app #displayContainer .active.arrow,
-    body.-emu #token-action-hud .active#tah-reposition,
-    body.-emu #token-action-hud .active#tah-categories,
-    body.-emu #sidebar .token-mold>a.active,
-    body.-emu .sidebar-popout .token-mold>a.active,
-    body.-emu #sidebar .sidebar-tab .directory-header .active.header-control,
-    body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control,
-    body.-emu .dialog .tox .tox-tbtn.tox-tbtn--enabled,
-    body.-emu #sidebar .tox .tox-tbtn.tox-tbtn--enabled,
-    body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .tox .tox-tbtn.tox-tbtn--enabled,
-    body.-emu #hotbar .macro.active,
-    body.-emu #hud .control-icon.active,
-    body.-emu #controls .control-tools .scene-control.active,
-    body.-emu #controls .control-tools .control-tool.active,
-    body.-emu #controls .control-tools .control-tool.toggle.active,
-    body.-emu #navigation #scene-list .scene.active,
-    body.-emu #navigation #scene-list .scene.view,
-    body.-emu #navigation #scene-list .scene.active:not(.gm),
-    body.-emu #navigation #scene-list .scene.view:not(.gm),
-    body.-emu #sidebar #sidebar-tabs>.item.active,
-    body.-emu #sidebar #sidebar-tabs>.collapse.active,
-    body.-emu .sidebar-popout #sidebar-tabs>.item.active,
-    body.-emu .sidebar-popout #sidebar-tabs>.collapse.active,
-    .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock,
-    .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock,
-    body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.active,
-    body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.active,
-    body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy,
-    body.-emu #df-curvy-walls-tools .control-tool.active,
-    body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
-                text-shadow: none;
-                border: 1px solid var(--color-text-creme);
-    }
+.dice-tooltip .part-header .part-flavor {
+    color: var(--primary-font);
+}
+
+
+body.-emu .window-app {
+    box-shadow: 0 0px 0px rgba(var(--color-black), 1);
+}
+
+.item-piles-even-color:nth-child(even) {
+    background-color: #322C27;
+}
+
+.item-piles-even-color:nth-child(odd) {
+    background-color: #453B32;
+}
+
+/* Anonymous Module---------------------------------*/
+
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.fumble,
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.failure,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.fumble,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.failure {
+    background-color: #501515;
+    border-color: var(--color-text-rot);
+}
+
+
+
+
+.rsr-dual .dice-row .failure {
+    color: #var(--color-text-rot);
+}
+
+.rsr-dual .mixed {
+    color: var(--color-text-rot);
+    font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
+}
+
+.rsr-dual .dice-row .success {
+    color: #77CE77;
+}
+
+
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="search"] {
+    width: calc(100% - 2px);
+    min-width: 20px;
+    height: var(--form-field-height);
+    background: rgba(0, 0, 0, 0.05);
+    padding: 1px 3px;
+    margin: 0;
+    color: var(--color-text-light-2);
+}
+
+form button {
+    background: #322C27;
+    border: 1px solid #FFF0CA;
+    color: #FFF0CA;
+}
+
+.active-effect-sheet .effect-change .mode select {
+    color: #FFFFFF;
+    width: 100%;
+}
+
+
+.tidy5e.sheet.actor .ability-scores .ability .ability-mod,
+.tidy5e.sheet.actor .ability-scores .ability .ability-save {
+    opacity: 1;
+    border-radius: 1px;
+    background: var(--color-background-dunkel);
+    color: var(--primary-font);
+}
+
+.tidy5e.sheet.actor .ability-scores .ability .ability-modifiers {
+    -webkit-box-shadow: 0 0 0 1px var(--tertiary-color);
+    box-shadow: 0 0 0 1px var(--tertiary-color);
+    border-radius: 1px;
+}
+
+.tidy5e.sheet.actor .tidy5e-navigation .item.active {
+    background: var(--color-background-dunkel);
+    border: 1px solid var(--color-text-creme);
+    border-bottom-color: transparent;
+    color: var(--color-text-creme);
+}
+
+.tidy5e.sheet.actor .tidy5e-header {
+    background-color: var(--color-background-braun);
+}
+
+
+body.-emu .dialog .tabs a.active,
+body.-emu .dialog .sheet-tabs a.active,
+body.-emu #sidebar .tabs a.active,
+body.-emu #sidebar .sheet-tabs a.active,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .tabs a.active,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .sheet-tabs a.active,
+body.-emu #module-management .list-filters a.active,
+body.-emu .dialog button.active,
+body.-emu #sidebar button.active,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) button.active,
+body.-emu #menu #menu-items li.active,
+body.-emu #sidebar [data-tab="combat"] #combat-controls .active.combat-control,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-controls .active.combat-control,
+body.-emu .filepicker.window-app .filepicker-body .filepicker-header .display-modes .active.display-mode,
+body.-emu .window-app[id*="JournalEntry-"] a.active.editor-edit,
+body.-emu .active.alwayshp-btn,
+body.-emu #sidebar #combat .active.add-temporary,
+body.-emu .sidebar-popout #combat .active.add-temporary,
+body.-emu #specials-config .fxmaster .directory-header a.active,
+body.-emu ul.command-menu li.active,
+body.-emu #token-action-hud button.active.tah-title-button,
+body.-emu #token-action-hud .tah-action button.active,
+body.-emu #sidebar .token-mold>label>span.active,
+body.-emu .sidebar-popout .token-mold>label>span.active,
+.-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header a.active,
+body.-emu .sheet[id*="activeeffect-sheet-"] .-emu-layout .effects-header a.active,
+.-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards-header a.active,
+body.-emu .window-app[id*="cards-sheet-"] .-emu-layout .cards-header a.active,
+.-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-header a.active,
+body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-header a.active,
+.-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active,
+body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active,
+.-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list li a.active,
+body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list .-emu-layout li a.active,
+.-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards .card a.active,
+body.-emu .window-app[id*="cards-sheet-"] .cards .-emu-layout .card a.active,
+.-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result a.active,
+body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-result a.active,
+.-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active,
+body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active,
+body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder,
+body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-entity,
+body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-folder,
+body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-entity,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item.folder .folder-header .active.create-folder,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item.folder .folder-header .active.create-entity,
+body.-emu .dialog .directory .directory-item .active.create-folder,
+body.-emu .dialog .directory .directory-item .active.create-document,
+body.-emu #sidebar .directory .directory-item .active.create-folder,
+body.-emu #sidebar .directory .directory-item .active.create-document,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item .active.create-folder,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item .active.create-document,
+body.-emu #navigation .active#nav-toggle,
+.-emu-layout body.-emu .window-app .window-header>a.active,
+.-emu-layout body.-emu .window-app .window-header a.active.header-button,
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .active.button.message-delete,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .active.button.message-delete,
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-controls .chat-control-icon .active.fa-dice-d20,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-controls .chat-control-icon .active.fa-dice-d20,
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-controls .control-buttons a.active,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-controls .control-buttons a.active,
+body.-emu #sidebar [data-tab="combat"] .combat-tracker-header .encounters a.active,
+body.-emu #sidebar [data-tab="combat"] .combat-tracker-header .encounter-controls a.active,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] .combat-tracker-header .encounters a.active,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] .combat-tracker-header .encounter-controls a.active,
+body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant .active.combatant-control,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant .active.combatant-control,
+body.-emu #sidebar [data-tab="playlists"] .directory-list .playlist-header .sound-controls .active.sound-control,
+body.-emu #sidebar [data-tab="playlists"] .directory-list .sound .sound-controls .active.sound-control,
+body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] .directory-list .playlist-header .sound-controls .active.sound-control,
+body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] .directory-list .sound .sound-controls .active.sound-control,
+body.-emu #sidebar [data-tab="playlists"] #currently-playing .sound .active.sound-control,
+body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] #currently-playing .sound .active.sound-control,
+body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button.active,
+body.-emu #sidebar [data-tab="chat"] #chat-log .chat-message .chat-card .die-result-overlay-br button.active,
+body.-emu #dfcp-rt-buttons button.active,
+body.-emu #specials-config .fxmaster .special-effects .controls a.active,
+body.-emu div.permission-viewer a.active,
+body.-emu #smalltime-app #displayContainer .active.arrow,
+body.-emu #token-action-hud .active#tah-reposition,
+body.-emu #token-action-hud .active#tah-categories,
+body.-emu #sidebar .token-mold>a.active,
+body.-emu .sidebar-popout .token-mold>a.active,
+body.-emu #sidebar .sidebar-tab .directory-header .active.header-control,
+body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control,
+body.-emu .dialog .tox .tox-tbtn.tox-tbtn--enabled,
+body.-emu #sidebar .tox .tox-tbtn.tox-tbtn--enabled,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .tox .tox-tbtn.tox-tbtn--enabled,
+body.-emu #hotbar .macro.active,
+body.-emu #hud .control-icon.active,
+body.-emu #controls .control-tools .scene-control.active,
+body.-emu #controls .control-tools .control-tool.active,
+body.-emu #controls .control-tools .control-tool.toggle.active,
+body.-emu #navigation #scene-list .scene.active,
+body.-emu #navigation #scene-list .scene.view,
+body.-emu #navigation #scene-list .scene.active:not(.gm),
+body.-emu #navigation #scene-list .scene.view:not(.gm),
+body.-emu #sidebar #sidebar-tabs>.item.active,
+body.-emu #sidebar #sidebar-tabs>.collapse.active,
+body.-emu .sidebar-popout #sidebar-tabs>.item.active,
+body.-emu .sidebar-popout #sidebar-tabs>.collapse.active,
+.-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock,
+.-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock,
+body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.active,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.active,
+body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy,
+body.-emu #df-curvy-walls-tools .control-tool.active,
+body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
+    text-shadow: none;
+    border: 1px solid var(--color-text-creme);
+}
 
 .-emu-layout body.-emu #controls .control-tools .control-tool,
 .-emu-layout body.-emu #controls .control-tools .scene-control {
@@ -2523,21 +2087,6 @@ nav.damage-log-nav.tabs {
 .chat-message .message-header {
     line-height: 20px;
     color: #FFF0CA;
-}
-
-/*--------------------------------- DFreds Chat Pins ---------------------------------*/
-.chat-message.whisper {
-    background: var(--color-background-dunkel-mild);
-    border: 2px solid #F3D876;
-}
-
-.dice-roll .dice-formula,
-.dice-roll .dice-total {
-    background: var(--color-background-dunkel);
-    border: 1px solid var(--color-border-light-primary);
-    border-radius: 3px;
-    box-shadow: none;
-    word-break: break-all;
 }
 
 
