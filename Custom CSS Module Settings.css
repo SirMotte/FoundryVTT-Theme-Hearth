@@ -82,9 +82,13 @@
 
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-header {
-    background-color: var(--background);
+    background-color: var(--header-background);
     color: var(--primary-font);
     border-radius: 2px;
+}
+
+body.-emu #sidebar [data-tab=chat] #chat-log .message .flavor-text, body.-emu #sidebar [data-tab=chat] #chat-log .message .whisper-to, body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .flavor-text, body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .whisper-to {
+    background: var(--color-background-dunkel);
 }
 
 body.-emu .window-app .window-header {
@@ -707,7 +711,7 @@ body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) a[href] {
 
 body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active,
 body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active {
-    background-color: red;
+    background-color: var(--color-text-gelb);
     color: black;
 }
 
@@ -732,8 +736,8 @@ body.-emu #sidebar [data-tab="chat"] #chat-log .message,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message {
 
     background-image: var(--emu-image-background-light, none);
-    border-top: 3px solid var(--color-border-light-primary);
-    border-bottom: 3px solid var(--color-border-light-primary);
+    border-top: 8px solid var(--color-border-light-primary);
+    border-bottom: 1px solid var(--color-border-light-primary);
     border-radius: 5px;
     border-style: solid;
     color: var(--primary-font);
@@ -879,36 +883,6 @@ body.-emu #hud .control-icon {
     box-shadow: none;
     color: var(--color-text-creme);
 }
-
-body.-emu .dialog a[href],
-body.-emu #sidebar a[href],
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) a[href] {
-    color: #7ED8FF;
-    text-decoration: none;
-    text-shadow: none;
-}
-
-body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active,
-body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active {
-    background-color: red;
-    color: black;
-}
-
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer,
-.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer {
-    color: var(--color-text-rot);
-}
-
-.-emu-layout body.-emu .dialog p,
-.-emu-layout body.-emu #sidebar p,
-.-emu-layout body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) p {
-    background: var(--color-background-dunkel-mild);
-}
-
-aside.rules-text {
-    color: #DDDDDD;
-}
-
 
 h1,
 h2,
@@ -1387,7 +1361,7 @@ aside.read-aloud-text {
 /*--------------------------------- Simple Weather ---------------------------------*/
 
 #weather-app #rightHandle {
-    background: url(../images/denim-dark-090.webp) repeat;
+    background: var(--color-background-dunkel-mild);
     background-color: var(--color-background-dunkel-mild);
 }
 
@@ -1415,7 +1389,7 @@ aside.read-aloud-text {
 }
 
 
-/* ---------------------------------Monk's Common Display ---------------------------------*/
+/* --------------------------------- Monk's Common Display ---------------------------------*/
 #common-display-toolbar .common-display-button.toggle {
     background: var(--color-background-dunkel);
     border: 1px solid #F2AB76;
