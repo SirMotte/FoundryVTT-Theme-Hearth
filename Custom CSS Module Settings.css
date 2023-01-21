@@ -673,7 +673,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-border-light-primary);
+    background-color: var(--color-text-creme);
     border-radius: 2px;
     outline: 0;
 }
@@ -711,8 +711,8 @@ body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) a[href] {
 
 body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active,
 body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.defeated.active .combatant-control.active {
-    background-color: var(--color-text-gelb);
-    color: black;
+    background-color: var(--color-background-dunkel);
+    color: var(--primary-font);
 }
 
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer,
@@ -736,7 +736,7 @@ body.-emu #sidebar [data-tab="chat"] #chat-log .message,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message {
 
     background-image: var(--emu-image-background-light, none);
-    border-top: 8px solid var(--color-border-light-primary);
+    border-top: 7px solid var(--color-border-light-primary);
     border-bottom: 1px solid var(--color-border-light-primary);
     border-radius: 5px;
     border-style: solid;
@@ -860,6 +860,11 @@ h3 {
 .chat-message.whisper {
     background: var(--color-background-dunkel-mild);
     border: 2px solid #F3D876;
+}
+
+.-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) .window-content .chat-message {
+    border-radius: 3px;
+    background: var(--color-background-dunkel);
 }
 
 .dice-roll .dice-formula,
@@ -2018,6 +2023,7 @@ nav.damage-log-nav.tabs {
 
 .chat-message {
     color: var(--primary-font);
+    background-color: var(--color-background-dunkel-mild);
 }
 
 .chat-message .table-draw .table-description {
