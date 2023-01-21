@@ -72,6 +72,8 @@
     color: var(--primary-font);
 }
 
+/* Midi Qol */
+
 
 /* -------------------- DnD 5E Ruleset -------------------- */
 .dnd5e.chat-card {
@@ -868,45 +870,6 @@ h3 {
 /*--------------------------------- Deadly Encounter Benchmark ---------------------------------*/
 .isdeadly-backgroundClear {
     background-color: #ffffff00;
-}
-
-/* -------------------- Ernie's Modern UI ---------------------------------*/
-body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
-body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success,
-body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
-body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success {
-    background-color: #1F241C;
-    border-color: 1px solid #77CE77;
-    color: var(--primary-font);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--color-border-light-primary);
-    border-radius: 2px;
-    outline: 0;
-}
-
-body.-emu .window-app {
-    border: 3px double RGB(var(--emu-color-border, 33, 50, 52));
-}
-
-.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-metadata,
-.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-sender,
-.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-metadata,
-.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .message-sender {
-    color: var(--color-text-gruen);
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
-.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-formula {
-    background-color: var(--color-background-dunkel);
-}
-
-
-.-emu-layout body.-emu #hud input[type="text"] {
-    color: var(--color-text-creme);
 }
 
 body.-emu #hud .control-icon {
