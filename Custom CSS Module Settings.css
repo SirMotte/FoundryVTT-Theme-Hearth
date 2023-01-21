@@ -30,7 +30,7 @@
     --tertiary-color: #DDDDDD;
     --secondary-color: #DDDDDD;
     --faint-color: #322C27;
-    --header-background: #232323;
+    --header-background: #412b29;
     --primary-font: #DDDDDD;
     --primary-accent: #FF913F;
     --prepared: #322a1a;
@@ -83,6 +83,11 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     background-color: var(--background);
     color: var(--primary-font);
     border-radius: 2px;
+}
+
+body.-emu .window-app .window-header {
+    background: var(--header-background);
+    color: var(--primary-font);
 }
 
 .rsr5e-roll-label {
@@ -213,6 +218,10 @@ p::selection {
 
 /*--------------------------------- Tidy 5E Sheet ---------------------------------*/
 /*This first part overwrites color settings within Tidy 5E Sheet on a more global scale*/
+.tidy5eDark .tidy5e.sheet.actor .tidy5e-sheet {
+    background: var(--color-background-dunkel);
+}
+
 .tidy5e.sheet.actor .traits .configure-flags {
     border: 1px solid var(--faint-color);
     border-radius: 0 0 2px 2px;
@@ -1263,78 +1272,7 @@ h3 {
         color: var(--color-text-gruen);
     }
 
-    .tidy5e.sheet.actor .portrait-temp input {
-        color: #DDDDDD
-    }
-
-    .tidy5e.sheet.actor.npc .unlinked .link-state.fa-unlink {
-        background: #501515;
-    }
-
-    .tidy5e.sheet.actor .origin-summary .proficiency {
-        color: var(--color-text-tuerkis);
-    }
-
-    .tidy5e.sheet.actor .spell-component.C,
-    .tidy5e.sheet.actor .spell-component.R {
-        background: var(--color-text-blau);
-        border-radius: 1px;
-        color: #000000;
-    }
-
-    .tidy5e.sheet.actor .list-layout .items-list .items-footer a {
-        color: var(--secondary-color);
-        border-radius: 1px;
-    }
-
-    .tidy5e.sheet.actor .xp-bar-total {
-        width: 100%;
-        height: 5px;
-        border: 1px solid var(--color-background-dunkel-mild);
-        border-radius: 1px;
-        background: var(--color-background-dunkel);
-    }
-
-    .tidy5e.sheet.actor .items-list .items-header .spellSlotMarker .dot {
-        border: 1px solid var(--color-background-dunkel);
-    }
-
-    .tidy5e.sheet.actor .class-list {
-        color: #A8B6FF;
-    }
-
-    /*Item Sheet*/
-    .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group select,
-    .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group input[type=text],
-    .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group button,
-    .tidy5e.sheet.item .sheet-body .tab.details .form-group select,
-    .tidy5e.sheet.item .sheet-body .tab.details .form-group input[type=text],
-    .tidy5e.sheet.item .sheet-body .tab.details .form-group button,
-    .tidy5e.sheet.item .sheet-body .tab.advancement .form-group select,
-    .tidy5e.sheet.item .sheet-body .tab.advancement .form-group input[type=text],
-    .tidy5e.sheet.item .sheet-body .tab.advancement .form-group button,
-    .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group select,
-    .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group input[type=text],
-    .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group button,
-    .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group select,
-    .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group input[type=text],
-    .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group button {
-        background: var(--color-background-dunkel);
-        height: 20px;
-        font-size: 13px;
-    }
-
-
-    /*Checkboxes*/
-    .tidy5e.sheet.item .sheet-body .tab.item-betterRolls .form-group label.checkbox,
-    .tidy5e.sheet.item .sheet-body .tab.details .form-group label.checkbox,
-    .tidy5e.sheet.item .sheet-body .tab.advancement .form-group label.checkbox,
-    .tidy5e.sheet.item .sheet-body .tab.dynamiceffects .form-group label.checkbox,
-    .tidy5e.sheet.item .sheet-body .tab.magic-items .form-group label.checkbox {
-        border-radius: 1px;
-    }
-
-    /*--------------------------------- TDFreds Chat Pins ---------------------------------*/
+     /*--------------------------------- TDFreds Chat Pins ---------------------------------*/
     .chat-message.whisper {
         background: var(--color-background-dunkel-mild);
         border: 2px solid #F3D876;
@@ -1390,6 +1328,14 @@ h3 {
 
 
     .-emu-layout body.-emu #hud input[type="text"] {
+        color: var(--color-text-creme);
+    }
+
+    body.-emu #hud .control-icon {
+        background-color: var(--color-background-braun);
+        background-image: none;
+        border: 1px solid var(--color-border-light-primary);
+        box-shadow: none;
         color: var(--color-text-creme);
     }
 
@@ -1761,17 +1707,13 @@ h3 {
     }
 
     .tidy5e.sheet.actor .tidy5e-navigation .item.active {
-        background: var(--background);
+        background: var(--color-background-dunkel);
         border: 1px solid var(--color-text-creme);
         border-bottom-color: transparent;
         color: var(--color-text-creme);
     }
 
-    .tidy5eDark .tidy5e.sheet.actor .tidy5e-sheet {
-        background: var(--background);
-    }
-
-    .tidy5e.sheet.actor .tidy5e-header {
+       .tidy5e.sheet.actor .tidy5e-header {
         background-color: var(--color-background-braun);
     }
 
@@ -1885,7 +1827,7 @@ h3 {
     body.-emu #df-curvy-walls-tools .control-tool.active,
     body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
                 text-shadow: none;
-                border-bottom: 1px solid var(--color-text-creme);
+                border: 1px solid var(--color-text-creme);
     }
 
 .-emu-layout body.-emu #controls .control-tools .control-tool,
