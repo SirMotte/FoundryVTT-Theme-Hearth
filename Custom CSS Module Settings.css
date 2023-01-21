@@ -1487,6 +1487,12 @@ nav.damage-log-nav.tabs {
     color: var(--primary-font);
 }
 
+.action-pack__item .item-summary .item-properties .tag {
+    background: var(--color-background-braun);
+    color: var(--primary-font);
+    border-radius: 2px;
+}
+
 .action-pack__container h2 {
     background-color: #322C27;
     border: 1px solid #6C5848;
