@@ -1,3 +1,4 @@
+:host,
 /* Custom CSS */
 /*HEAVY WIP, sorting not complete. Add these entrys into the Custom CSS Rules Sheet - Only works well in tandem with Ernie's Modern UI - Please See the Readme!/
 
@@ -796,83 +797,8 @@ h3 {
     white-space: nowrap;
 }
 
-:host,
-:root {
-    --modesto: "Calibri", sans-serif;
-    --modesto-condensed:
-        --signika: "Calibri", sans-serif;
-    --font-primary: "Calibri", sans-serif;
-    --font-mono: "Calibri", sans-serif;
-    --font-awesome: "Calibri", sans-serif;
-    --palatino-Linotype: "Calibri", sans-serif;
-    --t5e-modesto:
 
-    /* Custom CSS */
-    /*HEAVY WIP, sorting not complete. Add these entrys into the Custom CSS Rules Sheet - Only works well in tandem with Ernie's Modern UI - Please See the Readme!/
-    
-    /*Here I either define or overwrite root color settings that stem from baseline Foundry*/
-    .root {
-        --sidebar-width: 270px;
-    }
 
-    .system-dnd5e {
-        --color-text-creme: #FFF0CA;
-        --color-background-braun: #322C27;
-        --color-background-dunkel: #1C1C1C;
-        --color-background-dunkel-mild: #232323;
-        --color-text-gruen: #77CE77;
-        --color-text-blau: #69B7FF;
-        --color-text-rot: #fa8f8f;
-        --color-text-gelb: #F3D876;
-        --background: #232323;
-        --color-text-tuerkis: #8CFFFF;
-        --color-orange: #F2AB76;
-        --color-dunkelrot: #501515;
-        --color-dunkelrot-dunkler: #241C1C;
-        --color-dunkelgruen: #1F241C;
-        --color-dunkellila: #23182F;
-        --color-border-light-primary: #6C5848;
-        --color-dunkelblau: #191E21;
-        --primary-font: #DDDDDD;
-        --tertiary-color: #DDDDDD;
-        --secondary-color: #DDDDDD;
-        --faint-color: #322C27;
-        --header-background: #232323;
-        --primary-font: #DDDDDD;
-        --primary-accent: #FF913F;
-        --prepared: #322a1a;
-        --t5e-primary-font: #DDDDDD;
-    }
-
-    .system-dnd5e.tidy5eDark {
-        --tertiary-color: #DDDDDD;
-        --light-color: #6C5848;
-        --prepared: #153013;
-        --always-prepared-outline: #F3D876;
-        --always-prepared-accent: #F3D876;
-        --always-prepared: #1f321a;
-        --exhaustion-font: #DDDDDD;
-        --encumbrance-bar: #501515;
-        --encumbrance-bar-outline: #501515;
-        --note-background: #232323;
-        --xp-bar: #77CE77;
-        --prepared-outline: #2D842D;
-        --attunement-required: #FF5555;
-        --icon-attuned: #77CE77;
-        --encumbrance-outline: #000000;
-        --warning-accent: #FF6161;
-        --exhaustion-lvl1: #504A15;
-        --exhaustion-lvl2: #503815;
-        --exhaustion-lvl3: #501515;
-        --safe-accent: #FF913F;
-        --unsafe-accent: #501515;
-        --prepareable: #232323;
-        --faintest-color: #232323;
-        --checkbox-font: #DDDDDD;
-        --checkbox-checked: #274714;
-        --icon-outline: #000000;
-        --icon-font: #000000;
-    }
 
     .prosemirror.editing-source textarea {
         color: var(--primary-font);
@@ -1643,7 +1569,7 @@ h3 {
         color: var(--primary-font);
     }
 
-  
+
 
 
     /* -------- Damage Log ---------------------------------*/
@@ -1719,28 +1645,6 @@ h3 {
         box-shadow: 0 0px 0px rgba(var(--color-black), 1);
     }
 
-    .action-pack__container {
-        background: #232323;
-        border: 1px solid #6C5848;
-        transition: bottom 0.0s;
-        color: var(--primary-font);
-    }
-
-    .action-pack__container h2 {
-        background-color: #322C27;
-        border: 1px solid #6C5848;
-        border-radius: 1px;
-        font-family: "Calibri Bold", sans-serif;
-        font-weight: bold;
-        font-size: var(--font-size-17px);
-    }
-
-    .action-pack__container h1 {
-        font-family: "Calibri Black", sans-serif;
-        color: var(--primary-font);
-        font-size: var(--font-size-17px);
-    }
-
     .item-piles-even-color:nth-child(even) {
         background-color: #322C27;
     }
@@ -1763,7 +1667,7 @@ h3 {
 
 
     .rsr-dual .dice-row .failure {
-        color: #FF6161;
+        color: #var(--color-text-rot);
     }
 
     .rsr-dual .mixed {
@@ -2074,6 +1978,35 @@ nav.damage-log-nav.tabs {
     color: var(--primary-font);
 }
 
+.action-pack__container {
+    background: #232323;
+    border: 3px double #6C5848;
+    transition: bottom 0.0s;
+    color: var(--primary-font);
+}
+
+.action-pack__container h2 {
+    background-color: #322C27;
+    border: 1px solid #6C5848;
+    border-radius: 1px;
+    font-family: "Calibri Bold", sans-serif;
+    font-weight: bold;
+    font-size: var(--font-size-17px);
+}
+
+.action-pack__container h1 {
+    font-family: "Calibri Black", sans-serif;
+    color: var(--primary-font);
+    font-size: var(--font-size-17px);
+}
+
+.action-pack__initiative {
+    background-color: var(--color-background-braun);
+    border: 1px solid var(--color-text-gelb);
+    border-radius: 2px;
+    color: var(--color-text-creme);
+    box-shadow: none;
+}
 
 /*--------------------------------- Item Piles ---------------------------- */
 
@@ -2129,18 +2062,18 @@ nav.damage-log-nav.tabs {
 .fa-times:before,
 .fa-xmark:before {
     content: "\f00d";
-    color: #FF6161;
+    color: var(--color-text-rot);
 }
 
-    .fa-skull:before {
-        content: "\f54c";
-        color: var(--color-text-creme);
-    }
+.fa-skull:before {
+    content: "\f54c";
+    color: white;
+}
 
 .fa-angle-double-down:before,
 .fa-angles-down:before {
     content: "\f103";
-    color: #FF6161;
+    color: var(--color-text-rot);
 }
 
 .fa-angle-double-up:before,
@@ -2584,7 +2517,6 @@ nav.damage-log-nav.tabs {
     --font-primary: "Calibri", sans-serif;
     --font-mono: "Calibri", sans-serif;
     --font-awesome: "Calibri", sans-serif;
-
 }
 
 .system-dnd5e {
@@ -2601,42 +2533,6 @@ nav.damage-log-nav.tabs {
     color: var(--primary-font);
 }
 
-.tidy5e.sheet.item .sheet-header .summary li {
-    font-weight: 400;
-}
-
-.monks-tokenbar .sheet .items-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    color: var(--primary-font);
-}
-
-#vtta-tokenizer div.menu {
-    background-color: #322C27;
-}
-
-#vtta-tokenizer div.view-layer-control {
-    background-color: #322C27;
-    border-bottom: thin solid rgb(255, 240, 202);
-}
-
-#vtta-tokenizer div.section {
-    background-color: #232323;
-    border: thin solid rgb(35, 35, 35);
-}
-
-#vtta-tokenizer div.view-layer-control .section,
-#vtta-tokenizer .section {
-    border: thin solid rgb(35, 35, 35);
-    background-color: #232323;
-}
-
-.app.window-app.randomtarget .target-item label {
-    color: var(--primary-font);
-}
 
 .chat-message {
     color: var(--primary-font);
@@ -2654,8 +2550,8 @@ nav.damage-log-nav.tabs {
     color: #FFF0CA;
 }
 
- /*--------------------------------- TDFreds Chat Pins ---------------------------------*/
- .chat-message.whisper {
+/*--------------------------------- DFreds Chat Pins ---------------------------------*/
+.chat-message.whisper {
     background: var(--color-background-dunkel-mild);
     border: 2px solid #F3D876;
 }
@@ -2670,20 +2566,26 @@ nav.damage-log-nav.tabs {
 }
 
 
-    /*---------- Token Bar ---------------------------------*/
-    #tokenbar .bar-controls {
-        margin: 0 2px;
-        text-align: center;
-        color: #c9c7b8;
-        background: #322C27;
-        border: 3px double #6C5848;
-        box-shadow: none;
-        border-radius: 1px;
-    }
+/*---------- Token Bar ---------------------------------*/
+#tokenbar .bar-controls {
+    margin: 0 2px;
+    text-align: center;
+    color: #c9c7b8;
+    background: #322C27;
+    border: 3px double #6C5848;
+    box-shadow: none;
+    border-radius: 1px;
+}
 
-    #tokenbar .token {
-        border: 3px double #6C5848;
-        border-radius: 1px;
-        background: var(--color-background-braun);
-        box-shadow: none;
-    }
+#tokenbar .token {
+    border: 3px double #6C5848;
+    border-radius: 1px;
+    background: var(--color-background-braun);
+    box-shadow: none;
+}
+
+.-emu-layout body.-emu #sidebar {
+    border-radius: var(--emu-border-radius-default, 0) 0 0 var(--emu-border-radius-default, 0);
+    position: relative;
+    border: 3px double var(--color-border-light-primary)
+}
