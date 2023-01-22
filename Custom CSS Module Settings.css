@@ -1163,6 +1163,10 @@ body.-emu .window-app {
 }
 
 
+.-emu-layout body.-emu #module-management .package-list {
+    border-bottom: 1px solid var(--color-border-light-primary);
+}
+
 
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.fumble,
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.failure,
@@ -1174,12 +1178,12 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 
 
 .rsr-dual .dice-row .failure {
-    color: #var(--color-text-rot);
+    color: var(--color-text-rot);
 }
 
 .rsr-dual .mixed {
     color: var(--color-text-rot);
-    font-family: "Calibri Bold", sans-serif;
+    font-family: "Calibri", sans-serif;
     font-weight: bold;
 }
 
