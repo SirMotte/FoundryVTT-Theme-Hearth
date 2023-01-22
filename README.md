@@ -29,11 +29,12 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Small Weather](https://github.com/LeafWulf/smallweather)
 - [Deadly Encounter Benchmark](https://github.com/snshatto/deadly-encounter-benchmark)
 - [DFreds Chat Pins](https://github.com/DFreds/dfreds-chat-pins)
+- [Token Notes](https://wiki.theripper93.com/premium/token-notes)
 - A lot of Modules don't require dedicated support, try it out.
 
 ## Known Issues:
-- Some areas of certain UI elements are hard to read or messed up. This is mostly caused by Ernie's Modern UI that will be resolved at some point. A lot needs to be done.
 - Modules that alter UI elements can potentially cause UI issues.
+- It's impossible for me to test all modules. If you come across readbility issues, contact me.
 
 ## Installation Instructions and Set-Up
 

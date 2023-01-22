@@ -72,6 +72,26 @@
     color: var(--primary-font);
 }
 
+/* Token Notes*/
+
+.token-notes-container input, .token-notes-container textarea {
+    color: var(--primary-font);
+}
+textarea {
+    width: 100%;
+    min-height: 50px;
+    padding: 5px;
+    background: #322c27;
+    border: 3px double var(--color-border-light-primary);
+    border-radius: 2px;
+    font-family: "Calibri", sans-serif;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+
 /* Midi Qol */
 
 
@@ -672,6 +692,14 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     color: var(--primary-font);
 }
 
+body.-emu .package-configuration .categories .scrollable, body.-emu .package-configuration .categories footer {
+    border-left: 1px solid var(--color-border-light-primary);
+}
+
+body.-emu .package-configuration .categories footer {
+    border-top: 1px solid var(--color-border-light-primary);
+}
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--color-text-creme);
     border-radius: 2px;
@@ -1134,15 +1162,7 @@ body.-emu .window-app {
     box-shadow: 0 0px 0px rgba(var(--color-black), 1);
 }
 
-.item-piles-even-color:nth-child(even) {
-    background-color: #322C27;
-}
 
-.item-piles-even-color:nth-child(odd) {
-    background-color: #453B32;
-}
-
-/* Anonymous Module---------------------------------*/
 
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.fumble,
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.failure,
@@ -1151,8 +1171,6 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     background-color: #501515;
     border-color: var(--color-text-rot);
 }
-
-
 
 
 .rsr-dual .dice-row .failure {
@@ -1364,6 +1382,11 @@ aside.read-aloud-text {
 }
 
 /*--------------------------------- Simple Weather ---------------------------------*/
+#smalltime-app .window-content {
+    border-radius: 2px;
+    border: 3px double var(--color-border-light-primary);
+}
+
 
 #weather-app #rightHandle {
     background: var(--color-background-dunkel-mild);
@@ -1376,23 +1399,26 @@ aside.read-aloud-text {
 #configWeather {
     font-family: "Calibri Bold", sans-serif;
     font-weight: bold;
-
     color: var(--primary-font);
-    text-shadow: 0px 0px 0px rgb(0 0 0 / 50%);
+    text-shadow: none;
 }
 
 #weather-app #displayContainer-weatherapp {
     background: #322C27;
+    left: -3px;
+    border-top: 3px double var(--color-border-light-primary);
+    border-right: 3px double var(--color-border-light-primary);
+    border-bottom: 3px double var(--color-border-light-primary);
     font-family: "Calibri Bold", sans-serif;
     font-weight: bold;
-    border-radius: 1px;
+    border-radius: 2px;
     box-shadow: none;
+    top: -3px;
 }
 
 #weather-app #current-temp {
     color: #FFF0CA;
 }
-
 
 /* --------------------------------- Monk's Common Display ---------------------------------*/
 #common-display-toolbar .common-display-button.toggle {
@@ -1520,6 +1546,14 @@ nav.damage-log-nav.tabs {
 
 .item-piles-chat-card li:nth-child(odd) {
     background-color: var(--color-background-dunkel);
+}
+
+.item-piles-even-color:nth-child(even) {
+    background-color: #322C27;
+}
+
+.item-piles-even-color:nth-child(odd) {
+    background-color: #453B32;
 }
 
 /*--------------------------------- Icons --------------------------------- */
