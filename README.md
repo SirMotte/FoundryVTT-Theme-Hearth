@@ -30,11 +30,14 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Deadly Encounter Benchmark](https://github.com/snshatto/deadly-encounter-benchmark)
 - [DFreds Chat Pins](https://github.com/DFreds/dfreds-chat-pins)
 - [Token Notes](https://wiki.theripper93.com/premium/token-notes)
+- [Token Info Icons](https://github.com/jopeek/fvtt-token-info-icons)
 - A lot of Modules don't require dedicated support, try it out.
 
 ## Known Issues:
 - Modules that alter UI elements can potentially cause UI issues.
 - It's impossible for me to test all modules. If you come across readbility issues, contact me.
+- [Module Management +](https://github.com/mouse0270/module-credits): Export Window is barely readable. Can't figure out how to fix this (<-CSS Noob)
+
 
 ## Installation Instructions and Set-Up
 

@@ -99,7 +99,7 @@ textarea {
 
 /* -------------------- DnD 5E Ruleset -------------------- */
 .dnd5e.chat-card {
-    background: #232323;
+    background-color: #232323;
 }
 
 body.-emu #sidebar [data-tab="chat"] #chat-log .message .message-header,
@@ -695,6 +695,10 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     background-color: #1F241C;
     border-color: 1px solid #77CE77;
     color: var(--primary-font);
+}
+
+.-emu-layout body.-emu #sidebar .sidebar-tab .directory-header, .-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-header {
+    background: var(--color-background-dunkel-mild);
 }
 
 body.-emu .package-configuration .categories .scrollable,
