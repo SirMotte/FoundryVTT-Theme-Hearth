@@ -74,9 +74,11 @@
 
 /* Token Notes*/
 
-.token-notes-container input, .token-notes-container textarea {
+.token-notes-container input,
+.token-notes-container textarea {
     color: var(--primary-font);
 }
+
 textarea {
     width: 100%;
     min-height: 50px;
@@ -107,7 +109,10 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     border-radius: 2px;
 }
 
-body.-emu #sidebar [data-tab=chat] #chat-log .message .flavor-text, body.-emu #sidebar [data-tab=chat] #chat-log .message .whisper-to, body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .flavor-text, body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .whisper-to {
+body.-emu #sidebar [data-tab=chat] #chat-log .message .flavor-text,
+body.-emu #sidebar [data-tab=chat] #chat-log .message .whisper-to,
+body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .flavor-text,
+body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .whisper-to {
     background: var(--color-background-dunkel);
 }
 
@@ -692,7 +697,8 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     color: var(--primary-font);
 }
 
-body.-emu .package-configuration .categories .scrollable, body.-emu .package-configuration .categories footer {
+body.-emu .package-configuration .categories .scrollable,
+body.-emu .package-configuration .categories footer {
     border-left: 1px solid var(--color-border-light-primary);
 }
 
