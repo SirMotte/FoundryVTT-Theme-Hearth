@@ -1,13 +1,9 @@
 :host,
 /* Custom CSS */
-/*HEAVY WIP, sorting not complete. Add these entrys into the Custom CSS Rules Sheet - Only works well in tandem with Ernie's Modern UI - Please See the Readme!/
+/*HEAVY WIP, sorting not complete. Add these entrys into the Custom CSS Rules Sheet.
+~~~~~ Only works well in tandem with Ernie's Modern UI - Please See the Readme!~~~~~*/
 
 /*Here I either define or overwrite root color settings that stem from baseline Foundry*/
-.root {
-    --sidebar-width: 270px;
-
-}
-
 .system-dnd5e {
     --color-text-creme: #FFF0CA;
     --color-background-braun: #322C27;
