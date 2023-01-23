@@ -110,6 +110,7 @@ body.-emu #sidebar [data-tab=chat] #chat-log .message .whisper-to,
 body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .flavor-text,
 body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .whisper-to {
     background: var(--color-background-dunkel);
+    padding-left: 4px;
 }
 
 body.-emu .window-app .window-header {
@@ -888,6 +889,10 @@ h3 {
 
 .prosemirror.editing-source textarea {
     color: var(--primary-font);
+}
+
+.-emu-layout body.-emu #sidebar p, .-emu-layout body.-emu .dialog p, .-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) p {
+    padding-left: 4px;
 }
 
 /*--------------------------------- DFreds Chat Pins ---------------------------------*/
@@ -1905,6 +1910,16 @@ nav.damage-log-nav.tabs {
     color: #FF8FE0;
 }
 
+.fa-unlock:before {
+    content: "\f09c";
+    color:var(--color-text-gruen);
+}
+
+.fa-lock:before {
+    content: "\f023";
+    color: var(--color-text-rot);
+}
+
 .fa-door-closed:before {
     content: "\f52a";
     color: var(--color-text-rot);
@@ -1949,7 +1964,62 @@ nav.damage-log-nav.tabs {
 .fa-refresh:before,
 .fa-sync:before {
     content: "\f021";
+    color: var(--color-text-gelb);
+}
+
+.fa-shield-check:before {
+    content: "\f2f7";
+    color: #76ff76;
+}
+
+university:before {
+    content: "\f19c";
+    color: #dbff84;
+}
+
+.fa-magic-wand-sparkles:before, .fa-wand-magic-sparkles:before {
+    content: "\e2ca";
+    color: #a5ffff;
+}
+
+.fa-boxes-alt:before, .fa-boxes-stacked:before, .fa-boxes:before {
+    content: "\f468";
+    color: #ff8282;
+}
+
+.fa-list-1-2:before, .fa-list-numeric:before, .fa-list-ol:before {
+    content: "\f0cb";
     color: var(--primary-font);
+}
+
+.fa-cloud-sun-rain:before {
+    content: "\f743";
+    color: #c1d7ff;
+}
+
+.fa-palette:before {
+    content: "\f53f";
+    color: #ffc7fb;
+}
+
+.fa-database:before {
+    content: "\f1c0";
+    color: #ffd299;
+}
+
+.fa-film:before {
+    content: "\f008";
+    color: #b1a3ff;
+}
+
+.fa-dice:before {
+    content: "\f522";
+    color: #d4ff8f;
+}
+
+.fa-circle-xmark:before, .fa-times-circle:before, .fa-xmark-circle:before {
+    content: "\f057";
+    color: #ff6666;
 }
 
 .fa-image:before {
