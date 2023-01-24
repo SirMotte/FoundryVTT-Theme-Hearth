@@ -91,7 +91,9 @@ textarea {
 
 
 /* Midi Qol */
-
+.midi-qol-nobox {
+    border-top: 4px groove var(--color-border-light-primary);
+}
 
 /* -------------------- DnD 5E Ruleset -------------------- */
 .dnd5e.chat-card {
@@ -685,14 +687,7 @@ p::selection {
 
 
 /* -------------------- Ernie's Modern UI ---------------------------------*/
-body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
-body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success,
-body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
-body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success {
-    background-color: #1F241C;
-    border-color: 1px solid #77CE77;
-    color: var(--primary-font);
-}
+
 
 .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header, .-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-header {
     background: var(--color-background-dunkel-mild);
@@ -772,7 +767,7 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
 
     background-image: var(--emu-image-background-light, none);
     border-top: 7px solid var(--color-border-light-primary);
-    border-bottom: 1px solid var(--color-border-light-primary);
+    border-bottom: 3px solid var(--color-border-light-primary);
     border-radius: 5px;
     border-style: solid;
     color: var(--primary-font);
@@ -1184,7 +1179,15 @@ body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.f
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.fumble,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.failure {
     background-color: #501515;
-    border-color: var(--color-text-rot);
+    border: 1px solid var(--color-text-rot);
+}
+
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
+body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.critical,
+body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .dice-roll .dice-total.success {
+    background-color: #13380e;
+    border: 1px solid var(--color-text-gruen);
 }
 
 
