@@ -719,6 +719,7 @@ body.-emu .window-app {
     color: var(--color-text-gruen);
     font-size: 16px;
     font-weight: bold;
+    margin-left: -2px;
 }
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .dice-roll .dice-formula,
@@ -726,6 +727,12 @@ body.-emu .window-app {
     background-color: var(--color-background-dunkel);
 }
 
+.chat-message .table-draw .table-results .table-result .result-text {
+    margin-right: 5px;
+    margin-left: -4px;
+    padding: 0;
+    line-height: 16px;
+}
 
 .-emu-layout body.-emu #hud input[type="text"] {
     color: var(--color-text-creme);
@@ -862,10 +869,6 @@ a.inline-roll {
 #keybindings .binding .key.uneditable {
     background: var(--background);
 }
-
-
-
-
 
 h3 {
     border-bottom: 1px solid var(--color-text-light-7);
@@ -2164,6 +2167,7 @@ university:before {
     color: var(--primary-font);
     font-size: var(--font-size-12);
     padding: 5px 0;
+    margin: 4px;
 }
 
 .chat-message .message-header {
