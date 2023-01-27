@@ -685,6 +685,10 @@ p::selection {
     border-radius: 1px;
 }
 
+/* removes the leading icon from the roll table results */
+li.table-result img.result-image  {
+	display: none;
+}
 
 /* -------------------- Ernie's Modern UI ---------------------------------*/
 
@@ -729,7 +733,7 @@ body.-emu .window-app {
 
 .chat-message .table-draw .table-results .table-result .result-text {
     margin-right: 5px;
-    margin-left: -4px;
+    margin-left: 4px;
     padding: 0;
     line-height: 16px;
 }
@@ -2082,6 +2086,11 @@ university:before {
 .fa-redo:before {
     content: "\f01e";
     color: var(--color-text-tuerkis);
+}
+
+.fa-bullseye:before {
+    content: "\f140";
+    color: #4fff7d;
 }
 
 .fa-trash-alt:before,
