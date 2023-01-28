@@ -31,6 +31,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [DFreds Chat Pins](https://github.com/DFreds/dfreds-chat-pins)
 - [Token Notes](https://wiki.theripper93.com/premium/token-notes)
 - [Token Info Icons](https://github.com/jopeek/fvtt-token-info-icons)
+- [Moulinette](https://github.com/SvenWerlen/moulinette-core)
 - A lot of Modules don't require dedicated support, try it out.
 
 ## Known Issues:
