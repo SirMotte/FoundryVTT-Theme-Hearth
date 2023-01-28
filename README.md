@@ -1,5 +1,5 @@
 # Sir Motte's Magnificent Darkness - Hearth Theme for Foundry VTT
-![grafik](https://user-images.githubusercontent.com/82598692/215295882-19bbde8f-78fd-4d4f-982a-4ddd08fe4316.png)
+![grafik](https://user-images.githubusercontent.com/82598692/215295962-b3991143-a348-492b-ba24-25c6663d12ea.png)
 
 
 This is my attempt at a recreation of my well received [Theme for Fantasy Grounds Unity](https://github.com/SirMotte/FGU-Theme-Hearth).
