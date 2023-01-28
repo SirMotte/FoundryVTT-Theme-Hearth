@@ -32,6 +32,7 @@ This should be it. Happy testing and bug hunting. Please report any findings to 
 ## Supported Modules
 Others work out of the box or are not used by me. Right now I won't take requests for additional module support, but leave a comment anyway so I can create a todo list:
 
+- A lot of Modules don't require dedicated support, try it out.
 - [Action Pack](https://github.com/teroparvinen/foundry-action-pack)
 - [Always HP](https://github.com/ironmonk88/always-hp)
 - [Anonymous](https://github.com/reonZ/anonymous)
@@ -46,7 +47,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Token Notes](https://wiki.theripper93.com/premium/token-notes)
 - [Token Info Icons](https://github.com/jopeek/fvtt-token-info-icons)
 - [Moulinette](https://github.com/SvenWerlen/moulinette-core)
-- A lot of Modules don't require dedicated support, try it out.
+
 
 ## Known Issues:
 - Modules that alter UI elements can potentially cause UI issues.
