@@ -2208,3 +2208,44 @@ university:before {
     position: relative;
     border: 3px double var(--color-border-light-primary)
 }
+
+/*---------- Moulinette---------------------------------*/
+ul.filterList li.top {
+    background: var(--color-background-braun);
+    border: 1px solid var(--color-border-light-primary);
+}
+
+ul.filterList {
+    background: var(--color-background-dunkel-mild);
+}
+
+ul.filterList ul li {
+    color: #000;
+    border-bottom: 1px solid var(--color-border-light-primary);
+}
+
+ul.filterList ul li.filler {
+    height: 300px;
+    background: var(--color-background-dunkel) !important;
+}
+
+ul.filterList li a:hover, ul.filterList li a.hover {
+    background: var(--color-dunkelrot);
+}
+
+ul.filterList ul li a:hover {
+    display: block;
+    background: var(--color-dunkelrot-dunkler) !important;
+}
+
+body.-emu #sidebar a:hover, body.-emu .dialog a:hover, body.-emu .window-app:not(.-emu-clean-sheet) a:hover {
+    color: var(--color-text-creme);
+}
+
+ul.sub_menu li.cloud {
+    color: var(--primary-font);
+}
+
+ul.filterList ul li a {
+    background: var(--color-background-braun)!important;
+}
