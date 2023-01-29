@@ -33,11 +33,17 @@
     --primary-accent: #FF913F;
     --prepared: #322a1a;
     --t5e-primary-font: #DDDDDD;
+    --t5e-secondary-color: #DDDDDD;
     --color-bg-option: #322C27;
-    
+    --t5e-header-background: #232323;
+    --t5e-tertiary-color: #DDDDDD;
+    --t5e-background: #1C1C1C;
+    --t5e-encumbrance-bar: #501515;
+    --t5e-encumbrance-bar-outline: #FF5555;
 }
 
 .system-dnd5e.tidy5eDark {
+    
     --tertiary-color: #DDDDDD;
     --light-color: #6C5848;
     --prepared: #153013;
@@ -45,8 +51,7 @@
     --always-prepared-accent: #F3D876;
     --always-prepared: #1f321a;
     --exhaustion-font: #DDDDDD;
-    --encumbrance-bar: #501515;
-    --encumbrance-bar-outline: #501515;
+    
     --note-background: #232323;
     --xp-bar: #77CE77;
     --prepared-outline: #2D842D;
@@ -65,6 +70,7 @@
     --checkbox-checked: #274714;
     --icon-outline: #000000;
     --icon-font: #000000;
+    
 }
 
 .prosemirror.editing-source textarea {
@@ -264,6 +270,18 @@ p::selection {
 /*This first part overwrites color settings within Tidy 5E Sheet on a more global scale*/
 .tidy5eDark .tidy5e.sheet.actor .tidy5e-sheet {
     background: var(--color-background-dunkel);
+}
+
+.tidy5e.sheet.actor .list-layout .items-list .item .item-controls:not(#context-menu) a .inactive:hover, .tidy5e.sheet.actor .list-layout .items-list .item .item-controls:not(#context-menu) a:hover {
+    color: var(--color-orange);
+}
+
+.tidy5e.sheet.actor .list-layout .items-list .item .item-controls:not(#context-menu) a .inactive {
+    color: var(--color-text-blau);
+}
+
+.tidy5e.sheet.actor .list-layout .items-list .item .item-controls:not(#context-menu) a {
+    color: var(--color-text-gelb);
 }
 
 .tidy5e.sheet.actor .traits .configure-flags {
@@ -624,17 +642,18 @@ p::selection {
     background: #085c03
 }
 
+
 .tidy5e.sheet.actor input.hp-max,
 .tidy5e.sheet.actor input.max-temphp {
     color: var(--color-text-gruen);
 }
 
 .tidy5e.sheet.actor .portrait-temp input {
-    color: #DDDDDD
+    color: var(--primary-font);
 }
 
 .tidy5e.sheet.actor.npc .unlinked .link-state.fa-unlink {
-    background: #501515;
+    background: var(--color-dunkelrot);
 }
 
 .tidy5e.sheet.actor .origin-summary .proficiency {
@@ -2165,11 +2184,6 @@ university:before {
 .fa-plus-circle:before {
     content: "\f055";
     color: var(--color-text-gruen);
-}
-
-.fa-bookmark:before {
-    content: "\f02e";
-    color: var(--color-orange);
 }
 
 .fa-compass:before {
