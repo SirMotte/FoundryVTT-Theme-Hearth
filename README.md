@@ -13,31 +13,6 @@ If you already want to test it and get a feel on how it looks, follow the set-up
 - [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Highly Recommended, must be set to Dark Ui for best results)
 - Calibri Font Installed - Guide in the Works (Recommended - Some UI elements will be quirky with other font styles)
 
-## Supported Modules
-Others work out of the box or are not used by me. Right now I won't take requests for additional module support, but leave a comment anyway so I can create a todo list:
-
-- [Action Pack](https://github.com/teroparvinen/foundry-action-pack)
-- [Always HP](https://github.com/ironmonk88/always-hp)
-- [Anonymous](https://github.com/reonZ/anonymous)
-- [Combat Tracker Disposition](https://github.com/LebombJames/combat-tracker-disposition)
-- [Damage Log](https://github.com/cs96and/FoundryVTT-damage-log)
-- [Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator)
-- [Monk's Common Display](https://github.com/ironmonk88/monks-common-display)
-- [Monk's Token Bar](https://github.com/ironmonk88/monks-tokenbar)
-- [Small Weather](https://github.com/LeafWulf/smallweather)
-- [Deadly Encounter Benchmark](https://github.com/snshatto/deadly-encounter-benchmark)
-- [DFreds Chat Pins](https://github.com/DFreds/dfreds-chat-pins)
-- [Token Notes](https://wiki.theripper93.com/premium/token-notes)
-- [Token Info Icons](https://github.com/jopeek/fvtt-token-info-icons)
-- [Moulinette](https://github.com/SvenWerlen/moulinette-core)
-- A lot of Modules don't require dedicated support, try it out.
-
-## Known Issues:
-- Modules that alter UI elements can potentially cause UI issues.
-- It's impossible for me to test all modules. If you come across readbility issues, contact me.
-- [Module Management +](https://github.com/mouse0270/module-credits): Export Window is barely readable. Can't figure out how to fix this (<-CSS Noob)
-
-
 ## Installation Instructions and Set-Up
 
 1. Install the required modules to Foundy VTT.
@@ -53,6 +28,32 @@ Others work out of the box or are not used by me. Right now I won't take request
    - coming soon
 
 This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue reporter.
+
+## Supported Modules
+Others work out of the box or are not used by me. Right now I won't take requests for additional module support, but leave a comment anyway so I can create a todo list:
+
+- A lot of Modules don't require dedicated support, try it out.
+- [Action Pack](https://github.com/teroparvinen/foundry-action-pack)
+- [Always HP](https://github.com/ironmonk88/always-hp)
+- [Anonymous](https://github.com/reonZ/anonymous)
+- [Combat Tracker Disposition](https://github.com/LebombJames/combat-tracker-disposition)
+- [Damage Log](https://github.com/cs96and/FoundryVTT-damage-log)
+- [Dice Tray](https://gitlab.com/asacolips-projects/foundry-mods/foundry-vtt-dice-calculator)
+- [Monk's Common Display](https://github.com/ironmonk88/monks-common-display)
+- [Monk's Token Bar](https://github.com/ironmonk88/monks-tokenbar)
+- [Small Weather](https://github.com/LeafWulf/smallweather)
+- [Deadly Encounter Benchmark](https://github.com/snshatto/deadly-encounter-benchmark)
+- [DFreds Chat Pins](https://github.com/DFreds/dfreds-chat-pins)
+- [Token Notes](https://wiki.theripper93.com/premium/token-notes)
+- [Token Info Icons](https://github.com/jopeek/fvtt-token-info-icons)
+- [Moulinette](https://github.com/SvenWerlen/moulinette-core)
+
+
+## Known Issues:
+- Modules that alter UI elements can potentially cause UI issues.
+- It's impossible for me to test all modules. If you come across readbility issues, contact me.
+- [Module Management +](https://github.com/mouse0270/module-credits): Export Window is barely readable. Can't figure out how to fix this (<-CSS Noob)
+
 
 Have Fun!
 Sir Motte
