@@ -19,7 +19,7 @@
     --color-text-tuerkis: #8CFFFF;
     --color-orange: #F2AB76;
     --color-dunkelrot: #501515;
-    --color-dunkelrot-dunkler: #241C1C;
+    --color-dunkelrot-dunkler: #311a1a;
     --color-dunkelgruen: #1F241C;
     --color-dunkellila: #23182F;
     --color-border-light-primary: #6C5848;
@@ -41,14 +41,15 @@
     --t5e-encumbrance-bar: #501515;
     --t5e-encumbrance-bar-outline: #9b1a1a;
     --t5e-prepared: #153013;
+    --t5e-always-prepared-outline: #F3D876;
+    --t5e-always-prepared-accent: #69B7FF;
+    --t5e-always-prepared: #042e42;
 }
 
 .system-dnd5e.tidy5eDark {
-    
     --tertiary-color: #DDDDDD;
     --light-color: #6C5848;
-    
-    --exhaustion-font: #DDDDDD;    
+    --exhaustion-font: #DDDDDD;
     --note-background: #232323;
     --xp-bar: #77CE77;
     --prepared-outline: #2D842D;
@@ -67,7 +68,6 @@
     --checkbox-checked: #274714;
     --icon-outline: #000000;
     --icon-font: #000000;
-    
 }
 
 .prosemirror.editing-source textarea {
@@ -85,7 +85,7 @@ textarea {
     width: 100%;
     min-height: 50px;
     padding: 5px;
-    background: #322c27;
+    background: var(--color-background-braun);
     border: 3px double var(--color-border-light-primary);
     border-radius: 2px;
     font-family: "Calibri", sans-serif;
@@ -314,15 +314,7 @@ p::selection {
     background: var(--color-background-braun);
 }
 
-.tidy5e.sheet.actor .items-list .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: var(--color-background-dunkel);
-}
+
 
 /*Here begins the more fingrained work in no particular order*/
 
@@ -379,6 +371,20 @@ p::selection {
     background: rgb(24 49 88 / 30%);
     border-right-style: solid;
     border-color: #69B7FF;
+    padding: none;
+    border-width: 6px;
+    border-radius: 1px;
+    margin-right: -6px;
+}
+
+.tidy5e.sheet.actor .items-list .item {
+    background: var(--color-background-dunkel-mild);
+}
+
+.tidy5e.sheet.actor .items-list .item.innate {
+    background: var(--color-dunkelrot);
+    border-right-style: solid;
+    border-color: var(--color-text-rot);
     padding: none;
     border-width: 6px;
     border-radius: 1px;
