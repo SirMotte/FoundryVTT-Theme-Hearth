@@ -11,8 +11,10 @@
     --color-background-dunkel-mild: #232323;
     --color-text-gruen: #77CE77;
     --color-text-blau: #69B7FF;
+    --color-dunkelblau: #191E21;
     --color-text-rot: #fa8f8f;
     --color-text-gelb: #F3D876;
+    --color-dunkelgelb: #25241C;
     --background: #232323;
     --color-text-tuerkis: #8CFFFF;
     --color-orange: #F2AB76;
@@ -32,6 +34,7 @@
     --prepared: #322a1a;
     --t5e-primary-font: #DDDDDD;
     --color-bg-option: #322C27;
+    
 }
 
 .system-dnd5e.tidy5eDark {
@@ -2294,7 +2297,39 @@ ul.filterList ul li a {
 }
 
 
-
 #moulinette.forge .footer {
     background: var(--color-background-dunkel);
+}
+
+
+/*Simple Calendar*/
+
+body.game .simple-calendar.window-app .window-content {
+    background-color: var(--color-background-dunkel-mild) !important;
+    background-image: none !important;
+    color: var(--primary-font) !important;
+    border: 1px solid var(--color-border-light-primary);
+    border-image: none;
+    box-shadow: none;
+    scrollbar-color: var(--color-text-creme);
+}
+
+body.game .simple-calendar.window-app header.window-header {
+    background-image: none;
+    background-color: var(--header-background);
+    color: var(--color-text-creme);
+    border: 1px soild var(--color-border-light-primary);
+    border-image: none;
+}
+
+body.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-yb {
+    background-color: var(--color-dunkelblau);
+    border-color: var(--color-text-blau);
+    color: var(--primary-font);
+}
+
+body.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-bc {
+    background: var(--color-text-gelb);
+    border-color: black;
+    color: var(--primary-font);
 }
