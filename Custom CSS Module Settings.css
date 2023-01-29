@@ -1819,6 +1819,11 @@ nav.damage-log-nav.tabs {
     color: var(--color-text-gelb);
 }
 
+.fa-magic:before, .fa-wand-magic:before {
+    content: "\f0d0";
+    color: var(--color-text-tuerkis);
+}
+
 .fa-random:before,
 .fa-shuffle:before {
     content: "\f074";
