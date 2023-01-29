@@ -39,19 +39,16 @@
     --t5e-tertiary-color: #DDDDDD;
     --t5e-background: #1C1C1C;
     --t5e-encumbrance-bar: #501515;
-    --t5e-encumbrance-bar-outline: #FF5555;
+    --t5e-encumbrance-bar-outline: #9b1a1a;
+    --t5e-prepared: #153013;
 }
 
 .system-dnd5e.tidy5eDark {
     
     --tertiary-color: #DDDDDD;
     --light-color: #6C5848;
-    --prepared: #153013;
-    --always-prepared-outline: #F3D876;
-    --always-prepared-accent: #F3D876;
-    --always-prepared: #1f321a;
-    --exhaustion-font: #DDDDDD;
     
+    --exhaustion-font: #DDDDDD;    
     --note-background: #232323;
     --xp-bar: #77CE77;
     --prepared-outline: #2D842D;
@@ -378,10 +375,10 @@ p::selection {
     margin-right: -6px;
 }
 
-.tidy5e.sheet.actor .items-list .item.alwaysPrepared {
-    background: #042e42;
+.tidy5e.sheet.actor .items-list .item.alwaysprepared {
+    background: rgb(24 49 88 / 30%);
     border-right-style: solid;
-    border-color: #4479eb;
+    border-color: #69B7FF;
     padding: none;
     border-width: 6px;
     border-radius: 1px;
