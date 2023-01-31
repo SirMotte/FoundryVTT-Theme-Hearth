@@ -47,6 +47,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Token Notes](https://wiki.theripper93.com/premium/token-notes)
 - [Token Info Icons](https://github.com/jopeek/fvtt-token-info-icons)
 - [Moulinette](https://github.com/SvenWerlen/moulinette-core)
+- [NameForge](https://gitlab.com/ElvisPereira/nameforge)
 
 
 ## Known Issues:
