@@ -726,6 +726,15 @@ li.table-result img.result-image  {
 	display: none;
 }
 
+
+/* Name Forge */
+
+.nf-tag {
+    background-color: var(--color-background-braun);
+    border: 1px solid var(--color-text-gelb);
+}
+
+
 /* -------------------- Ernie's Modern UI ---------------------------------*/
 
 body.-emu #sidebar .sidebar-tab .directory-footer, body.-emu #sidebar .sidebar-tab .directory-header, body.-emu #sidebar [data-tab=combat] .combat-tracker-header, body.-emu .sidebar-popout .sidebar-tab .directory-footer, body.-emu .sidebar-popout .sidebar-tab .directory-header, body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] .combat-tracker-header {
