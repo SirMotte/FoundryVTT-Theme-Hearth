@@ -2,8 +2,8 @@
 ![grafik](https://user-images.githubusercontent.com/82598692/215295962-b3991143-a348-492b-ba24-25c6663d12ea.png)
 
 
-This is my attempt at a recreation of my well received [Theme for Fantasy Grounds Unity](https://github.com/SirMotte/FGU-Theme-Hearth).
-If you already want to test it and get a feel on how it looks, follow the set-up instructions below and ideally report back with findings and opinions.
+This is a recreation of my well received [Theme for Fantasy Grounds Unity](https://github.com/SirMotte/FGU-Theme-Hearth).
+Follow the set-up instructions below and ideally report back with findings and opinions.
 
 ## Requirements:
 - Foundry VTT (Duh!)
