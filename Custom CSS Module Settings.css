@@ -44,6 +44,7 @@
     --t5e-always-prepared-outline: #F3D876;
     --t5e-always-prepared-accent: #69B7FF;
     --t5e-always-prepared: #042e42;
+    --emu-color-primary: #DDDDDD;
 }
 
 .system-dnd5e.tidy5eDark {
@@ -70,7 +71,20 @@
     --icon-font: #000000;
 }
 
+
+
 .prosemirror.editing-source textarea {
+    color: var(--primary-font);
+}
+
+
+/*Item Collection*/
+
+.itemcollection-details .currency label {
+    color: var(--primary-font)
+}
+
+.itemcollection-details {
     color: var(--primary-font);
 }
 
@@ -736,6 +750,30 @@ li.table-result img.result-image  {
 
 
 /* -------------------- Ernie's Modern UI ---------------------------------*/
+.dnd5e.sheet.item .sheet-navigation {
+    background: var(--header-background);
+}
+
+.dnd5e.sheet .sheet-navigation {
+    background: var(--header-background);
+    font-family: "Calibri Bold", sans-serif;
+    font size: 12px;
+    font weight: 400;
+
+}
+
+.dnd5e.sheet.item .sheet-body .item-properties .form-group input {
+    border: 1px solid var(--color-border-light-primary);
+}
+
+.-emu-layout body.-emu.system-dnd5e .dnd5e.sheet .sheet-header {
+    background: var(--color-background-braun);
+}
+
+body.-emu.system-dnd5e .dnd5e.sheet .sheet-navigation .item.active {
+    border-color: var(--color-orange);
+    color: RGB(var(--emu-color-primary,229,117,9));
+}
 
 body.-emu #sidebar .sidebar-tab .directory-footer, body.-emu #sidebar .sidebar-tab .directory-header, body.-emu #sidebar [data-tab=combat] .combat-tracker-header, body.-emu .sidebar-popout .sidebar-tab .directory-footer, body.-emu .sidebar-popout .sidebar-tab .directory-header, body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] .combat-tracker-header {
     background-color: var(--color-background-dunkel-mild);
@@ -1071,18 +1109,17 @@ h3 {
 :host,
 :root {
     --modesto: "Calibri", sans-serif;
-    --modesto-condensded: "Calibri Bold", sans-serif;
+    --t5e-modesto: "Calibri Bold", sans-serif;
     --signika: "Calibri", sans-serif;
     --font-primary: "Calibri", sans-serif;
     --font-mono: "Calibri", sans-serif;
     --font-awesome: "Calibri", sans-serif;
-    --t5e-modesto: "Calibri", sans-serif;
     --t5e-signika: "Calibri", sans-serif;
 
 }
 
 .system-dnd5e.tidy5eDark {
-    --modesto: "Calibri", sans-serif;
+    --t5e-modesto: "Calibri", sans-serif;
     --signika: "Calibri", sans-serif;
     --font-primary: "Calibri", sans-serif;
     --font-mono: "Calibri", sans-serif;
