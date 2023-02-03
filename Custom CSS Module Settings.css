@@ -116,6 +116,29 @@ textarea {
 }
 
 /* -------------------- DnD 5E Ruleset -------------------- */
+.dnd5e.sheet.group .members .directory-header > * {
+    margin: -7px;
+    font-family: "Calibri", sans-serif;
+    font-weight: normal;
+    text-align: left;
+    color: var(--color-text-creme);
+    background: var(--color-dunkelrot-dunkler);
+}
+
+.dnd5e.sheet.group .members .directory-header {
+    background: var(--color-dunkelrot-dunkler);
+    border: 1px solid var(--color-border-light-primary);
+}
+.dnd5e.sheet.group .members .hp .bar-container {
+    background: #111;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+.dnd5e.sheet.group .members .hp .bar {
+    border-radius: 2px;
+}
+
 .dnd5e.chat-card {
     background-color: #232323;
 }
@@ -757,9 +780,12 @@ li.table-result img.result-image  {
 .dnd5e.sheet .sheet-navigation {
     background: var(--header-background);
     font-family: "Calibri Bold", sans-serif;
-    font size: 12px;
-    font weight: 400;
+    margin-bottom: 2px solid var(--color-border-light-primary);
+}
 
+.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value {
+    font-family: "Calibri Bold", sans-serif;
+    color: var(--color-text-gruen);
 }
 
 .dnd5e.sheet.item .sheet-body .item-properties .form-group input {
