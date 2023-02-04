@@ -119,7 +119,7 @@ textarea {
 
 
 
-.dnd5e.sheet.group .members .directory-header > * {
+.dnd5e.sheet.group .members .directory-header>* {
     margin: -7px;
     font-family: "Calibri", sans-serif;
     font-weight: normal;
@@ -132,6 +132,7 @@ textarea {
     background: var(--color-dunkelrot-dunkler);
     border: 1px solid var(--color-border-light-primary);
 }
+
 .dnd5e.sheet.group .members .hp .bar-container {
     background: #111;
     border: 1px solid #000;
@@ -309,7 +310,8 @@ p::selection {
     background: var(--color-background-dunkel);
 }
 
-.tidy5e.sheet.actor .list-layout .items-list .item .item-controls:not(#context-menu) a .inactive:hover, .tidy5e.sheet.actor .list-layout .items-list .item .item-controls:not(#context-menu) a:hover {
+.tidy5e.sheet.actor .list-layout .items-list .item .item-controls:not(#context-menu) a .inactive:hover,
+.tidy5e.sheet.actor .list-layout .items-list .item .item-controls:not(#context-menu) a:hover {
     color: var(--color-orange);
 }
 
@@ -762,8 +764,8 @@ p::selection {
 }
 
 /* removes the leading icon from the roll table results */
-li.table-result img.result-image  {
-	display: none;
+li.table-result img.result-image {
+    display: none;
 }
 
 
@@ -780,7 +782,8 @@ li.table-result img.result-image  {
     background: var(--header-background);
 }
 
-body.-emu #navigation #scene-list .scene.active, body.-emu #navigation #scene-list .scene.view {
+body.-emu #navigation #scene-list .scene.active,
+body.-emu #navigation #scene-list .scene.view {
     background-image: var(--color-background-dunkel);
 }
 
@@ -805,27 +808,124 @@ body.-emu #navigation #scene-list .scene.active, body.-emu #navigation #scene-li
 
 body.-emu.system-dnd5e .dnd5e.sheet .sheet-navigation .item.active {
     border-color: var(--color-orange);
-    color: RGB(var(--emu-color-primary,229,117,9));
+    color: RGB(var(--emu-color-primary, 229, 117, 9));
 }
 
-body.-emu #sidebar .sidebar-tab .directory-footer, body.-emu #sidebar .sidebar-tab .directory-header, body.-emu #sidebar [data-tab=combat] .combat-tracker-header, body.-emu .sidebar-popout .sidebar-tab .directory-footer, body.-emu .sidebar-popout .sidebar-tab .directory-header, body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] .combat-tracker-header {
+body.-emu #sidebar .sidebar-tab .directory-footer,
+body.-emu #sidebar .sidebar-tab .directory-header,
+body.-emu #sidebar [data-tab=combat] .combat-tracker-header,
+body.-emu .sidebar-popout .sidebar-tab .directory-footer,
+body.-emu .sidebar-popout .sidebar-tab .directory-header,
+body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] .combat-tracker-header {
     background-color: var(--color-background-dunkel-mild);
 }
 
-.-emu-layout body.-emu #sidebar [data-tab=combat] #combat-controls .combat-control.center, .-emu-layout body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] #combat-controls .combat-control.center {
+.-emu-layout body.-emu #sidebar [data-tab=combat] #combat-controls .combat-control.center,
+.-emu-layout body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] #combat-controls .combat-control.center {
     outline: 1px solid var(--color-text-rot);
 }
 
-.-emu-layout body.-emu #sidebar [data-tab=chat] #chat-controls .chat-control-icon .fa-dice-d20:hover, .-emu-layout body.-emu #sidebar [data-tab=chat] #chat-controls .control-buttons a:hover, .-emu-layout body.-emu #sidebar [data-tab=chat] #chat-log .message .button.message-delete:hover, .-emu-layout body.-emu .sheet[id*=ActiveEffectsConfig] .changes-list li a:hover, .-emu-layout body.-emu .sheet[id*=ActiveEffectsConfig] .effects-header a:hover, .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-controls .chat-control-icon .fa-dice-d20:hover, .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-controls .control-buttons a:hover, .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .button.message-delete:hover, .-emu-layout body.-emu .window-app .window-header a.header-button:hover, .-emu-layout body.-emu .window-app .window-header>a:hover, .-emu-layout body.-emu .window-app[id*=RollTableConfig-] .table-results .table-header a:hover, .-emu-layout body.-emu .window-app[id*=RollTableConfig-] .table-results .table-result a:hover, .-emu-layout body.-emu .window-app[id*=cards-sheet-] .cards .card a:hover, .-emu-layout body.-emu .window-app[id*=cards-sheet-] .cards-header a:hover, .-emu-layout body.-emu .window-app[id*=rolltable-sheet-] .table-results .table-header a:hover, .-emu-layout body.-emu .window-app[id*=rolltable-sheet-] .table-results .table-result a:hover, body.-emu #controls .control-tools .control-tool.active, body.-emu #controls .control-tools .control-tool.toggle:hover, body.-emu #controls .control-tools .control-tool:hover, body.-emu #controls .control-tools .scene-control.active, body.-emu #controls .control-tools .scene-control:hover, body.-emu #hotbar .bar-controls #bar-toggle:hover, body.-emu #hotbar .bar-controls #macro-directory:hover, body.-emu #hotbar .bar-controls .page-control:hover, body.-emu #hotbar .macro:hover, body.-emu #hud .control-icon.active, body.-emu #hud .control-icon:hover, body.-emu #menu #menu-items li:hover, body.-emu #module-management .list-filters a:hover, body.-emu #navigation #nav-toggle:hover, body.-emu #navigation #scene-list .scene:hover, body.-emu #sidebar #sidebar-tabs>.collapse:hover, body.-emu #sidebar #sidebar-tabs>.item:hover, body.-emu #sidebar .directory .directory-item .create-document:hover, body.-emu #sidebar .directory .directory-item .create-folder:hover, body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity:hover, body.-emu #sidebar .directory .directory-item.folder .folder-header:hover, body.-emu #sidebar .directory .directory-item:hover, body.-emu #sidebar .sheet-tabs a:hover, body.-emu #sidebar .sidebar-tab .directory-header .header-control:hover, body.-emu #sidebar .tabs a:hover, body.-emu #sidebar [data-tab=combat] #combat-controls .combat-control:hover, body.-emu #sidebar [data-tab=combat] #combat-tracker .combatant .combatant-control:hover, body.-emu #sidebar [data-tab=combat] #combat-tracker .combatant:hover, body.-emu #sidebar [data-tab=combat] .combat-tracker-header .encounter-controls a:hover, body.-emu #sidebar [data-tab=combat] .combat-tracker-header .encounters a:hover, body.-emu #sidebar [data-tab=playlists] #currently-playing .sound .sound-control:hover, body.-emu #sidebar [data-tab=playlists] .directory-list .playlist-header .sound-controls .sound-control:hover, body.-emu #sidebar [data-tab=playlists] .directory-list .sound .sound-controls .sound-control:hover, body.-emu #sidebar button:hover, body.-emu .dialog .directory .directory-item .create-document:hover, body.-emu .dialog .directory .directory-item .create-folder:hover, body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity:hover, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder:hover, body.-emu .dialog .directory .directory-item.folder .folder-header:hover, body.-emu .dialog .directory .directory-item:hover, body.-emu .dialog .sheet-tabs a:hover, body.-emu .dialog .tabs a:hover, body.-emu .dialog button:hover, body.-emu .filepicker.window-app .filepicker-body .filepicker-header .display-modes .display-mode:hover, body.-emu .sheet .sheet-header>img:hover, body.-emu .sheet[id*=ActiveEffectsConfig] .-emu-layout .effects-header a:hover, body.-emu .sheet[id*=ActiveEffectsConfig] .changes-list .-emu-layout li a:hover, body.-emu .sidebar-popout #sidebar-tabs>.collapse:hover, body.-emu .sidebar-popout #sidebar-tabs>.item:hover, body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control:hover, body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] #combat-controls .combat-control:hover, body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] #combat-tracker .combatant .combatant-control:hover, body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] #combat-tracker .combatant:hover, body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] .combat-tracker-header .encounter-controls a:hover, body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] .combat-tracker-header .encounters a:hover, body.-emu .sidebar-popout[id=playlists-popout] .window-content [data-tab=playlists] #currently-playing .sound .sound-control:hover, body.-emu .sidebar-popout[id=playlists-popout] .window-content [data-tab=playlists] .directory-list .playlist-header .sound-controls .sound-control:hover, body.-emu .sidebar-popout[id=playlists-popout] .window-content [data-tab=playlists] .directory-list .sound .sound-controls .sound-control:hover, body.-emu .window-app .window-resizable-handle:hover, body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item .create-document:hover, body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item .create-folder:hover, body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item.folder .folder-header .create-entity:hover, body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item.folder .folder-header:hover, body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item:hover, body.-emu .window-app:not(.-emu-clean-sheet) .sheet-tabs a:hover, body.-emu .window-app:not(.-emu-clean-sheet) .tabs a:hover, body.-emu .window-app:not(.-emu-clean-sheet) button:hover, body.-emu .window-app[id*=JournalEntry-] a.editor-edit:hover, body.-emu .window-app[id*=RollTableConfig-] .table-results .-emu-layout .table-header a:hover, body.-emu .window-app[id*=RollTableConfig-] .table-results .-emu-layout .table-result a:hover, body.-emu .window-app[id*=cards-sheet-] .-emu-layout .cards-header a:hover, body.-emu .window-app[id*=cards-sheet-] .cards .-emu-layout .card a:hover, body.-emu .window-app[id*=rolltable-sheet-] .table-results .-emu-layout .table-header a:hover, body.-emu .window-app[id*=rolltable-sheet-] .table-results .-emu-layout .table-result a:hover {
+.-emu-layout body.-emu #sidebar [data-tab=chat] #chat-controls .chat-control-icon .fa-dice-d20:hover,
+.-emu-layout body.-emu #sidebar [data-tab=chat] #chat-controls .control-buttons a:hover,
+.-emu-layout body.-emu #sidebar [data-tab=chat] #chat-log .message .button.message-delete:hover,
+.-emu-layout body.-emu .sheet[id*=ActiveEffectsConfig] .changes-list li a:hover,
+.-emu-layout body.-emu .sheet[id*=ActiveEffectsConfig] .effects-header a:hover,
+.-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-controls .chat-control-icon .fa-dice-d20:hover,
+.-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-controls .control-buttons a:hover,
+.-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .button.message-delete:hover,
+.-emu-layout body.-emu .window-app .window-header a.header-button:hover,
+.-emu-layout body.-emu .window-app .window-header>a:hover,
+.-emu-layout body.-emu .window-app[id*=RollTableConfig-] .table-results .table-header a:hover,
+.-emu-layout body.-emu .window-app[id*=RollTableConfig-] .table-results .table-result a:hover,
+.-emu-layout body.-emu .window-app[id*=cards-sheet-] .cards .card a:hover,
+.-emu-layout body.-emu .window-app[id*=cards-sheet-] .cards-header a:hover,
+.-emu-layout body.-emu .window-app[id*=rolltable-sheet-] .table-results .table-header a:hover,
+.-emu-layout body.-emu .window-app[id*=rolltable-sheet-] .table-results .table-result a:hover,
+body.-emu #controls .control-tools .control-tool.active,
+body.-emu #controls .control-tools .control-tool.toggle:hover,
+body.-emu #controls .control-tools .control-tool:hover,
+body.-emu #controls .control-tools .scene-control.active,
+body.-emu #controls .control-tools .scene-control:hover,
+body.-emu #hotbar .bar-controls #bar-toggle:hover,
+body.-emu #hotbar .bar-controls #macro-directory:hover,
+body.-emu #hotbar .bar-controls .page-control:hover,
+body.-emu #hotbar .macro:hover,
+body.-emu #hud .control-icon.active,
+body.-emu #hud .control-icon:hover,
+body.-emu #menu #menu-items li:hover,
+body.-emu #module-management .list-filters a:hover,
+body.-emu #navigation #nav-toggle:hover,
+body.-emu #navigation #scene-list .scene:hover,
+body.-emu #sidebar #sidebar-tabs>.collapse:hover,
+body.-emu #sidebar #sidebar-tabs>.item:hover,
+body.-emu #sidebar .directory .directory-item .create-document:hover,
+body.-emu #sidebar .directory .directory-item .create-folder:hover,
+body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity:hover,
+body.-emu #sidebar .directory .directory-item.folder .folder-header:hover,
+body.-emu #sidebar .directory .directory-item:hover,
+body.-emu #sidebar .sheet-tabs a:hover,
+body.-emu #sidebar .sidebar-tab .directory-header .header-control:hover,
+body.-emu #sidebar .tabs a:hover,
+body.-emu #sidebar [data-tab=combat] #combat-controls .combat-control:hover,
+body.-emu #sidebar [data-tab=combat] #combat-tracker .combatant .combatant-control:hover,
+body.-emu #sidebar [data-tab=combat] #combat-tracker .combatant:hover,
+body.-emu #sidebar [data-tab=combat] .combat-tracker-header .encounter-controls a:hover,
+body.-emu #sidebar [data-tab=combat] .combat-tracker-header .encounters a:hover,
+body.-emu #sidebar [data-tab=playlists] #currently-playing .sound .sound-control:hover,
+body.-emu #sidebar [data-tab=playlists] .directory-list .playlist-header .sound-controls .sound-control:hover,
+body.-emu #sidebar [data-tab=playlists] .directory-list .sound .sound-controls .sound-control:hover,
+body.-emu #sidebar button:hover,
+body.-emu .dialog .directory .directory-item .create-document:hover,
+body.-emu .dialog .directory .directory-item .create-folder:hover,
+body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity:hover,
+body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder:hover,
+body.-emu .dialog .directory .directory-item.folder .folder-header:hover,
+body.-emu .dialog .directory .directory-item:hover,
+body.-emu .dialog .sheet-tabs a:hover,
+body.-emu .dialog .tabs a:hover,
+body.-emu .dialog button:hover,
+body.-emu .filepicker.window-app .filepicker-body .filepicker-header .display-modes .display-mode:hover,
+body.-emu .sheet .sheet-header>img:hover,
+body.-emu .sheet[id*=ActiveEffectsConfig] .-emu-layout .effects-header a:hover,
+body.-emu .sheet[id*=ActiveEffectsConfig] .changes-list .-emu-layout li a:hover,
+body.-emu .sidebar-popout #sidebar-tabs>.collapse:hover,
+body.-emu .sidebar-popout #sidebar-tabs>.item:hover,
+body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control:hover,
+body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] #combat-controls .combat-control:hover,
+body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] #combat-tracker .combatant .combatant-control:hover,
+body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] #combat-tracker .combatant:hover,
+body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] .combat-tracker-header .encounter-controls a:hover,
+body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] .combat-tracker-header .encounters a:hover,
+body.-emu .sidebar-popout[id=playlists-popout] .window-content [data-tab=playlists] #currently-playing .sound .sound-control:hover,
+body.-emu .sidebar-popout[id=playlists-popout] .window-content [data-tab=playlists] .directory-list .playlist-header .sound-controls .sound-control:hover,
+body.-emu .sidebar-popout[id=playlists-popout] .window-content [data-tab=playlists] .directory-list .sound .sound-controls .sound-control:hover,
+body.-emu .window-app .window-resizable-handle:hover,
+body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item .create-document:hover,
+body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item .create-folder:hover,
+body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item.folder .folder-header .create-entity:hover,
+body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item.folder .folder-header:hover,
+body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item:hover,
+body.-emu .window-app:not(.-emu-clean-sheet) .sheet-tabs a:hover,
+body.-emu .window-app:not(.-emu-clean-sheet) .tabs a:hover,
+body.-emu .window-app:not(.-emu-clean-sheet) button:hover,
+body.-emu .window-app[id*=JournalEntry-] a.editor-edit:hover,
+body.-emu .window-app[id*=RollTableConfig-] .table-results .-emu-layout .table-header a:hover,
+body.-emu .window-app[id*=RollTableConfig-] .table-results .-emu-layout .table-result a:hover,
+body.-emu .window-app[id*=cards-sheet-] .-emu-layout .cards-header a:hover,
+body.-emu .window-app[id*=cards-sheet-] .cards .-emu-layout .card a:hover,
+body.-emu .window-app[id*=rolltable-sheet-] .table-results .-emu-layout .table-header a:hover,
+body.-emu .window-app[id*=rolltable-sheet-] .table-results .-emu-layout .table-result a:hover {
     box-shadow: inset 0 0 0 2px var(--color-orange);
 }
 
 
-.-emu-layout body.-emu #sidebar .sidebar-tab .directory-header, .-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-header {
+.-emu-layout body.-emu #sidebar .sidebar-tab .directory-header,
+.-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-header {
     background: var(--color-background-dunkel-mild);
 }
 
-.-emu-layout body.-emu #sidebar [data-tab=combat] .combat-tracker-header, .-emu-layout body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] .combat-tracker-header {
+.-emu-layout body.-emu #sidebar [data-tab=combat] .combat-tracker-header,
+.-emu-layout body.-emu .sidebar-popout[id=combat-popout] .window-content [data-tab=combat] .combat-tracker-header {
     flex-direction: column;
     background: var(--color-background-braun);
     border-bottom: 1px solid var(--color-border-light-primary);
@@ -835,11 +935,120 @@ body.-emu .package-configuration .categories .scrollable,
 body.-emu .package-configuration .categories footer {
     border-left: 1px solid var(--color-border-light-primary);
 }
-body.-emu .dialog .tabs a.active, body.-emu .dialog .sheet-tabs a.active, body.-emu #sidebar .tabs a.active, body.-emu #sidebar .sheet-tabs a.active, body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .tabs a.active, body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .sheet-tabs a.active, body.-emu #module-management .list-filters a.active, body.-emu .dialog button.active, body.-emu #sidebar button.active, body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) button.active, body.-emu #menu #menu-items li.active, body.-emu #sidebar [data-tab="combat"] #combat-controls .active.combat-control, body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-controls .active.combat-control, body.-emu .filepicker.window-app .filepicker-body .filepicker-header .display-modes .active.display-mode, body.-emu .window-app[id*="JournalEntry-"] a.active.editor-edit, body.-emu .active.alwayshp-btn, body.-emu #sidebar #combat .active.add-temporary, body.-emu .sidebar-popout #combat .active.add-temporary, body.-emu #specials-config .fxmaster .directory-header a.active, body.-emu ul.command-menu li.active, body.-emu #token-action-hud button.active.tah-title-button, body.-emu #token-action-hud .tah-action button.active, body.-emu #sidebar .token-mold>label>span.active, body.-emu .sidebar-popout .token-mold>label>span.active, .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header a.active, body.-emu .sheet[id*="activeeffect-sheet-"] .-emu-layout .effects-header a.active, .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards-header a.active, body.-emu .window-app[id*="cards-sheet-"] .-emu-layout .cards-header a.active, .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-header a.active, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-header a.active, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active, .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list li a.active, body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list .-emu-layout li a.active, .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards .card a.active, body.-emu .window-app[id*="cards-sheet-"] .cards .-emu-layout .card a.active, .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result a.active, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-result a.active, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active, body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder, body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-entity, body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-folder, body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-entity, body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item.folder .folder-header .active.create-folder, body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item.folder .folder-header .active.create-entity, body.-emu .dialog .directory .directory-item .active.create-folder, body.-emu .dialog .directory .directory-item .active.create-document, body.-emu #sidebar .directory .directory-item .active.create-folder, body.-emu #sidebar .directory .directory-item .active.create-document, body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item .active.create-folder, body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item .active.create-document, body.-emu #navigation .active#nav-toggle, .-emu-layout body.-emu .window-app .window-header>a.active, .-emu-layout body.-emu .window-app .window-header a.active.header-button, .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .active.button.message-delete, .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .active.button.message-delete, .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-controls .chat-control-icon .active.fa-dice-d20, .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-controls .chat-control-icon .active.fa-dice-d20, .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-controls .control-buttons a.active, .-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-controls .control-buttons a.active, body.-emu #sidebar [data-tab="combat"] .combat-tracker-header .encounters a.active, body.-emu #sidebar [data-tab="combat"] .combat-tracker-header .encounter-controls a.active, body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] .combat-tracker-header .encounters a.active, body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] .combat-tracker-header .encounter-controls a.active, body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant .active.combatant-control, body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant .active.combatant-control, body.-emu #sidebar [data-tab="playlists"] .directory-list .playlist-header .sound-controls .active.sound-control, body.-emu #sidebar [data-tab="playlists"] .directory-list .sound .sound-controls .active.sound-control, body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] .directory-list .playlist-header .sound-controls .active.sound-control, body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] .directory-list .sound .sound-controls .active.sound-control, body.-emu #sidebar [data-tab="playlists"] #currently-playing .sound .active.sound-control, body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] #currently-playing .sound .active.sound-control, body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button.active, body.-emu #sidebar [data-tab="chat"] #chat-log .chat-message .chat-card .die-result-overlay-br button.active, body.-emu #dfcp-rt-buttons button.active, body.-emu #specials-config .fxmaster .special-effects .controls a.active, body.-emu div.permission-viewer a.active, body.-emu #smalltime-app #displayContainer .active.arrow, body.-emu #token-action-hud .active#tah-reposition, body.-emu #token-action-hud .active#tah-categories, body.-emu #sidebar .token-mold>a.active, body.-emu .sidebar-popout .token-mold>a.active, body.-emu #sidebar .sidebar-tab .directory-header .active.header-control, body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control, body.-emu .dialog .tox .tox-tbtn.tox-tbtn--enabled, body.-emu #sidebar .tox .tox-tbtn.tox-tbtn--enabled, body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .tox .tox-tbtn.tox-tbtn--enabled, body.-emu #hotbar .macro.active, body.-emu #hud .control-icon.active, body.-emu #controls .control-tools .scene-control.active, body.-emu #controls .control-tools .control-tool.active, body.-emu #controls .control-tools .control-tool.toggle.active, body.-emu #navigation #scene-list .scene.active, body.-emu #navigation #scene-list .scene.view, body.-emu #navigation #scene-list .scene.active:not(.gm), body.-emu #navigation #scene-list .scene.view:not(.gm), body.-emu #sidebar #sidebar-tabs>.item.active, body.-emu #sidebar #sidebar-tabs>.collapse.active, body.-emu .sidebar-popout #sidebar-tabs>.item.active, body.-emu .sidebar-popout #sidebar-tabs>.collapse.active, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock, body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.active, body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.active, body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
+
+body.-emu .dialog .tabs a.active,
+body.-emu .dialog .sheet-tabs a.active,
+body.-emu #sidebar .tabs a.active,
+body.-emu #sidebar .sheet-tabs a.active,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .tabs a.active,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .sheet-tabs a.active,
+body.-emu #module-management .list-filters a.active,
+body.-emu .dialog button.active,
+body.-emu #sidebar button.active,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) button.active,
+body.-emu #menu #menu-items li.active,
+body.-emu #sidebar [data-tab="combat"] #combat-controls .active.combat-control,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-controls .active.combat-control,
+body.-emu .filepicker.window-app .filepicker-body .filepicker-header .display-modes .active.display-mode,
+body.-emu .window-app[id*="JournalEntry-"] a.active.editor-edit,
+body.-emu .active.alwayshp-btn,
+body.-emu #sidebar #combat .active.add-temporary,
+body.-emu .sidebar-popout #combat .active.add-temporary,
+body.-emu #specials-config .fxmaster .directory-header a.active,
+body.-emu ul.command-menu li.active,
+body.-emu #token-action-hud button.active.tah-title-button,
+body.-emu #token-action-hud .tah-action button.active,
+body.-emu #sidebar .token-mold>label>span.active,
+body.-emu .sidebar-popout .token-mold>label>span.active,
+.-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header a.active,
+body.-emu .sheet[id*="activeeffect-sheet-"] .-emu-layout .effects-header a.active,
+.-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards-header a.active,
+body.-emu .window-app[id*="cards-sheet-"] .-emu-layout .cards-header a.active,
+.-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-header a.active,
+body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-header a.active,
+.-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active,
+body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active,
+.-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list li a.active,
+body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list .-emu-layout li a.active,
+.-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards .card a.active,
+body.-emu .window-app[id*="cards-sheet-"] .cards .-emu-layout .card a.active,
+.-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result a.active,
+body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-result a.active,
+.-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active,
+body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active,
+body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder,
+body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-entity,
+body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-folder,
+body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-entity,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item.folder .folder-header .active.create-folder,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item.folder .folder-header .active.create-entity,
+body.-emu .dialog .directory .directory-item .active.create-folder,
+body.-emu .dialog .directory .directory-item .active.create-document,
+body.-emu #sidebar .directory .directory-item .active.create-folder,
+body.-emu #sidebar .directory .directory-item .active.create-document,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item .active.create-folder,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item .active.create-document,
+body.-emu #navigation .active#nav-toggle,
+.-emu-layout body.-emu .window-app .window-header>a.active,
+.-emu-layout body.-emu .window-app .window-header a.active.header-button,
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .active.button.message-delete,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .active.button.message-delete,
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-controls .chat-control-icon .active.fa-dice-d20,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-controls .chat-control-icon .active.fa-dice-d20,
+.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-controls .control-buttons a.active,
+.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-controls .control-buttons a.active,
+body.-emu #sidebar [data-tab="combat"] .combat-tracker-header .encounters a.active,
+body.-emu #sidebar [data-tab="combat"] .combat-tracker-header .encounter-controls a.active,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] .combat-tracker-header .encounters a.active,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] .combat-tracker-header .encounter-controls a.active,
+body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant .active.combatant-control,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant .active.combatant-control,
+body.-emu #sidebar [data-tab="playlists"] .directory-list .playlist-header .sound-controls .active.sound-control,
+body.-emu #sidebar [data-tab="playlists"] .directory-list .sound .sound-controls .active.sound-control,
+body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] .directory-list .playlist-header .sound-controls .active.sound-control,
+body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] .directory-list .sound .sound-controls .active.sound-control,
+body.-emu #sidebar [data-tab="playlists"] #currently-playing .sound .active.sound-control,
+body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] #currently-playing .sound .active.sound-control,
+body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button.active,
+body.-emu #sidebar [data-tab="chat"] #chat-log .chat-message .chat-card .die-result-overlay-br button.active,
+body.-emu #dfcp-rt-buttons button.active,
+body.-emu #specials-config .fxmaster .special-effects .controls a.active,
+body.-emu div.permission-viewer a.active,
+body.-emu #smalltime-app #displayContainer .active.arrow,
+body.-emu #token-action-hud .active#tah-reposition,
+body.-emu #token-action-hud .active#tah-categories,
+body.-emu #sidebar .token-mold>a.active,
+body.-emu .sidebar-popout .token-mold>a.active,
+body.-emu #sidebar .sidebar-tab .directory-header .active.header-control,
+body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control,
+body.-emu .dialog .tox .tox-tbtn.tox-tbtn--enabled,
+body.-emu #sidebar .tox .tox-tbtn.tox-tbtn--enabled,
+body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .tox .tox-tbtn.tox-tbtn--enabled,
+body.-emu #hotbar .macro.active,
+body.-emu #hud .control-icon.active,
+body.-emu #controls .control-tools .scene-control.active,
+body.-emu #controls .control-tools .control-tool.active,
+body.-emu #controls .control-tools .control-tool.toggle.active,
+body.-emu #navigation #scene-list .scene.active,
+body.-emu #navigation #scene-list .scene.view,
+body.-emu #navigation #scene-list .scene.active:not(.gm),
+body.-emu #navigation #scene-list .scene.view:not(.gm),
+body.-emu #sidebar #sidebar-tabs>.item.active,
+body.-emu #sidebar #sidebar-tabs>.collapse.active,
+body.-emu .sidebar-popout #sidebar-tabs>.item.active,
+body.-emu .sidebar-popout #sidebar-tabs>.collapse.active,
+.-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock,
+.-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock,
+body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.active,
+body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.active,
+body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy,
+body.-emu #df-curvy-walls-tools .control-tool.active,
+body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
     text-shadow: none;
     border: 1px solid var(--color-text-creme);
     background: var(--color-dunkelrot);
 }
+
 body.-emu .package-configuration .categories footer {
     border-top: 1px solid var(--color-border-light-primary);
 }
@@ -1031,7 +1240,9 @@ h3 {
     color: var(--primary-font);
 }
 
-.-emu-layout body.-emu #sidebar p, .-emu-layout body.-emu .dialog p, .-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) p {
+.-emu-layout body.-emu #sidebar p,
+.-emu-layout body.-emu .dialog p,
+.-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) p {
     padding-left: 4px;
 }
 
@@ -1933,7 +2144,8 @@ nav.damage-log-nav.tabs {
     color: var(--color-text-gelb);
 }
 
-.fa-magic:before, .fa-wand-magic:before {
+.fa-magic:before,
+.fa-wand-magic:before {
     content: "\f0d0";
     color: var(--color-text-tuerkis);
 }
@@ -2064,7 +2276,7 @@ nav.damage-log-nav.tabs {
 
 .fa-unlock:before {
     content: "\f09c";
-    color:var(--color-text-gruen);
+    color: var(--color-text-gruen);
 }
 
 .fa-lock:before {
@@ -2129,17 +2341,22 @@ university:before {
     color: #dbff84;
 }
 
-.fa-magic-wand-sparkles:before, .fa-wand-magic-sparkles:before {
+.fa-magic-wand-sparkles:before,
+.fa-wand-magic-sparkles:before {
     content: "\e2ca";
     color: #a5ffff;
 }
 
-.fa-boxes-alt:before, .fa-boxes-stacked:before, .fa-boxes:before {
+.fa-boxes-alt:before,
+.fa-boxes-stacked:before,
+.fa-boxes:before {
     content: "\f468";
     color: #ff8282;
 }
 
-.fa-list-1-2:before, .fa-list-numeric:before, .fa-list-ol:before {
+.fa-list-1-2:before,
+.fa-list-numeric:before,
+.fa-list-ol:before {
     content: "\f0cb";
     color: var(--primary-font);
 }
@@ -2169,7 +2386,9 @@ university:before {
     color: #d4ff8f;
 }
 
-.fa-circle-xmark:before, .fa-times-circle:before, .fa-xmark-circle:before {
+.fa-circle-xmark:before,
+.fa-times-circle:before,
+.fa-xmark-circle:before {
     content: "\f057";
     color: #ff6666;
 }
@@ -2235,14 +2454,16 @@ university:before {
     color: #4fff7d;
 }
 
-.fa-magnifying-glass-minus:before, .fa-search-minus:before {
+.fa-magnifying-glass-minus:before,
+.fa-search-minus:before {
     content: "\f010";
     color: var(--color-text-blau);
 }
 
-.fa-magnifying-glass-plus:before, .fa-search-plus:before {
+.fa-magnifying-glass-plus:before,
+.fa-search-plus:before {
     content: "\f00e";
-    color:var(--color-text-gelb);
+    color: var(--color-text-gelb);
 }
 
 .fa-trash-alt:before,
@@ -2381,7 +2602,8 @@ ul.filterList ul li.filler {
     background: var(--color-background-dunkel) !important;
 }
 
-ul.filterList li a:hover, ul.filterList li a.hover {
+ul.filterList li a:hover,
+ul.filterList li a.hover {
     background: var(--color-dunkelrot);
 }
 
@@ -2390,7 +2612,9 @@ ul.filterList ul li a:hover {
     background: var(--color-dunkelrot-dunkler) !important;
 }
 
-body.-emu #sidebar a:hover, body.-emu .dialog a:hover, body.-emu .window-app:not(.-emu-clean-sheet) a:hover {
+body.-emu #sidebar a:hover,
+body.-emu .dialog a:hover,
+body.-emu .window-app:not(.-emu-clean-sheet) a:hover {
     color: var(--color-text-creme);
 }
 
@@ -2399,7 +2623,7 @@ ul.sub_menu li.cloud {
 }
 
 ul.filterList ul li a {
-    background: var(--color-background-braun)!important;
+    background: var(--color-background-braun) !important;
 }
 
 
