@@ -2649,7 +2649,7 @@ body.game .simple-calendar.window-app header.window-header {
     background-color: var(--header-background);
     color: var(--color-text-creme);
     border-top: 1px double var(--color-border-light-primary);
-    border.left: 1px double var(--color-border-light-primary);
+    border-left: 1px double var(--color-border-light-primary);
     border-right: 1px double var(--color-border-light-primary);
     border-bottom: 1px solid var(--color-border-light-primary);
     border-image: none;
@@ -2665,4 +2665,117 @@ body.game .simple-calendar.window-app .window-content button.fsc-xb.fsc-bc {
     background: var(--color-text-gelb);
     border-color: black;
     color: var(--primary-font);
+}
+
+/*Automated Animations*/
+
+#AA-autorec-settings .window-content, #AA-item-settings .window-content, #AA-ae-settings .window-content {
+    color: var(--primary-font);
+    background: var(--color-background-dunkel);
+    --tjs-icon-button-background: var(--color-background-braun);
+    --tjs-icon-button-background-hover: var(--color-dunkelrot);
+    --tjs-icon-button-background-selected: var(--color-dunkelrot);
+}
+
+header.svelte-1g5ic18.svelte-1g5ic18 {
+    background: var(--color-background-braun);
+    border-bottom: 1px solid var(--color-border-light-primary);
+    color: var(--primary-font);
+}
+
+header.svelte-1g5ic18 ul li.svelte-1g5ic18 {
+    color: var(--color-text-creme);
+    font-family: "Calibri Bold", sans-serif;
+    font-size:medium;
+    margin: auto;
+    transition: none;
+}
+
+header.svelte-1g5ic18 ul li.active.svelte-1g5ic18 {
+    text-shadow: none;
+    border-bottom: 1px solid var(--color-text-creme);
+}
+
+header.svelte-1vbjp39 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25em 0.25em;
+    background: var(--color-background-dunkel-mild);
+    border-bottom: 2px solid var(--color-border-light-primary);
+    height: fit-content;
+    width: 100%;
+    --tjs-input-text-align: center;
+    --tjs-input-border: 1px solid var(--color-background-braun);
+    --tjs-input-border-radius: none;
+    --tjs-input-width: 70%;
+}
+
+div.svelte-r7wy3l {
+    background: var(--color-dunkel-mild);
+    border: 1px solid var(--color-border-light-primary);
+
+    height: fit-content;
+    width: 100%;
+    --tjs-summary-width: 98%;
+    --tjs-summary-margin: 0 0 0 1%;
+    --tjs-input-text-align: center;
+    --tjs-input-border: 1.5pxoutsetrgba(0, 0, 0, 0.5);
+    --tjs-input-border-radius: 2px;
+}
+
+.aa-autorec-headerButton {
+    color: var(--primary-font);
+}
+
+.sectionButton.svelte-18s2cti.svelte-18s2cti {
+    background: var(--color-background-dunkel);
+    border: 1px solid var(--color-border-light-primary);
+    border-radius: 2px;
+}
+
+.aa-section-border {
+    margin-right: 3%;
+    margin-left: 3%;
+    border: 1px solid var(--color-border-light-primary);
+    border-radius: 2px;
+    background: var(--color-background-braun);
+    margin-bottom: 5px;
+}
+
+.aa-primary-border {
+    margin-right: 3%;
+    margin-left: 3%;
+    border: 1px solid var(--color-border-light-primary);
+    background: var(--color-background-braun);
+    border-radius: 2px;
+    margin-bottom: 3px;
+}
+
+.aa-SectionHeader.svelte-1rha2ro label.svelte-1rha2ro {
+    font-family: "Calibri Bold", sans-serif;
+    color: var(--color-text-creme);
+}
+
+#AA-autorec-settings .animation select, #AA-item-settings .animation select, #AA-ae-settings .animation select {
+    background-color: var(--color-background-dunkel-mild);
+    font-family: "Calibri", sans-serif;
+    color: var(--primary-font);
+    border-radius: 2px;
+}
+
+#AA-autorec-settings .animation input, #AA-item-settings .animation input, #AA-ae-settings .animation input {
+    color: var(--primary-font);
+    background: var(--color-background-dunkel);
+    border: 1px solid black;
+}
+
+#AA-autorec-settings .animation table input[type=text], #AA-item-settings .animation table input[type=text], #AA-ae-settings .animation table input[type=text] {
+    color: var(--primary-font);
+}
+
+footer.svelte-1g5ic18.svelte-1g5ic18 {
+    background: var(--color-background-braun);
+    border-top: 1px solid var(--color-border-light-primary);
 }
