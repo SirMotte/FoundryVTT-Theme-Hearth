@@ -33,6 +33,7 @@ This should be it. Happy testing and bug hunting. Please report any findings to 
 Others work out of the box or are not used by me. Right now I won't take requests for additional module support, but leave a comment anyway so I can create a todo list:
 
 - A lot of Modules don't require dedicated support, try it out.
+- [Midi QoL](https://gitlab.com/tposney/midi-qol) -> Depending on you settings you may have mixed results. Please tell me if something is amiss.
 - [Action Pack](https://github.com/teroparvinen/foundry-action-pack)
 - [Always HP](https://github.com/ironmonk88/always-hp)
 - [Anonymous](https://github.com/reonZ/anonymous)
