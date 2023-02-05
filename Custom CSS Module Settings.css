@@ -1,4 +1,3 @@
-:host,
 /* Custom CSS */
 /*HEAVY WIP, sorting not complete. Add these entrys into the Custom CSS Rules Sheet.
 ~~~~~ Only works well in tandem with Ernie's Modern UI - Please See the Readme!~~~~~*/
@@ -72,6 +71,35 @@
 }
 
 
+:root {
+    --modesto: "Calibri", sans-serif;
+    --t5e-modesto: "Calibri Bold", sans-serif;
+    --signika: "Calibri", sans-serif;
+    --font-primary: "Calibri", sans-serif;
+    --font-mono: "Calibri", sans-serif;
+    --font-awesome: "Calibri", sans-serif;
+    --t5e-signika: "Calibri", sans-serif;
+
+   }
+
+.system-dnd5e.tidy5eDark {
+    --t5e-modesto: "Calibri", sans-serif;
+    --signika: "Calibri", sans-serif;
+    --font-primary: "Calibri", sans-serif;
+    --font-mono: "Calibri", sans-serif;
+    --font-awesome: "Calibri", sans-serif;
+}
+
+.system-dnd5e {
+    --modesto: "Calibri", sans-serif;
+    --signika: "Calibri", sans-serif;
+    --font-primary: "Calibri", sans-serif;
+    --font-mono: "Calibri", sans-serif;
+    --font-awesome: "Calibri", sans-serif;
+    --t5e-modesto: "Calibri Bold", sans-serif;
+    --tjs-summary-font-family: "Calibri", sans-serif;
+}
+
 
 .prosemirror.editing-source textarea {
     color: var(--primary-font);
@@ -102,7 +130,7 @@ textarea {
     background: var(--color-background-braun);
     border: 3px double var(--color-border-light-primary);
     border-radius: 2px;
-    font-family: "Calibri", sans-serif;
+    font-family: var(--font-primary);
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
@@ -121,7 +149,7 @@ textarea {
 
 .dnd5e.sheet.group .members .directory-header>* {
     margin: -7px;
-    font-family: "Calibri", sans-serif;
+    font-family: var(--font-primary);
     font-weight: normal;
     text-align: left;
     color: var(--color-text-creme);
@@ -197,7 +225,7 @@ body.-emu .window-app .window-header {
     flex: 1;
     margin: 0;
     line-height: 36px;
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
     font-weight: bold;
     font-size: var(--font-size-20px);
     color: var(--color-text-creme);
@@ -205,7 +233,7 @@ body.-emu .window-app .window-header {
 
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
 .-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
     font-weight: bold;
     color: var(--color-text-creme);
     background: #350e2e;
@@ -220,7 +248,11 @@ body.-emu .window-app .window-header {
 
 body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item.active {
     border-color: var(--color-text-creme);
-    color: red;
+}
+
+.-emu-layout body.-emu #sidebar [data-tab=chat] #chat-log .message .dice-result, .-emu-layout body.-emu #sidebar [data-tab=chat] #chat-log .message .dice-roll, .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .dice-result, .-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message .dice-roll {
+    gap: 1px;
+    border: 1px solid var(--color-background-braun);
 }
 
 .cfg__btn-tab-header {
@@ -374,7 +406,7 @@ p::selection {
     margin-left: 4px;
     line-height: 20px;
     font-size: 13px;
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
     font-weight: bold;
     font-weight: normal;
     color: var(--secondary-color);
@@ -514,7 +546,7 @@ p::selection {
 .tidy5e.sheet.actor .ability-scores .ability .ability-score {
     margin: 1px 0 5px 0;
     padding: 2px 0 0 0;
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
     font-weight: bold;
     font-weight: 400;
 }
@@ -544,12 +576,12 @@ p::selection {
 
 .tidy5e.sheet.actor .traits .tag {
     margin-right: 4px;
-    font-family: "Calibri", sans-serif;
+    font-family: var(--font-primary);
     color: var(--primary-font);
 }
 
 .tidy5e.sheet.actor .skills-list .skill .skill-name {
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
     font-weight: bold;
     color: var(--color-text-creme);
 }
@@ -567,7 +599,7 @@ p::selection {
 }
 
 .tidy5e.sheet.actor .resources .resource .resource-name input {
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
     font-weight: bold;
     font-size: 13px;
     text-align: center;
@@ -660,7 +692,7 @@ p::selection {
 .tidy5e.sheet.actor .spellcasting-ability h3 {
     margin-right: 10px;
     font-size: 18px;
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
     font-weight: bold;
 }
 
@@ -782,6 +814,11 @@ li.table-result img.result-image {
     background: var(--header-background);
 }
 
+body.-emu #players {
+    border: 3px double RGB(var(--emu-color-border,33,50,52));
+    background: var(--color-background-dunkel);
+}
+
 body.-emu #navigation #scene-list .scene.active,
 body.-emu #navigation #scene-list .scene.view {
     background-image: var(--color-background-dunkel);
@@ -789,12 +826,14 @@ body.-emu #navigation #scene-list .scene.view {
 
 .dnd5e.sheet .sheet-navigation {
     background: var(--header-background);
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
+    font-weight: bold;
     margin-bottom: 2px solid var(--color-border-light-primary);
 }
 
 .dnd5e.sheet.actor ul.attributes li.attribute .attribute-value {
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
+    font-weight: bold;
     color: var(--color-text-gruen);
 }
 
@@ -1124,9 +1163,9 @@ body.-emu #sidebar [data-tab="chat"] #chat-log .message,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message {
 
     background-image: var(--emu-image-background-light, none);
-    border-top: 7px solid var(--color-border-light-primary);
-    border-bottom: 3px solid var(--color-border-light-primary);
-    border-radius: 5px;
+    border-top: 3px solid var(--color-border-light-primary);
+    border-bottom: 7px solid var(--color-border-light-primary);
+    border-radius: 2px;
     border-style: solid;
     color: var(--primary-font);
 }
@@ -1319,6 +1358,15 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     }*/
 
 
+    .text-sneaky:not(:hover) {
+        color: var(--primary-font);
+    }
+
+    input.form-control, textarea.form-control {
+        border: 1px solid var(--color-border-light-primary);
+        border-radius: 2px;
+        background: var(--color-background-dunkel);
+    }
 /* -------------------- xXxXx ---------------------------------*/
 a.content-link,
 a.inline-roll {
@@ -1341,10 +1389,6 @@ a.inline-roll {
     background: var(--background);
 }
 
-
-
-
-
 h3 {
     border-bottom: 1px solid var(--color-text-light-7);
 }
@@ -1359,37 +1403,6 @@ h3 {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
-:host,
-:root {
-    --modesto: "Calibri", sans-serif;
-    --t5e-modesto: "Calibri Bold", sans-serif;
-    --signika: "Calibri", sans-serif;
-    --font-primary: "Calibri", sans-serif;
-    --font-mono: "Calibri", sans-serif;
-    --font-awesome: "Calibri", sans-serif;
-    --t5e-signika: "Calibri", sans-serif;
-
-}
-
-.system-dnd5e.tidy5eDark {
-    --t5e-modesto: "Calibri", sans-serif;
-    --signika: "Calibri", sans-serif;
-    --font-primary: "Calibri", sans-serif;
-    --font-mono: "Calibri", sans-serif;
-    --font-awesome: "Calibri", sans-serif;
-
-}
-
-.system-dnd5e {
-    --modesto: "Calibri", sans-serif;
-    --signika: "Calibri", sans-serif;
-    --font-primary: "Calibri", sans-serif;
-    --font-mono: "Calibri", sans-serif;
-    --font-awesome: "Calibri", sans-serif;
-    --t5e-modesto: "Calibri Bold", sans-serif;
-}
-
 
 #requestsavingthrow .request-grid>div.selected {
     color: var(--color-orange);
@@ -1614,119 +1627,6 @@ form button {
     background-color: var(--color-background-braun);
 }
 
-
-body.-emu .dialog .tabs a.active,
-body.-emu .dialog .sheet-tabs a.active,
-body.-emu #sidebar .tabs a.active,
-body.-emu #sidebar .sheet-tabs a.active,
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .tabs a.active,
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .sheet-tabs a.active,
-body.-emu #module-management .list-filters a.active,
-body.-emu .dialog button.active,
-body.-emu #sidebar button.active,
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) button.active,
-body.-emu #menu #menu-items li.active,
-body.-emu #sidebar [data-tab="combat"] #combat-controls .active.combat-control,
-body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-controls .active.combat-control,
-body.-emu .filepicker.window-app .filepicker-body .filepicker-header .display-modes .active.display-mode,
-body.-emu .window-app[id*="JournalEntry-"] a.active.editor-edit,
-body.-emu .active.alwayshp-btn,
-body.-emu #sidebar #combat .active.add-temporary,
-body.-emu .sidebar-popout #combat .active.add-temporary,
-body.-emu #specials-config .fxmaster .directory-header a.active,
-body.-emu ul.command-menu li.active,
-body.-emu #token-action-hud button.active.tah-title-button,
-body.-emu #token-action-hud .tah-action button.active,
-body.-emu #sidebar .token-mold>label>span.active,
-body.-emu .sidebar-popout .token-mold>label>span.active,
-.-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header a.active,
-body.-emu .sheet[id*="activeeffect-sheet-"] .-emu-layout .effects-header a.active,
-.-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards-header a.active,
-body.-emu .window-app[id*="cards-sheet-"] .-emu-layout .cards-header a.active,
-.-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-header a.active,
-body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-header a.active,
-.-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active,
-body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active,
-.-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list li a.active,
-body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list .-emu-layout li a.active,
-.-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards .card a.active,
-body.-emu .window-app[id*="cards-sheet-"] .cards .-emu-layout .card a.active,
-.-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result a.active,
-body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-result a.active,
-.-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active,
-body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active,
-body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder,
-body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-entity,
-body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-folder,
-body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-entity,
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item.folder .folder-header .active.create-folder,
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item.folder .folder-header .active.create-entity,
-body.-emu .dialog .directory .directory-item .active.create-folder,
-body.-emu .dialog .directory .directory-item .active.create-document,
-body.-emu #sidebar .directory .directory-item .active.create-folder,
-body.-emu #sidebar .directory .directory-item .active.create-document,
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item .active.create-folder,
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .directory .directory-item .active.create-document,
-body.-emu #navigation .active#nav-toggle,
-.-emu-layout body.-emu .window-app .window-header>a.active,
-.-emu-layout body.-emu .window-app .window-header a.active.header-button,
-.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .message .active.button.message-delete,
-.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .message .active.button.message-delete,
-.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-controls .chat-control-icon .active.fa-dice-d20,
-.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-controls .chat-control-icon .active.fa-dice-d20,
-.-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-controls .control-buttons a.active,
-.-emu-layout body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-controls .control-buttons a.active,
-body.-emu #sidebar [data-tab="combat"] .combat-tracker-header .encounters a.active,
-body.-emu #sidebar [data-tab="combat"] .combat-tracker-header .encounter-controls a.active,
-body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] .combat-tracker-header .encounters a.active,
-body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] .combat-tracker-header .encounter-controls a.active,
-body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant .active.combatant-control,
-body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant .active.combatant-control,
-body.-emu #sidebar [data-tab="playlists"] .directory-list .playlist-header .sound-controls .active.sound-control,
-body.-emu #sidebar [data-tab="playlists"] .directory-list .sound .sound-controls .active.sound-control,
-body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] .directory-list .playlist-header .sound-controls .active.sound-control,
-body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] .directory-list .sound .sound-controls .active.sound-control,
-body.-emu #sidebar [data-tab="playlists"] #currently-playing .sound .active.sound-control,
-body.-emu .sidebar-popout[id="playlists-popout"] .window-content [data-tab="playlists"] #currently-playing .sound .active.sound-control,
-body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button.active,
-body.-emu #sidebar [data-tab="chat"] #chat-log .chat-message .chat-card .die-result-overlay-br button.active,
-body.-emu #dfcp-rt-buttons button.active,
-body.-emu #specials-config .fxmaster .special-effects .controls a.active,
-body.-emu div.permission-viewer a.active,
-body.-emu #smalltime-app #displayContainer .active.arrow,
-body.-emu #token-action-hud .active#tah-reposition,
-body.-emu #token-action-hud .active#tah-categories,
-body.-emu #sidebar .token-mold>a.active,
-body.-emu .sidebar-popout .token-mold>a.active,
-body.-emu #sidebar .sidebar-tab .directory-header .active.header-control,
-body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control,
-body.-emu .dialog .tox .tox-tbtn.tox-tbtn--enabled,
-body.-emu #sidebar .tox .tox-tbtn.tox-tbtn--enabled,
-body.-emu .window-app:not([id*="Actor-"]):not([id*="Item-"]) .tox .tox-tbtn.tox-tbtn--enabled,
-body.-emu #hotbar .macro.active,
-body.-emu #hud .control-icon.active,
-body.-emu #controls .control-tools .scene-control.active,
-body.-emu #controls .control-tools .control-tool.active,
-body.-emu #controls .control-tools .control-tool.toggle.active,
-body.-emu #navigation #scene-list .scene.active,
-body.-emu #navigation #scene-list .scene.view,
-body.-emu #navigation #scene-list .scene.active:not(.gm),
-body.-emu #navigation #scene-list .scene.view:not(.gm),
-body.-emu #sidebar #sidebar-tabs>.item.active,
-body.-emu #sidebar #sidebar-tabs>.collapse.active,
-body.-emu .sidebar-popout #sidebar-tabs>.item.active,
-body.-emu .sidebar-popout #sidebar-tabs>.collapse.active,
-.-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock,
-.-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock,
-body.-emu #sidebar [data-tab="combat"] #combat-tracker .combatant.active,
-body.-emu .sidebar-popout[id="combat-popout"] .window-content [data-tab="combat"] #combat-tracker .combatant.active,
-body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy,
-body.-emu #df-curvy-walls-tools .control-tool.active,
-body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label {
-    text-shadow: none;
-    border: 1px solid var(--color-text-creme);
-}
-
 .-emu-layout body.-emu #controls .control-tools .control-tool,
 .-emu-layout body.-emu #controls .control-tools .scene-control {
     border-radius: 3px;
@@ -1770,7 +1670,7 @@ aside.read-aloud-text {
 #wind,
 #weather-text,
 #configWeather {
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
     font-weight: bold;
     color: var(--primary-font);
     text-shadow: none;
@@ -1782,7 +1682,7 @@ aside.read-aloud-text {
     border-top: 3px double var(--color-border-light-primary);
     border-right: 3px double var(--color-border-light-primary);
     border-bottom: 3px double var(--color-border-light-primary);
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
     font-weight: bold;
     border-radius: 2px;
     box-shadow: none;
@@ -1883,7 +1783,7 @@ nav.damage-log-nav.tabs {
     background-color: #322C27;
     border: 1px solid #6C5848;
     border-radius: 1px;
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
     font-weight: bold;
     font-size: var(--font-size-17px);
 }
@@ -2516,24 +2416,6 @@ university:before {
     color: var(--primary-font);
 }
 
-.system-dnd5e.tidy5eDark {
-    --modesto: "Calibri", sans-serif;
-    --signika: "Calibri", sans-serif;
-    --font-primary: "Calibri", sans-serif;
-    --font-mono: "Calibri", sans-serif;
-    --font-awesome: "Calibri", sans-serif;
-}
-
-.system-dnd5e {
-    --modesto: "Calibri", sans-serif;
-    --signika: "Calibri", sans-serif;
-    --font-primary: "Calibri", sans-serif;
-    --font-mono: "Calibri", sans-serif;
-    --font-awesome: "Calibri", sans-serif;
-    --t5e-modesto: "Calibri Bold", sans-serif;
-    --t5e-signika: "Calibri", sans-serif;
-}
-
 .monks-tokenbar .sheet .items-list .item .item-name {
     color: var(--primary-font);
 }
@@ -2685,7 +2567,8 @@ header.svelte-1g5ic18.svelte-1g5ic18 {
 
 header.svelte-1g5ic18 ul li.svelte-1g5ic18 {
     color: var(--color-text-creme);
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
+    font-weight: bold;
     font-size:medium;
     margin: auto;
     transition: none;
@@ -2715,9 +2598,9 @@ header.svelte-1vbjp39 {
 div.svelte-r7wy3l {
     background: var(--color-dunkel-mild);
     border: 1px solid var(--color-border-light-primary);
-
     height: fit-content;
     width: 100%;
+    border-radius: 2px;
     --tjs-summary-width: 98%;
     --tjs-summary-margin: 0 0 0 1%;
     --tjs-input-text-align: center;
@@ -2754,7 +2637,8 @@ div.svelte-r7wy3l {
 }
 
 .aa-SectionHeader.svelte-1rha2ro label.svelte-1rha2ro {
-    font-family: "Calibri Bold", sans-serif;
+    font-family: var(--font-primary);
+    font-weight: bold;
     color: var(--color-text-creme);
 }
 
@@ -2778,4 +2662,31 @@ div.svelte-r7wy3l {
 footer.svelte-1g5ic18.svelte-1g5ic18 {
     background: var(--color-background-braun);
     border-top: 1px solid var(--color-border-light-primary);
+}
+
+summary.svelte-r8xt33 svg.svelte-r8xt33 {
+    color: var(--primary-font);
+    opacity: 100%;
+}
+
+summary.svelte-1hxu1tb.svelte-1hxu1tb {
+    font-weight: normal;
+    font-family: var(--font-primary);
+}
+
+#AA-autorec-settings .animation .aaSelect table.aaMenu td label, #AA-item-settings .animation .aaSelect table.aaMenu td label, #AA-ae-settings .animation .aaSelect table.aaMenu td label {
+    font-size:medium;
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+
+.aa-customFont.svelte-aftvs4.svelte-aftvs4 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header, .-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-item.folder .folder-header {
+    border-top: 1px solid var(--color-border-light-primary);
+    border-bottom: 1px solid var(--color-border-light-primary);
 }

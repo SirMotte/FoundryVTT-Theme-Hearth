@@ -48,6 +48,7 @@ Others work out of the box or are not used by me. Right now I won't take request
 - [Token Info Icons](https://github.com/jopeek/fvtt-token-info-icons)
 - [Moulinette](https://github.com/SvenWerlen/moulinette-core)
 - [NameForge](https://gitlab.com/ElvisPereira/nameforge)
+- [Automated Animations](https://github.com/otigon/automated-jb2a-animations)
 
 
 ## Known Issues:
