@@ -7,11 +7,13 @@ Follow the set-up instructions below and ideally report back with findings and o
 
 ## Requirements:
 - Foundry VTT (Duh!)
-- DnD 5E Ruleset (No support for other rulesets is planned)
-- [Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout) (Required, make sure to use the Pre-Release Version linked in Ernie's Readme.)
-- [Custom CSS Module](https://github.com/cswendrowski/FoundryVTT-Custom-CSS) (Required)
+- DnD 5E Ruleset
+- [Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout) (Use the Pre-Release Version linked in Ernie's Readme.)
+- [Custom CSS Module](https://github.com/cswendrowski/FoundryVTT-Custom-CSS)
+
+## Recommended:
 - [Tidy5ESheet](https://github.com/sdenec/tidy5e-sheet) (Highly Recommended, must be set to Dark Ui for best results)
-- Calibri Font Installed - Guide in the Works (Recommended - Some UI elements will be quirky with other font styles)
+- Calibri Font Installed - Guide in the Works (Some UI elements will look quirky with other font styles)
 
 ## Installation Instructions and Set-Up
 
@@ -29,11 +31,10 @@ Follow the set-up instructions below and ideally report back with findings and o
 
 This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue reporter.
 
-## Supported Modules
-Others work out of the box or are not used by me. Right now I won't take requests for additional module support, but leave a comment anyway so I can create a todo list:
+## Currently Supported Modules
+### A lot of Modules don't require dedicated support, try it out.
 
-- A lot of Modules don't require dedicated support, try it out.
-- [Midi QoL](https://gitlab.com/tposney/midi-qol) -> Depending on you settings you may have mixed results. Please tell me if something is amiss.
+- [Midi QoL](https://gitlab.com/tposney/midi-qol) -> Depending on you settings you may have mixed results.
 - [Action Pack](https://github.com/teroparvinen/foundry-action-pack)
 - [Always HP](https://github.com/ironmonk88/always-hp)
 - [Anonymous](https://github.com/reonZ/anonymous)
