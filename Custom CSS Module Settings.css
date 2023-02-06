@@ -814,6 +814,11 @@ li.table-result img.result-image {
     background: var(--header-background);
 }
 
+body.-emu #sidebar select optgroup, body.-emu #sidebar select option, body.-emu .dialog select optgroup, body.-emu .dialog select option, body.-emu .window-app:not(.-emu-clean-sheet) select optgroup, body.-emu .window-app:not(.-emu-clean-sheet) select option {
+    background-color: var(--color-background-dunkel);
+    color: var(--primary-font);
+}
+
 body.-emu #players {
     border: 3px double RGB(var(--emu-color-border,33,50,52));
     background: var(--color-background-dunkel);
@@ -1415,7 +1420,7 @@ h3 {
 
 .monks-tokenbar .sheet .items-list .items-header h3 {
     padding-left: 5px;
-    font-family: "Calibri", sans-serif;
+    font-family: var(--font-primary);
     font-size: 20px;
     font-weight: 700;
     text-align: left;
@@ -2771,5 +2776,6 @@ header.svelte-1iu6c13 .autorecLabel.svelte-1iu6c13 {
 }
 
 .aa-bgRed {
-    background-color: var(--color-dunkelrot);
+    background-color: rgb(37, 37, 37) var(--color-dunkelrot);
 }
+
