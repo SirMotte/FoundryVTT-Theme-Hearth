@@ -2690,3 +2690,21 @@ summary.svelte-1hxu1tb.svelte-1hxu1tb {
     border-top: 1px solid var(--color-border-light-primary);
     border-bottom: 1px solid var(--color-border-light-primary);
 }
+
+.aa-autorec-headerButton02.svelte-1pixf6p.svelte-1pixf6p {
+    color: var(--primary-font);
+}
+
+.aa-pickAnim.svelte-11wacwj.svelte-11wacwj {
+    font-family: "Calibri", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: var(--color-text-creme);
+}
+
+.sectionButton.svelte-1pixf6p.svelte-1pixf6p {
+    background: var(--color-background-dunkel);
+    padding: 0.2em;
+    border-radius: 2px;
+    border: 1px solid var(--color-text-gelb);
+}
