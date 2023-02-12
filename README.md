@@ -8,7 +8,7 @@ Follow the set-up instructions below and ideally report back with findings and o
 ## Requirements:
 - Foundry VTT (Duh!)
 - DnD 5E Ruleset
-- [Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout) (Use the Pre-Release Version linked in Ernie's Readme.)
+- [Ernie's Modern UI](https://github.com/ernieayala/ernies-modern-layout)
 - [Custom CSS Module](https://github.com/cswendrowski/FoundryVTT-Custom-CSS)
 
 ## Recommended:
