@@ -27,7 +27,7 @@ Follow the set-up instructions below and ideally report back with findings and o
    - Choose the downloaded Sir_Motte_Hearth_Foundry.json file and import it.
 4. (Only if used) Open up the Tidy5e Sheet Settings and set it to the "Alternative (dark)" color scheme. Additional Settings used need further testing in regard of UI Elements. I will update this document accordingly.
 5. Install the Calibri Font for use in Foundry VTT (not mandatory but highly recommended).
-   - If you're on windows, navigate to the fonts system settings and search for the Calibri Font Type.
+   - If you're on windows, navigate to the fonts system settings and search for the Calibri Font Type. I'm unsure how to approach this on Mac or Linux.
    - ![grafik](https://user-images.githubusercontent.com/82598692/219111263-b2eb3da7-78ef-4130-91b9-271a918a6c5c.png)
    - Double Click the Font Family and select all Calibri Font types included. Right click and select "copy".
    - ![grafik](https://user-images.githubusercontent.com/82598692/219111688-b214a431-b5e8-4237-b053-7e0073cbc748.png)
@@ -43,9 +43,8 @@ Follow the set-up instructions below and ideally report back with findings and o
    - Calibri Light = calibril.ttf
    - Calibri Light Italic = calibrili.ttf
    - ![grafik](https://user-images.githubusercontent.com/82598692/219112725-4fa775f9-6529-4a4b-ab03-58106a02dca6.png)
-   - Make sure that the Font Family Custom within Ernies's Modern UI settings is set to Calibri
+   - Make sure that "Font Family Custom" within Ernies's Modern UI settings is set to Calibri.
    - ![grafik](https://user-images.githubusercontent.com/82598692/219114063-7663e23c-0c78-4920-9d07-8d2135c68ecb.png)
-   - I don't know how to handle this on Linux or Mac, sorry.
 
 
 This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue tracker.
