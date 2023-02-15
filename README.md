@@ -48,12 +48,12 @@ Follow the set-up instructions below and ideally report back with findings and o
    - I don't know how to handle this on Linux or Mac, sorry. 
 
 
-This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue reporter.
+This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue tracker.
 
 ## Currently Supported Modules
 ### A lot of Modules don't require dedicated support, try it out.
 
-- [Midi QoL](https://gitlab.com/tposney/midi-qol) -> Depending on you settings you may have mixed results.
+- [Midi QoL](https://gitlab.com/tposney/midi-qol) -> Depending on your settings you may have mixed results.
 - [Action Pack](https://github.com/teroparvinen/foundry-action-pack)
 - [Always HP](https://github.com/ironmonk88/always-hp)
 - [Anonymous](https://github.com/reonZ/anonymous)
