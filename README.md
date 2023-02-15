@@ -75,7 +75,7 @@ This should be it. Happy testing and bug hunting. Please report any findings to 
 - Modules that alter UI elements can potentially cause UI issues.
 - It's impossible for me to test all modules. If you come across readbility issues, contact me.
 - [Module Management +](https://github.com/mouse0270/module-credits): Export Window is barely readable. Can't figure out how to fix this (<-CSS Noob)
-- When opening up the Sequencer Database for JB2A Animations, the Automated Animation Effects suddenly has grey elements showing. Don't know how to fix this.
+- When opening up the Sequencer Database for JB2A Animations, input frames suddenly turn grey, might be a module bug. The effect reverts when closing the Database again.
 
 
 Have Fun!
