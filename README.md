@@ -32,7 +32,7 @@ Follow the set-up instructions below and ideally report back with findings and o
    - Double Click the Font Family and select all Calibri Font types included. Ricght click and select "copy".
    - ![grafik](https://user-images.githubusercontent.com/82598692/219111688-b214a431-b5e8-4237-b053-7e0073cbc748.png)
    - Paste the files into a folder that you can easily find, ideally the Foundry VTT Data Folder.
-   - ![grafik](https://user-images.githubusercontent.com/82598692/219112340-4df97917-025b-46e2-8665-3a1b25380cc1.png)   
+   - ![grafik](https://user-images.githubusercontent.com/82598692/219112340-4df97917-025b-46e2-8665-3a1b25380cc1.png)
    - Within Foundry VTT, navigate to the core settings menu and click the "Configure Additional Fonts" button.
    - ![grafik](https://user-images.githubusercontent.com/82598692/219110727-b0c3898b-0bf1-428d-befd-aaae721a4d07.png)
    - Click the Add Font Button and Create the Font entries as shown below:
@@ -45,7 +45,7 @@ Follow the set-up instructions below and ideally report back with findings and o
    - ![grafik](https://user-images.githubusercontent.com/82598692/219112725-4fa775f9-6529-4a4b-ab03-58106a02dca6.png)
    - Make sure that the Font Family Custom within Ernies's Modern UI settings is set to Calibri
    - ![grafik](https://user-images.githubusercontent.com/82598692/219114063-7663e23c-0c78-4920-9d07-8d2135c68ecb.png)
-   - I don't know how to handle this on Linux or Mac, sorry. 
+   - I don't know how to handle this on Linux or Mac, sorry.
 
 
 This should be it. Happy testing and bug hunting. Please report any findings to me either on Discord (Sir Motte#1305) or use the GitHub issue tracker.
