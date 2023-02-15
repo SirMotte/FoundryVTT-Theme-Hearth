@@ -2,8 +2,8 @@
 ![grafik](https://user-images.githubusercontent.com/82598692/215295962-b3991143-a348-492b-ba24-25c6663d12ea.png)
 
 
-This is a recreation of my well received [Theme for Fantasy Grounds Unity](https://github.com/SirMotte/FGU-Theme-Hearth).
-Follow the set-up instructions below and ideally report back with findings and opinions.
+This is a [Foundry VTT](https://foundryvtt.com/) recreation of my well received [Hearth Theme for Fantasy Grounds Unity](https://github.com/SirMotte/FGU-Theme-Hearth).
+Follow the set-up instructions below and ideally report back with findings and opinions. This is not a module!
 
 ## Requirements:
 - Foundry VTT (Duh!)
@@ -29,13 +29,13 @@ Follow the set-up instructions below and ideally report back with findings and o
 5. Install the Calibri Font for use in Foundry VTT (not mandatory but highly recommended).
    - If you're on windows, navigate to the fonts system settings and search for the Calibri Font Type.
    - ![grafik](https://user-images.githubusercontent.com/82598692/219111263-b2eb3da7-78ef-4130-91b9-271a918a6c5c.png)
-   - Double Click the Font Family and select all Calibri Font types included. Ricght click and select "copy".
+   - Double Click the Font Family and select all Calibri Font types included. Right click and select "copy".
    - ![grafik](https://user-images.githubusercontent.com/82598692/219111688-b214a431-b5e8-4237-b053-7e0073cbc748.png)
-   - Paste the files into a folder that you can easily find, ideally the Foundry VTT Data Folder.
+   - Paste the files into a folder that you can easily find, for example the Foundry VTT Data Folder.
    - ![grafik](https://user-images.githubusercontent.com/82598692/219112340-4df97917-025b-46e2-8665-3a1b25380cc1.png)
    - Within Foundry VTT, navigate to the core settings menu and click the "Configure Additional Fonts" button.
    - ![grafik](https://user-images.githubusercontent.com/82598692/219110727-b0c3898b-0bf1-428d-befd-aaae721a4d07.png)
-   - Click the Add Font Button and Create the Font entries as shown below:
+   - Click the Add Font Button and Create the Font entries as shown below, don't forget to attach the font files you just copied!:
    - Calibri Regular = calibri.ttf
    - Calibri Regular Italic = calibrii.ttf
    - Calibri Bold = calibrib.ttf
