@@ -2371,6 +2371,11 @@ university:before {
     color: var(--color-text-gelb);
 }
 
+.fa-caret-circle-up:before, .fa-circle-caret-up:before {
+    content: "\f331";
+    color: var(--primary-font);
+}
+
 .fa-trash-alt:before,
 .fa-trash-can:before {
     content: "\f2ed";
