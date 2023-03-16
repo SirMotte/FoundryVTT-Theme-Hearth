@@ -881,6 +881,10 @@ body.-emu.system-dnd5e .dnd5e.sheet .sheet-navigation .item.active {
     color: RGB(var(--emu-color-primary, 229, 117, 9));
 }
 
+.tabs .item.active {
+    text-shadow: none;
+}
+
 body.-emu #sidebar .sidebar-tab .directory-footer,
 body.-emu #sidebar .sidebar-tab .directory-header,
 body.-emu #sidebar [data-tab=combat] .combat-tracker-header,
