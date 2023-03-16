@@ -144,8 +144,34 @@ textarea {
 }
 
 /* -------------------- DnD 5E Ruleset -------------------- */
+.dnd5e.sheet .sheet-header .header-details {
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
 
+.dnd5e.sheet.actor h4.box-title {
+    font-family: "Calibri", serif;
+    color: var(--primary-font);
+    border-bottom: 1px solid var(--color-border-light-primary);
+}
 
+.dnd5e.sheet .window-content {
+    overflow-y: hidden;
+    padding: 5px;
+    background: var(--color-background-dunkel-mild);
+    font-size: 13px;
+    color: var(--primary-font);
+}
+.dnd5e input[type="text"], .dnd5e input[type="number"], .dnd5e select {
+    border: none;
+    background: none;
+    color: var(--color-text-creme);
+}
+
+.dnd5e.sheet .sheet-header .summary li {
+    color: var(--font-primary);
+}
 
 .dnd5e.sheet.group .members .directory-header>* {
     margin: -7px;
@@ -1288,6 +1314,13 @@ h3 {
 .-emu-layout body.-emu .dialog p,
 .-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) p {
     padding-left: 4px;
+}
+
+.-emu-layout body.-emu #sidebar a.content-link, .-emu-layout body.-emu #sidebar a.entity-link, .-emu-layout body.-emu #sidebar a.inline-roll, .-emu-layout body.-emu .dialog a.content-link, .-emu-layout body.-emu .dialog a.entity-link, .-emu-layout body.-emu .dialog a.inline-roll, .-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) a.content-link, .-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) a.entity-link, .-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) a.inline-roll {
+    border-radius: 1px;
+    border: 1px solid var(--color-border-highlight);
+    padding: var(--emu-space-pf,1px) var(--emu-space-xs,2px);
+    padding-inline-start: var(--emu-space-base,4px);
 }
 
 /*--------------------------------- DFreds Chat Pins ---------------------------------*/
