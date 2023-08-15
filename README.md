@@ -1,4 +1,4 @@
-# Sir Motte's Magnificent Darkness - Hearth Theme for Foundry VTT
+# [Outdated]]Sir Motte's Magnificent Darkness - Hearth Theme for Foundry VTT
 ![grafik](https://user-images.githubusercontent.com/82598692/215295962-b3991143-a348-492b-ba24-25c6663d12ea.png)
 
 
